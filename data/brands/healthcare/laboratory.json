@@ -3,12 +3,40 @@
     "path": "brands/healthcare/laboratory",
     "exclude": {
       "generic": [
-        "^laboratoire( d'analyses médicales)?",
-        "^laboratory$"
+        "^laborato(ire|ry)( d'analyses médicales)?$",
+        "^sample collection?$",
+        "^поликлиника$",
+        "^поліклініка$"
       ]
     }
   },
   "items": [
+    {
+      "displayName": "a+ Medicina Diagnóstica",
+      "id": "amedicinadiagnostica-4627ab",
+      "locationSet": {"include": ["br"]},
+      "matchNames": [
+        "a+ laboratórios",
+        "laboratório a+"
+      ],
+      "tags": {
+        "brand": "a+ Medicina Diagnóstica",
+        "brand:wikidata": "Q111392264",
+        "healthcare": "laboratory",
+        "name": "a+ Medicina Diagnóstica"
+      }
+    },
+    {
+      "displayName": "Beo-lab",
+      "id": "beolab-ed8186",
+      "locationSet": {"include": ["rs"]},
+      "tags": {
+        "brand": "beo-lab",
+        "brand:wikidata": "Q117891595",
+        "healthcare": "laboratory",
+        "name": "Beo-lab"
+      }
+    },
     {
       "displayName": "Bio-Val",
       "id": "bioval-c89743",
@@ -163,6 +191,19 @@
       }
     },
     {
+      "displayName": "Bodimed",
+      "id": "bodimed-59f78c",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Bodimed",
+        "brand:wikidata": "Q110583446",
+        "healthcare": "laboratory",
+        "name": "Bodimed",
+        "name:bg": "Бодимед",
+        "name:en": "Bodimed"
+      }
+    },
+    {
       "displayName": "Cedibio Unilabs",
       "id": "cedibiounilabs-c89743",
       "locationSet": {"include": ["fr"]},
@@ -187,6 +228,19 @@
       }
     },
     {
+      "displayName": "Cibalab",
+      "id": "cibalab-59f78c",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Cibalab",
+        "brand:wikidata": "Q110583364",
+        "healthcare": "laboratory",
+        "name": "Cibalab",
+        "name:bg": "Цибалаб",
+        "name:en": "Cibalab"
+      }
+    },
+    {
       "displayName": "CMD",
       "id": "cmd-8e8a61",
       "locationSet": {"include": ["ru"]},
@@ -194,6 +248,39 @@
         "brand": "CMD",
         "healthcare": "laboratory",
         "name": "CMD"
+      }
+    },
+    {
+      "displayName": "CSD",
+      "id": "csd-d27ce4",
+      "locationSet": {"include": ["ua"]},
+      "matchNames": ["тов сі ес ді лаб"],
+      "tags": {
+        "brand": "CSD",
+        "brand:wikidata": "Q117382737",
+        "healthcare": "laboratory",
+        "name": "CSD"
+      }
+    },
+    {
+      "displayName": "Diagnostyka (laboratorium)",
+      "id": "diagnostyka-a4d57c",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Diagnostyka",
+        "brand:wikidata": "Q118442310",
+        "healthcare": "laboratory",
+        "name": "Diagnostyka"
+      }
+    },
+    {
+      "displayName": "Dr Lal Path Labs",
+      "id": "drlalpathlabs-e99f45",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "brand": "Dr Lal Path Labs",
+        "brand:wikidata": "Q23198401",
+        "healthcare": "laboratory"
       }
     },
     {
@@ -233,6 +320,27 @@
       }
     },
     {
+      "displayName": "IMD Berlin",
+      "id": "imdberlin-e049ab",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "brand": "IMD Berlin",
+        "brand:wikidata": "Q117890527",
+        "healthcare": "laboratory",
+        "name": "IMD Berlin"
+      }
+    },
+    {
+      "displayName": "Invivo",
+      "id": "invivo-deddc9",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Invivo",
+        "healthcare": "laboratory",
+        "name": "Invivo"
+      }
+    },
+    {
       "displayName": "KDL",
       "id": "kdl-8e8a61",
       "locationSet": {"include": ["ru"]},
@@ -260,9 +368,18 @@
       "tags": {
         "brand": "LabCorp",
         "brand:wikidata": "Q6466630",
-        "brand:wikipedia": "en:Labcorp",
         "healthcare": "laboratory",
         "name": "LabCorp"
+      }
+    },
+    {
+      "displayName": "Laboratoire de biologie médicale",
+      "id": "laboratoiredebiologiemedicale-d77f29",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "brand": "Laboratoire de biologie médicale",
+        "healthcare": "laboratory",
+        "name": "Laboratoire de biologie médicale"
       }
     },
     {
@@ -301,6 +418,28 @@
       }
     },
     {
+      "displayName": "Labquest",
+      "id": "labquest-8e8a61",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Labquest",
+        "healthcare": "laboratory",
+        "name": "Labquest"
+      }
+    },
+    {
+      "displayName": "LifeLabs",
+      "id": "lifelabs-81e83d",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "brand": "LifeLabs",
+        "brand:wikidata": "Q109319451",
+        "healthcare": "laboratory",
+        "healthcare:speciality": "blood_check",
+        "name": "LifeLabs"
+      }
+    },
+    {
       "displayName": "Mirialis",
       "id": "mirialis-c89743",
       "locationSet": {"include": ["fr"]},
@@ -310,6 +449,18 @@
         "healthcare": "laboratory",
         "healthcare:speciality": "biology",
         "name": "Mirialis"
+      }
+    },
+    {
+      "displayName": "Nikolab",
+      "id": "nikolab-d27ce4",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "brand": "Nikolab",
+        "brand:wikidata": "Q116924642",
+        "healthcare": "laboratory",
+        "name": "Nikolab",
+        "name:en": "Nikolab"
       }
     },
     {
@@ -344,7 +495,6 @@
       "tags": {
         "brand": "Quest Diagnostics",
         "brand:wikidata": "Q7271456",
-        "brand:wikipedia": "en:Quest Diagnostics",
         "healthcare": "laboratory",
         "name": "Quest Diagnostics"
       }
@@ -361,13 +511,79 @@
       }
     },
     {
-      "displayName": "Synevo",
+      "displayName": "Salud Digna",
+      "id": "saluddigna-fe7e70",
+      "locationSet": {"include": ["mx"]},
+      "tags": {
+        "brand": "Salud Digna",
+        "brand:wikidata": "Q113200677",
+        "healthcare": "laboratory",
+        "name": "Salud Digna"
+      }
+    },
+    {
+      "displayName": "Synevo (Georgia)",
+      "id": "synevo-a30678",
+      "locationSet": {"include": ["ge"]},
+      "matchNames": ["სინევო"],
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q117891346",
+        "healthcare": "laboratory",
+        "name": "Synevo"
+      }
+    },
+    {
+      "displayName": "Synevo (Moldova)",
+      "id": "synevo-e59e51",
+      "locationSet": {"include": ["md"]},
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q117891179",
+        "healthcare": "laboratory",
+        "name": "Synevo"
+      }
+    },
+    {
+      "displayName": "Synevo (Poland)",
+      "id": "synevo-a4d57c",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q108474045",
+        "healthcare": "laboratory",
+        "name": "Synevo"
+      }
+    },
+    {
+      "displayName": "Synevo (Romania)",
+      "id": "synevo-80efe5",
+      "locationSet": {"include": ["ro"]},
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q85968400",
+        "healthcare": "laboratory",
+        "name": "Synevo"
+      }
+    },
+    {
+      "displayName": "Synevo (Turkey)",
+      "id": "synevo-c2c658",
+      "locationSet": {"include": ["tr"]},
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q117890974",
+        "healthcare": "laboratory",
+        "name": "Synevo"
+      }
+    },
+    {
+      "displayName": "Synevo (Ukraine)",
       "id": "synevo-d27ce4",
       "locationSet": {"include": ["ua"]},
       "tags": {
         "brand": "Synevo",
         "brand:wikidata": "Q65207011",
-        "brand:wikipedia": "uk:Synevo",
         "healthcare": "laboratory",
         "name": "Сінево",
         "name:en": "Synevo",
@@ -382,7 +598,6 @@
       "tags": {
         "brand": "Synlab",
         "brand:wikidata": "Q2376015",
-        "brand:wikipedia": "en:Synlab Group",
         "healthcare": "laboratory",
         "healthcare:speciality": "biology",
         "name": "Synlab"
@@ -437,17 +652,94 @@
       }
     },
     {
+      "displayName": "Діла",
+      "id": "dila-d27ce4",
+      "locationSet": {"include": ["ua"]},
+      "matchNames": ["diла", "dіла"],
+      "tags": {
+        "brand": "Діла",
+        "brand:wikidata": "Q116927709",
+        "healthcare": "laboratory",
+        "name": "Діла",
+        "name:en": "Dila",
+        "name:ru": "Дила",
+        "name:uk": "Діла"
+      }
+    },
+    {
       "displayName": "Инвитро",
       "id": "invitro-7c30a4",
       "locationSet": {"include": ["by", "ru"]},
       "tags": {
         "brand": "Инвитро",
         "brand:wikidata": "Q4200546",
-        "brand:wikipedia": "ru:Инвитро (компания)",
         "healthcare": "laboratory",
         "name": "Инвитро",
         "name:en": "Invitro",
         "name:ru": "Инвитро"
+      }
+    },
+    {
+      "displayName": "Лаборатория Бонецкого",
+      "id": "4797e9-deddc9",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Лаборатория Бонецкого",
+        "healthcare": "laboratory",
+        "name": "Лаборатория Бонецкого"
+      }
+    },
+    {
+      "displayName": "МедЛаб",
+      "id": "medlab-d27ce4",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "brand": "МедЛаб",
+        "brand:wikidata": "Q116924614",
+        "healthcare": "laboratory",
+        "name": "МедЛаб",
+        "name:en": "MedLab",
+        "name:ru": "МедЛаб",
+        "name:uk": "МедЛаб"
+      }
+    },
+    {
+      "displayName": "Рамус",
+      "id": "ramus-59f78c",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Рамус",
+        "brand:wikidata": "Q110583347",
+        "healthcare": "laboratory",
+        "name": "Рамус",
+        "name:bg": "Рамус",
+        "name:en": "Ramus"
+      }
+    },
+    {
+      "displayName": "Синево (България)",
+      "id": "synevo-59f78c",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Synevo",
+        "brand:wikidata": "Q110583425",
+        "healthcare": "laboratory",
+        "name": "Synevo",
+        "name:bg": "Синево",
+        "name:en": "Synevo"
+      }
+    },
+    {
+      "displayName": "Хеликс",
+      "id": "helix-8e8a61",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Хеликс",
+        "brand:wikidata": "Q109717117",
+        "healthcare": "laboratory",
+        "name": "Хеликс",
+        "name:en": "Helix",
+        "name:ru": "Хеликс"
       }
     }
   ]

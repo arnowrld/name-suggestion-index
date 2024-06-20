@@ -21,7 +21,6 @@
       "tags": {
         "brand": "Blume 2000",
         "brand:wikidata": "Q886166",
-        "brand:wikipedia": "de:Blume 2000",
         "name": "Blume 2000",
         "shop": "florist"
       }
@@ -33,7 +32,6 @@
       "tags": {
         "brand": "Blumen Risse",
         "brand:wikidata": "Q886177",
-        "brand:wikipedia": "de:Blumen Risse",
         "name": "Blumen Risse",
         "shop": "florist"
       }
@@ -46,7 +44,6 @@
       "tags": {
         "brand": "Holland Blumen Mark",
         "brand:wikidata": "Q1624739",
-        "brand:wikipedia": "de:Holland Blumen Mark",
         "name": "Holland Blumen Mark",
         "shop": "florist"
       }
@@ -60,7 +57,6 @@
       "tags": {
         "brand": "Interflora",
         "brand:wikidata": "Q692179",
-        "brand:wikipedia": "en:Interflora",
         "name": "Interflora",
         "shop": "florist"
       }
@@ -78,14 +74,35 @@
       }
     },
     {
+      "displayName": "Mester grønn",
+      "id": "mestergronn-3ef364",
+      "locationSet": {"include": ["no"]},
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Mester grønn",
+        "brand:wikidata": "Q19381396",
+        "name": "Mester grønn",
+        "shop": "florist"
+      }
+    },
+    {
       "displayName": "Monceau Fleurs",
       "id": "monceaufleurs-486692",
       "locationSet": {"include": ["be", "fr"]},
       "tags": {
         "brand": "Monceau Fleurs",
         "brand:wikidata": "Q17629431",
-        "brand:wikipedia": "fr:Emova Group",
         "name": "Monceau Fleurs",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "The Flower Shop",
+      "id": "theflowershop-64f976",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "The Flower Shop",
+        "name": "The Flower Shop",
         "shop": "florist"
       }
     },
@@ -105,7 +122,71 @@
       "locationSet": {"include": ["ru"]},
       "tags": {
         "brand": "Мосцветторг",
+        "brand:wikidata": "Q110253943",
         "name": "Мосцветторг",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "Оранж",
+      "id": "dfec3b-1841ed",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Оранж",
+        "brand:wikidata": "Q110253936",
+        "name": "Оранж",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "Цветовик",
+      "id": "307c8d-1841ed",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Цветовик",
+        "brand:wikidata": "Q110253962",
+        "name": "Цветовик",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "ЦветОптТорг",
+      "id": "c46356-1841ed",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "ЦветОптТорг",
+        "brand:wikidata": "Q110254004",
+        "name": "ЦветОптТорг",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "Цветочная база",
+      "id": "730fca-64f976",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Цветочная база",
+        "name": "Цветочная база",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "Цветы 24",
+      "id": "73baf0-64f976",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Цветы 24",
+        "name": "Цветы 24",
+        "shop": "florist"
+      }
+    },
+    {
+      "displayName": "Цветы Голландии",
+      "id": "20ea9a-64f976",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Цветы Голландии",
+        "name": "Цветы Голландии",
         "shop": "florist"
       }
     },

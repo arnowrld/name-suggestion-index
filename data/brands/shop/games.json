@@ -14,8 +14,22 @@
       "tags": {
         "brand": "Warhammer",
         "brand:wikidata": "Q587270",
-        "brand:wikipedia": "en:Games Workshop",
         "name": "Warhammer",
+        "shop": "games"
+      }
+    },
+    {
+      "displayName": "Пулсар",
+      "id": "pulsar-2df90d",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Пулсар",
+        "brand:wikidata": "Q120717304",
+        "name": "Пулсар",
+        "name:bg": "Пулсар",
+        "name:en": "Pulsar",
+        "operator": "Ozone.bg",
+        "operator:wikidata": "Q120717332",
         "shop": "games"
       }
     }

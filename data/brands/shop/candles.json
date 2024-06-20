@@ -6,14 +6,13 @@
   "items": [
     {
       "displayName": "Yankee Candle",
-      "id": "yankeecandle-742731",
+      "id": "yankeecandle-0f13f1",
       "locationSet": {
-        "include": ["ca", "gb", "us"]
+        "include": ["ca", "gb", "ph", "us"]
       },
       "tags": {
         "brand": "Yankee Candle",
         "brand:wikidata": "Q8048733",
-        "brand:wikipedia": "en:Yankee Candle",
         "name": "Yankee Candle",
         "shop": "candles"
       }

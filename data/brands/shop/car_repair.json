@@ -4,9 +4,11 @@
     "preserveTags": ["^name"],
     "exclude": {
       "generic": [
-        "^(auto serwis|car repair)$",
+        "^(auto (serwis|service)|car repair)$",
         "^(mécanique|tyres|wulkanizacja|vulcanizare)$",
         "^(вулканизация|шиномонтаж)$",
+        "^autoservis$",
+        "^avtoservis$",
         "^borrachar[ií]a$",
         "^garage\\s?(moto|auto)?$",
         "^gomer[ií]a$",
@@ -15,11 +17,27 @@
         "^авто(рынок|ремонт|сервис|запчасти|электрик|запчастини)?$",
         "^автома(г|газин|стерская)?$",
         "^автосервис\\+шиномонтаж$",
-        "^замена масла$"
-      ]
+        "^автосервіс$",
+        "^замена масла$",
+        "^сто$"
+      ],
+      "named": ["^elettrauto$"]
     }
   },
   "items": [
+    {
+      "displayName": "1a autoservice",
+      "id": "1aautoservice-4c8afc",
+      "locationSet": {
+        "include": ["at", "ch", "de"]
+      },
+      "tags": {
+        "brand": "1a autoservice",
+        "brand:wikidata": "Q109558465",
+        "name": "1a autoservice",
+        "shop": "car_repair"
+      }
+    },
     {
       "displayName": "A.T.U",
       "id": "atu-6db7c0",
@@ -28,7 +46,6 @@
       "tags": {
         "brand": "A.T.U",
         "brand:wikidata": "Q784721",
-        "brand:wikipedia": "de:Auto-Teile-Unger",
         "name": "A.T.U",
         "shop": "car_repair"
       }
@@ -44,7 +61,6 @@
       "tags": {
         "brand": "AAMCO",
         "brand:wikidata": "Q4649902",
-        "brand:wikipedia": "en:AAMCO Transmissions",
         "name": "AAMCO",
         "service:vehicle:transmission": "yes",
         "shop": "car_repair"
@@ -68,7 +84,6 @@
       "tags": {
         "brand": "ATS Euromaster",
         "brand:wikidata": "Q4654920",
-        "brand:wikipedia": "en:ATS Euromaster",
         "name": "ATS Euromaster",
         "shop": "car_repair"
       }
@@ -80,8 +95,19 @@
       "tags": {
         "brand": "Audi",
         "brand:wikidata": "Q23317",
-        "brand:wikipedia": "en:Audi",
         "name": "Audi",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Auto Plus",
+      "id": "autoplus-878d90",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Auto Plus",
+        "brand:wikidata": "Q65121114",
+        "name": "Auto Plus",
+        "official_name": "Auto Plus Professional Service Center",
         "shop": "car_repair"
       }
     },
@@ -97,12 +123,35 @@
       }
     },
     {
-      "displayName": "Autoservis",
-      "id": "autoservis-dc8719",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Automester",
+      "id": "automester-25491b",
+      "locationSet": {"include": ["dk"]},
       "tags": {
-        "brand": "Autoservis",
-        "name": "Autoservis",
+        "brand": "Automester",
+        "brand:wikidata": "Q110510044",
+        "name": "Automester",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "AutoPartner",
+      "id": "autopartner-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "AutoPartner",
+        "brand:wikidata": "Q110510294",
+        "name": "AutoPartner",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "AUTOPRIMO",
+      "id": "autoprimo-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "AUTOPRIMO",
+        "brand:wikidata": "Q117610578",
+        "name": "AUTOPRIMO",
         "shop": "car_repair"
       }
     },
@@ -114,16 +163,6 @@
         "brand": "Avatacar",
         "brand:wikidata": "Q65156251",
         "name": "Avatacar",
-        "shop": "car_repair"
-      }
-    },
-    {
-      "displayName": "Avtoservis",
-      "id": "avtoservis-dc8719",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "brand": "Avtoservis",
-        "name": "Avtoservis",
         "shop": "car_repair"
       }
     },
@@ -147,7 +186,6 @@
       "tags": {
         "brand": "BMW",
         "brand:wikidata": "Q26678",
-        "brand:wikipedia": "en:BMW",
         "name": "BMW",
         "shop": "car_repair"
       }
@@ -160,7 +198,6 @@
       "tags": {
         "brand": "Bosch Car Service",
         "brand:wikidata": "Q234021",
-        "brand:wikipedia": "en:Robert Bosch GmbH",
         "name": "Bosch Car Service",
         "shop": "car_repair"
       }
@@ -180,9 +217,9 @@
       "displayName": "Caliber Collision",
       "id": "calibercollision-878d90",
       "locationSet": {"include": ["us"]},
-      "note": "wikidata Q105118879 for this brand was deleted",
       "tags": {
         "brand": "Caliber Collision",
+        "brand:wikidata": "Q109329782",
         "name": "Caliber Collision",
         "shop": "car_repair"
       }
@@ -205,8 +242,18 @@
       "tags": {
         "brand": "Carglass",
         "brand:wikidata": "Q1035997",
-        "brand:wikipedia": "de:Carglass",
         "name": "Carglass",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "CarPeople",
+      "id": "carpeople-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "CarPeople",
+        "brand:wikidata": "Q110510349",
+        "name": "CarPeople",
         "shop": "car_repair"
       }
     },
@@ -232,15 +279,14 @@
       "tags": {
         "brand": "Chevrolet",
         "brand:wikidata": "Q29570",
-        "brand:wikipedia": "en:Chevrolet",
         "name": "Chevrolet",
         "shop": "car_repair"
       }
     },
     {
       "displayName": "Christian Brothers Automotive",
-      "id": "christianbrothersautomotive-dc8719",
-      "locationSet": {"include": ["001"]},
+      "id": "christianbrothersautomotive-878d90",
+      "locationSet": {"include": ["us"]},
       "tags": {
         "brand": "Christian Brothers Automotive",
         "name": "Christian Brothers Automotive",
@@ -254,8 +300,40 @@
       "tags": {
         "brand": "Citroën",
         "brand:wikidata": "Q6746",
-        "brand:wikipedia": "fr:Citroën",
         "name": "Citroën",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Delko",
+      "id": "delko-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "Delko",
+        "brand:wikidata": "Q24934757",
+        "name": "Delko",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Din Bilpartner",
+      "id": "dinbilpartner-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "Din Bilpartner",
+        "brand:wikidata": "Q110510457",
+        "name": "Din Bilpartner",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "E.Leclerc Auto",
+      "id": "eleclerc-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "E.Leclerc",
+        "brand:wikidata": "Q1273376",
+        "name": "E.Leclerc",
         "shop": "car_repair"
       }
     },
@@ -288,19 +366,17 @@
       "tags": {
         "brand": "Euromaster",
         "brand:wikidata": "Q3060668",
-        "brand:wikipedia": "de:Euromaster",
         "name": "Euromaster",
         "shop": "car_repair"
       }
     },
     {
       "displayName": "Feu Vert",
-      "id": "feuvert-98e3a2",
-      "locationSet": {"include": ["fr"]},
+      "id": "feuvert-89b710",
+      "locationSet": {"include": ["fr", "pt"]},
       "tags": {
         "brand": "Feu Vert",
         "brand:wikidata": "Q3070922",
-        "brand:wikipedia": "fr:Feu vert (entreprise)",
         "name": "Feu Vert",
         "shop": "car_repair"
       }
@@ -312,7 +388,6 @@
       "tags": {
         "brand": "Fiat",
         "brand:wikidata": "Q27597",
-        "brand:wikipedia": "en:Fiat",
         "name": "Fiat",
         "shop": "car_repair"
       }
@@ -326,7 +401,6 @@
       "tags": {
         "brand": "Firestone",
         "brand:wikidata": "Q420837",
-        "brand:wikipedia": "en:Firestone Tire and Rubber Company",
         "name": "Firestone",
         "official_name": "Firestone Complete Auto Care",
         "shop": "car_repair"
@@ -339,7 +413,6 @@
       "tags": {
         "brand": "First Stop",
         "brand:wikidata": "Q3072965",
-        "brand:wikipedia": "fr:First Stop",
         "name": "First Stop",
         "shop": "car_repair"
       }
@@ -361,7 +434,6 @@
       "tags": {
         "brand": "Ford",
         "brand:wikidata": "Q44294",
-        "brand:wikipedia": "en:Ford Motor Company",
         "name": "Ford",
         "shop": "car_repair"
       }
@@ -388,10 +460,24 @@
       "tags": {
         "brand": "France Pare-Brise",
         "brand:wikidata": "Q63335107",
-        "brand:wikipedia": "fr:France Pare-brise",
         "name": "France Pare-Brise",
         "shop": "car_repair",
         "short_name": "FPB"
+      }
+    },
+    {
+      "displayName": "Genesis",
+      "id": "genesis-dc8719",
+      "locationSet": {"include": ["001"]},
+      "matchNames": [
+        "genesis motor",
+        "genesis motors"
+      ],
+      "tags": {
+        "brand": "Genesis",
+        "brand:wikidata": "Q21451523",
+        "name": "Genesis",
+        "shop": "car_repair"
       }
     },
     {
@@ -414,7 +500,6 @@
       "tags": {
         "brand": "Goodyear",
         "brand:wikidata": "Q620875",
-        "brand:wikipedia": "en:Goodyear Tire and Rubber Company",
         "name": "Goodyear",
         "shop": "car_repair"
       }
@@ -426,7 +511,6 @@
       "tags": {
         "brand": "Grease Monkey",
         "brand:wikidata": "Q5598563",
-        "brand:wikipedia": "en:Grease Monkey (business)",
         "name": "Grease Monkey",
         "shop": "car_repair"
       }
@@ -439,8 +523,29 @@
       "tags": {
         "brand": "Halfords Autocentre",
         "brand:wikidata": "Q5641894",
-        "brand:wikipedia": "en:Halfords Autocentre",
         "name": "Halfords Autocentre",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Hella Service Partner",
+      "id": "hellaservicepartner-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "Hella Service Partner",
+        "brand:wikidata": "Q110510535",
+        "name": "Hella Service Partner",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "HiQ Tyres & Autocare",
+      "id": "hiqtyresandautocare-3b6d68",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "HiQ Tyres & Autocare",
+        "brand:wikidata": "Q55613688",
+        "name": "HiQ Tyres & Autocare",
         "shop": "car_repair"
       }
     },
@@ -451,7 +556,6 @@
       "tags": {
         "brand": "Honda",
         "brand:wikidata": "Q9584",
-        "brand:wikipedia": "en:Honda",
         "name": "Honda",
         "shop": "car_repair"
       }
@@ -463,7 +567,6 @@
       "tags": {
         "brand": "Hyundai",
         "brand:wikidata": "Q55931",
-        "brand:wikipedia": "en:Hyundai Motor Company",
         "name": "Hyundai",
         "shop": "car_repair"
       }
@@ -475,7 +578,6 @@
       "tags": {
         "brand": "Jiffy Lube",
         "brand:wikidata": "Q6192247",
-        "brand:wikipedia": "en:Jiffy Lube",
         "name": "Jiffy Lube",
         "shop": "car_repair"
       }
@@ -498,8 +600,29 @@
       "tags": {
         "brand": "Kwik Fit",
         "brand:wikidata": "Q958053",
-        "brand:wikipedia": "en:Kwik Fit",
         "name": "Kwik Fit",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Lexus",
+      "id": "lexus-dc8719",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Lexus",
+        "brand:wikidata": "Q35919",
+        "name": "Lexus",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Lucid Motors",
+      "id": "lucidmotors-3fdb50",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Lucid Motors",
+        "brand:wikidata": "Q28027517",
+        "name": "Lucid Motors",
         "shop": "car_repair"
       }
     },
@@ -513,7 +636,6 @@
       "tags": {
         "brand": "MAACO",
         "brand:wikidata": "Q6714015",
-        "brand:wikipedia": "en:MAACO",
         "name": "MAACO",
         "service:vehicle:body_repair": "yes",
         "service:vehicle:painting": "yes",
@@ -538,7 +660,6 @@
       "tags": {
         "brand": "Mazda",
         "brand:wikidata": "Q35996",
-        "brand:wikipedia": "en:Mazda",
         "name": "Mazda",
         "shop": "car_repair"
       }
@@ -560,7 +681,6 @@
       "tags": {
         "brand": "Meineke",
         "brand:wikidata": "Q6810159",
-        "brand:wikipedia": "en:Meineke Car Care Centers",
         "name": "Meineke",
         "official_name": "Meineke Car Care Center",
         "shop": "car_repair"
@@ -577,7 +697,6 @@
       "tags": {
         "brand": "Mekonomen",
         "brand:wikidata": "Q10580079",
-        "brand:wikipedia": "sv:Mekonomen",
         "name": "Mekonomen",
         "shop": "car_repair"
       }
@@ -589,7 +708,6 @@
       "tags": {
         "brand": "Mercedes-Benz",
         "brand:wikidata": "Q36008",
-        "brand:wikipedia": "en:Mercedes-Benz",
         "name": "Mercedes-Benz",
         "shop": "car_repair"
       }
@@ -601,7 +719,6 @@
       "tags": {
         "brand": "Merchant's",
         "brand:wikidata": "Q6818350",
-        "brand:wikipedia": "en:Merchant's Tire and Auto",
         "name": "Merchant's",
         "official_name": "Merchant's Tire and Auto",
         "shop": "car_repair"
@@ -614,7 +731,6 @@
       "tags": {
         "brand": "Midas",
         "brand:wikidata": "Q3312613",
-        "brand:wikipedia": "en:Midas (automotive service)",
         "name": "Midas",
         "shop": "car_repair"
       }
@@ -626,8 +742,18 @@
       "tags": {
         "brand": "Mobil 1",
         "brand:wikidata": "Q837922",
-        "brand:wikipedia": "en:Mobil 1",
         "name": "Mobil 1 Lube Express",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Mondial Pare-Brise",
+      "id": "mondialparebrise-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "Mondial Pare-Brise",
+        "brand:wikidata": "Q118129474",
+        "name": "Mondial Pare-Brise",
         "shop": "car_repair"
       }
     },
@@ -639,8 +765,18 @@
       "tags": {
         "brand": "Monro Muffler Brake",
         "brand:wikidata": "Q6902090",
-        "brand:wikipedia": "en:Monro Muffler Brake",
         "name": "Monro Muffler Brake",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Motrio",
+      "id": "motrio-dc8719",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Motrio",
+        "brand:wikidata": "Q6918585",
+        "name": "Motrio",
         "shop": "car_repair"
       }
     },
@@ -651,19 +787,38 @@
       "tags": {
         "brand": "Mr. Lube",
         "brand:wikidata": "Q17104067",
-        "brand:wikipedia": "en:Mr. Lube",
         "name": "Mr. Lube",
         "shop": "car_repair"
       }
     },
     {
-      "displayName": "Mycar",
-      "id": "mycar-c3960a",
+      "displayName": "mycar Tyre & Auto",
+      "id": "mycartyreandauto-c3960a",
       "locationSet": {"include": ["au"]},
+      "matchNames": ["mycar"],
       "tags": {
-        "brand": "Mycar",
+        "brand": "mycar Tyre & Auto",
         "brand:wikidata": "Q106224674",
-        "name": "Mycar",
+        "name": "mycar Tyre & Auto",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "NAPA AutoCare Center",
+      "id": "napaautocarecenter-3fdb50",
+      "locationSet": {"include": ["ca", "us"]},
+      "matchNames": [
+        "napa",
+        "napa autocare",
+        "napa autocare collision center",
+        "napa autocare mechanical center",
+        "napa autocare truck center"
+      ],
+      "preserveTags": ["^name$"],
+      "tags": {
+        "brand": "NAPA AutoCare Center",
+        "brand:wikidata": "Q6970842",
+        "name": "NAPA AutoCare Center",
         "shop": "car_repair"
       }
     },
@@ -674,7 +829,6 @@
       "tags": {
         "brand": "National Tire and Battery",
         "brand:wikidata": "Q6978944",
-        "brand:wikipedia": "en:National Tire and Battery",
         "name": "National Tire and Battery",
         "shop": "car_repair"
       }
@@ -686,7 +840,6 @@
       "tags": {
         "brand": "National Tyres and Autocare",
         "brand:wikidata": "Q6979055",
-        "brand:wikipedia": "en:National Tyres and Autocare",
         "name": "National Tyres and Autocare",
         "shop": "car_repair",
         "short_name": "National Tyres"
@@ -711,7 +864,6 @@
       "tags": {
         "brand": "Nissan",
         "brand:wikidata": "Q20165",
-        "brand:wikipedia": "ja:日産自動車",
         "name": "Nissan",
         "shop": "car_repair"
       }
@@ -734,7 +886,6 @@
       "tags": {
         "brand": "Norauto",
         "brand:wikidata": "Q3317698",
-        "brand:wikipedia": "en:Norauto",
         "name": "Norauto",
         "shop": "car_repair"
       }
@@ -746,15 +897,17 @@
       "tags": {
         "brand": "ÖAMTC",
         "brand:wikidata": "Q306057",
-        "brand:wikipedia": "de:Österreichischer Automobil-, Motorrad- und Touring Club",
         "name": "ÖAMTC",
         "shop": "car_repair"
       }
     },
     {
       "displayName": "Oficina",
-      "id": "oficina-dc8719",
-      "locationSet": {"include": ["001"]},
+      "id": "oficina-3dbfde",
+      "locationSet": {
+        "include": ["ao", "br", "pt"]
+      },
+      "note": "Probably a generic Portuguese name for a car repair shop",
       "tags": {
         "brand": "Oficina",
         "name": "Oficina",
@@ -768,7 +921,6 @@
       "tags": {
         "brand": "Opel",
         "brand:wikidata": "Q40966",
-        "brand:wikipedia": "en:Opel",
         "name": "Opel",
         "shop": "car_repair"
       }
@@ -780,7 +932,6 @@
       "tags": {
         "brand": "Pep Boys",
         "brand:wikidata": "Q3375007",
-        "brand:wikipedia": "en:Pep Boys",
         "name": "Pep Boys",
         "shop": "car_repair"
       }
@@ -792,7 +943,6 @@
       "tags": {
         "brand": "Peugeot",
         "brand:wikidata": "Q6742",
-        "brand:wikipedia": "en:Peugeot",
         "name": "Peugeot",
         "shop": "car_repair"
       }
@@ -804,7 +954,6 @@
       "tags": {
         "brand": "pitstop",
         "brand:wikidata": "Q1310014",
-        "brand:wikipedia": "de:Pitstop (Werkstattkette)",
         "name": "pitstop",
         "shop": "car_repair"
       }
@@ -816,18 +965,29 @@
       "tags": {
         "brand": "Point S",
         "brand:wikidata": "Q3393358",
-        "brand:wikipedia": "fr:Point S",
         "name": "Point S",
         "shop": "car_repair"
       }
     },
     {
       "displayName": "Precision Tune Auto Care",
-      "id": "precisiontuneautocare-dc8719",
-      "locationSet": {"include": ["001"]},
+      "id": "precisiontuneautocare-878d90",
+      "locationSet": {"include": ["us"]},
       "tags": {
         "brand": "Precision Tune Auto Care",
+        "brand:wikidata": "Q120717427",
         "name": "Precision Tune Auto Care",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Précisium",
+      "id": "precisium-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "Précisium",
+        "brand:wikidata": "Q117604969",
+        "name": "Précisium",
         "shop": "car_repair"
       }
     },
@@ -857,6 +1017,17 @@
       }
     },
     {
+      "displayName": "Quickpoint",
+      "id": "quickpoint-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "Quickpoint",
+        "brand:wikidata": "Q110510602",
+        "name": "Quickpoint",
+        "shop": "car_repair"
+      }
+    },
+    {
       "displayName": "Renault",
       "id": "renault-dc8719",
       "locationSet": {"include": ["001"]},
@@ -864,8 +1035,18 @@
       "tags": {
         "brand": "Renault",
         "brand:wikidata": "Q6686",
-        "brand:wikipedia": "fr:Renault",
         "name": "Renault",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Rivian Service Center",
+      "id": "rivianservicecenter-fo21l8",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Rivian Service Center",
+        "brand:wikidata": "Q7338847",
+        "name": "Rivian Service Center",
         "shop": "car_repair"
       }
     },
@@ -876,7 +1057,6 @@
       "tags": {
         "brand": "Roady",
         "brand:wikidata": "Q3434112",
-        "brand:wikipedia": "en:Roady (Mousquetaires)",
         "name": "Roady",
         "shop": "car_repair"
       }
@@ -889,7 +1069,6 @@
       "tags": {
         "brand": "Safelite AutoGlass",
         "brand:wikidata": "Q28797369",
-        "brand:wikipedia": "en:Safelite",
         "name": "Safelite AutoGlass",
         "service:vehicle:glass": "yes",
         "shop": "car_repair"
@@ -902,7 +1081,6 @@
       "tags": {
         "brand": "Sears Auto Center",
         "brand:wikidata": "Q6499202",
-        "brand:wikipedia": "en:Sears",
         "name": "Sears Auto Center",
         "shop": "car_repair"
       }
@@ -917,7 +1095,6 @@
       "tags": {
         "brand": "Service King",
         "brand:wikidata": "Q7455694",
-        "brand:wikipedia": "en:Service King Collision Repair",
         "name": "Service King",
         "shop": "car_repair"
       }
@@ -929,7 +1106,6 @@
       "tags": {
         "brand": "Speedy",
         "brand:wikidata": "Q3492969",
-        "brand:wikipedia": "fr:Speedy (entreprise)",
         "name": "Speedy",
         "shop": "car_repair"
       }
@@ -951,6 +1127,7 @@
       "locationSet": {"include": ["ca"]},
       "tags": {
         "brand": "Speedy Glass",
+        "brand:wikidata": "Q119104960",
         "name": "Speedy Glass",
         "shop": "car_repair"
       }
@@ -961,6 +1138,7 @@
       "locationSet": {"include": ["us"]},
       "tags": {
         "brand": "Speedy Glass",
+        "brand:wikidata": "Q119105000",
         "name": "Speedy Glass",
         "shop": "car_repair"
       }
@@ -972,8 +1150,29 @@
       "tags": {
         "brand": "Subaru",
         "brand:wikidata": "Q172741",
-        "brand:wikipedia": "en:Subaru",
         "name": "Subaru",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Sun Auto Service",
+      "id": "sunautoservice-878d90",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Sun Auto Service",
+        "brand:wikidata": "Q118383798",
+        "name": "Sun Auto Service",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Super Dæk Service",
+      "id": "superdaekservice-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "Super Dæk Service",
+        "brand:wikidata": "Q110510630",
+        "name": "Super Dæk Service",
         "shop": "car_repair"
       }
     },
@@ -984,8 +1183,40 @@
       "tags": {
         "brand": "Suzuki",
         "brand:wikidata": "Q181642",
-        "brand:wikipedia": "en:Suzuki",
         "name": "Suzuki",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Take 5 Oil Change",
+      "id": "take5oilchange-3fdb50",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Take 5 Oil Change",
+        "brand:wikidata": "Q112359190",
+        "name": "Take 5 Oil Change",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Teknicar",
+      "id": "teknicar-25491b",
+      "locationSet": {"include": ["dk"]},
+      "tags": {
+        "brand": "Teknicar",
+        "brand:wikidata": "Q110510682",
+        "name": "Teknicar",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Top Garage",
+      "id": "topgarage-98e3a2",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "Top Garage",
+        "brand:wikidata": "Q117602800",
+        "name": "Top Garage",
         "shop": "car_repair"
       }
     },
@@ -996,7 +1227,6 @@
       "tags": {
         "brand": "Toyota",
         "brand:wikidata": "Q53268",
-        "brand:wikipedia": "en:Toyota",
         "name": "Toyota",
         "shop": "car_repair"
       }
@@ -1019,8 +1249,18 @@
       "tags": {
         "brand": "Tuffy",
         "brand:wikidata": "Q17125314",
-        "brand:wikipedia": "en:Tuffy Auto Service Centers",
         "name": "Tuffy",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Ultra Tune",
+      "id": "ultratune-c3960a",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "brand": "Ultra Tune",
+        "brand:wikidata": "Q29025649",
+        "name": "Ultra Tune",
         "shop": "car_repair"
       }
     },
@@ -1028,10 +1268,10 @@
       "displayName": "Valvoline",
       "id": "valvoline-878d90",
       "locationSet": {"include": ["us"]},
+      "matchNames": ["oil can henry's"],
       "tags": {
         "brand": "Valvoline",
         "brand:wikidata": "Q7912852",
-        "brand:wikipedia": "en:Valvoline Instant Oil Change",
         "name": "Valvoline",
         "official_name": "Valvoline Instant Oil Change",
         "shop": "car_repair"
@@ -1050,13 +1290,33 @@
       }
     },
     {
+      "displayName": "VIP Tires and Service",
+      "id": "viptiresandservice-451c51",
+      "locationSet": {
+        "include": [
+          "us-ma.geojson",
+          "us-me.geojson",
+          "us-nh.geojson",
+          "us-vt.geojson"
+        ]
+      },
+      "matchNames": ["vip tires"],
+      "note": "Often co-located with O'Reilly Auto Parts stores which should be mapped seperately. These were owned/operated by VIP before 2013 but are now seperate.",
+      "tags": {
+        "brand": "VIP Tires and Service",
+        "brand:wikidata": "Q7907052",
+        "name": "VIP Tires and Service",
+        "service": "repair;tyres",
+        "shop": "car_repair"
+      }
+    },
+    {
       "displayName": "Volkswagen",
       "id": "volkswagen-dc8719",
       "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Volkswagen",
         "brand:wikidata": "Q246",
-        "brand:wikipedia": "en:Volkswagen",
         "name": "Volkswagen",
         "shop": "car_repair"
       }
@@ -1068,8 +1328,17 @@
       "tags": {
         "brand": "Volvo",
         "brand:wikidata": "Q215293",
-        "brand:wikipedia": "en:Volvo Cars",
         "name": "Volvo",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "displayName": "Vulcanizadora",
+      "id": "vulcanizadora-dc8719",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Vulcanizadora",
+        "name": "Vulcanizadora",
         "shop": "car_repair"
       }
     },
@@ -1091,7 +1360,6 @@
       "tags": {
         "brand": "Wintec Autoglas",
         "brand:wikidata": "Q23816518",
-        "brand:wikipedia": "de:Wintec",
         "name": "Wintec Autoglas",
         "shop": "car_repair"
       }
@@ -1118,28 +1386,6 @@
       }
     },
     {
-      "displayName": "СТО",
-      "id": "1d84c6-e23c5d",
-      "locationSet": {
-        "include": [
-          "by",
-          "ge",
-          "kg",
-          "kz",
-          "md",
-          "ru",
-          "tj",
-          "ua",
-          "uz"
-        ]
-      },
-      "tags": {
-        "brand": "СТО",
-        "name": "СТО",
-        "shop": "car_repair"
-      }
-    },
-    {
       "displayName": "カーコンビニ倶楽部",
       "id": "carconvenienceclub-aba9fa",
       "locationSet": {"include": ["jp"]},
@@ -1148,7 +1394,6 @@
         "brand:en": "Car Convenience Club",
         "brand:ja": "カーコンビニ倶楽部",
         "brand:wikidata": "Q11295590",
-        "brand:wikipedia": "ja:カーコンビニ倶楽部",
         "name": "カーコンビニ倶楽部",
         "name:en": "Car Convenience Club",
         "name:ja": "カーコンビニ倶楽部",

@@ -7,6 +7,18 @@
   },
   "items": [
     {
+      "displayName": "Asurion Tech Repair & Solutions",
+      "id": "asuriontechrepairandsolutions-592655",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Asurion Tech Repair & Solutions",
+        "brand:wikidata": "Q4811938",
+        "craft": "electronics_repair",
+        "electronics_repair": "computer;appliance;phone",
+        "name": "Asurion Tech Repair & Solutions"
+      }
+    },
+    {
       "displayName": "Cell Phone Repair",
       "id": "cellphonerepair-592655",
       "locationSet": {"include": ["us"]},
@@ -45,20 +57,22 @@
     },
     {
       "displayName": "DNS",
-      "id": "dns-c874ce",
-      "locationSet": {"include": ["001"]},
+      "id": "dns-37346b",
+      "locationSet": {"include": ["ru"]},
       "tags": {
         "brand": "DNS",
+        "brand:wikidata": "Q4036922",
         "craft": "electronics_repair",
         "name": "DNS"
       }
     },
     {
       "displayName": "DNS Сервисный центр",
-      "id": "338c9d-c874ce",
-      "locationSet": {"include": ["001"]},
+      "id": "338c9d-37346b",
+      "locationSet": {"include": ["ru"]},
       "tags": {
         "brand": "DNS Сервисный центр",
+        "brand:wikidata": "Q4036922",
         "craft": "electronics_repair",
         "name": "DNS Сервисный центр"
       }
@@ -70,10 +84,24 @@
       "tags": {
         "brand": "Geek Squad",
         "brand:wikidata": "Q3100073",
-        "brand:wikipedia": "en:Geek Squad",
         "craft": "electronics_repair",
         "electronics_repair": "computer",
         "name": "Geek Squad"
+      }
+    },
+    {
+      "displayName": "PCexpres",
+      "id": "pcexpres-96c0e5",
+      "locationSet": {"include": ["cz", "sk"]},
+      "matchNames": ["pc express"],
+      "tags": {
+        "brand": "PCexpres",
+        "brand:wikidata": "Q116867808",
+        "craft": "electronics_repair",
+        "electronics_repair": "computer;appliance;phone",
+        "name": "PCexpres",
+        "name:cs": "expres opravy",
+        "name:sk": "PCexpres"
       }
     },
     {
@@ -99,15 +127,15 @@
       }
     },
     {
-      "displayName": "Talk n' FIx",
+      "displayName": "Talk N' Fix",
       "id": "talknfix-592655",
       "locationSet": {"include": ["us"]},
       "tags": {
-        "brand": "Talk n' FIx",
+        "brand": "Talk N' Fix",
         "brand:wikidata": "Q108410613",
         "craft": "electronics_repair",
         "electronics_repair": "phone",
-        "name": "Talk n' FIx"
+        "name": "Talk N' Fix"
       }
     },
     {
@@ -117,10 +145,19 @@
       "tags": {
         "brand": "uBreakiFix",
         "brand:wikidata": "Q53685733",
-        "brand:wikipedia": "en:UBreakiFix",
         "craft": "electronics_repair",
-        "electronics_repair": "phone",
+        "electronics_repair": "computer;phone",
         "name": "uBreakiFix"
+      }
+    },
+    {
+      "displayName": "Лаборатория Ремонта",
+      "id": "a952d0-37346b",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Лаборатория Ремонта",
+        "craft": "electronics_repair",
+        "name": "Лаборатория Ремонта"
       }
     }
   ]

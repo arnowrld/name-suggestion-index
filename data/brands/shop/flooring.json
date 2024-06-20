@@ -5,14 +5,35 @@
   },
   "items": [
     {
+      "displayName": "Choices Flooring",
+      "id": "choicesflooring-42cf07",
+      "locationSet": {"include": ["au", "nz"]},
+      "tags": {
+        "brand": "Choices Flooring",
+        "brand:wikidata": "Q117155570",
+        "name": "Choices Flooring",
+        "shop": "flooring"
+      }
+    },
+    {
       "displayName": "Floor & Decor",
       "id": "flooranddecor-59a49c",
       "locationSet": {"include": ["us"]},
       "tags": {
         "brand": "Floor & Decor",
         "brand:wikidata": "Q56280964",
-        "brand:wikipedia": "en:Floor & Decor",
         "name": "Floor & Decor",
+        "shop": "flooring"
+      }
+    },
+    {
+      "displayName": "Floorworld",
+      "id": "floorworld-c8adcf",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "brand": "Floorworld",
+        "brand:wikidata": "Q117156913",
+        "name": "Floorworld",
         "shop": "flooring"
       }
     },

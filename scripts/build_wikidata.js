@@ -1,17 +1,15 @@
 // External
-import colors from 'colors/safe.js';
+import chalk from 'chalk';
 import fs from 'node:fs';
-import crypto from 'node:crypto';
 import fetch from 'node-fetch';
 import http from 'node:http';
 import https from 'node:https';
-import { iso1A2Code } from '@ideditor/country-coder';
+import { iso1A2Code } from '@rapideditor/country-coder';
 import JSON5 from 'json5';
 import localeCompare from 'locale-compare';
-import LocationConflation from '@ideditor/location-conflation';
+import LocationConflation from '@rapideditor/location-conflation';
 import shell from 'shelljs';
 import stringify from '@aitodotai/json-stringify-pretty-compact';
-import Twitter from 'Twitter';
 import wikibase from 'wikibase-sdk';
 import wikibaseEdit from 'wikibase-edit';
 const withLocale = localeCompare('en-US');
@@ -22,12 +20,12 @@ import { fileTree } from '../lib/file_tree.js';
 import { writeFileWithMeta } from '../lib/write_file_with_meta.js';
 
 // JSON
-import packageJSON from '../package.json';
-import treesJSON from '../config/trees.json';
+import packageJSON from '../package.json' assert {type: 'json'};
+import treesJSON from '../config/trees.json' assert {type: 'json'};
 const trees = treesJSON.trees;
 
 // We use LocationConflation for validating and processing the locationSets
-import featureCollectionJSON from '../dist/featureCollection.json';
+import featureCollectionJSON from '../dist/featureCollection.json' assert {type: 'json'};
 const loco = new LocationConflation(featureCollectionJSON);
 
 const wbk = wikibase({
@@ -49,30 +47,10 @@ const DRYRUN = false;
 
 // First, try to load the user's secrets.
 // This is optional but needed if you want this script to:
-// - connect to the Twitter API to fetch logos
 // - connect to the Wikibase API to update NSI identifiers.
 //
 // `secrets.json` looks like this:
 // {
-//   "twitter": [
-//     {
-//       "name": "name-suggestion-index-staging",
-//       "app_id": "16186858",
-//       "bearer_token": "AAAAAAAAAAAAAAAAAAA…",
-//       "twitter_consumer_key": "",
-//       "twitter_consumer_secret": "",
-//       "twitter_access_token_key": "",
-//       "twitter_access_token_secret": ""
-//     }, {
-//       "name": "name-suggestion-index-dev",
-//       "app_id": "16186940",
-//       "bearer_token": "AAAAAAAAAAAAAAAAAAA…",
-//       "twitter_consumer_key": "",
-//       "twitter_consumer_secret": "",
-//       "twitter_access_token_key": "",
-//       "twitter_access_token_secret": ""
-//     }
-//   ],
 //   "wikibase": {
 //     "username": "my-wikidata-username",
 //     "password": "my-wikidata-password"
@@ -89,45 +67,15 @@ try {
   _secrets = JSON5.parse(fs.readFileSync('./secrets.json', 'utf8'));
 } catch (err) { /* ignore */ }
 
-if (_secrets && !_secrets.twitter && !_secrets.wikibase) {
-  console.error(colors.red('WHOA!'));
-  console.error(colors.yellow('The `config/secrets.json` file format has changed a bit.'));
-  console.error(colors.yellow('We were expecting to find `twitter` or `wikibase` properties.'));
-  console.error(colors.yellow('Check `scripts/build_wikidata.js` for details...'));
+if (_secrets && !_secrets.wikibase) {
+  console.error(chalk.red('WHOA!'));
+  console.error(chalk.yellow('The `config/secrets.json` file format has changed a bit.'));
+  console.error(chalk.yellow('We were expecting to find a `wikibase` property.'));
+  console.error(chalk.yellow('Check `scripts/build_wikidata.js` for details...'));
   console.error('');
   process.exit(1);
 }
 
-// To fetch Twitter logos, sign up for API credentials at https://apps.twitter.com/
-// and put them into `config/secrets.json`
-
-let _twitterAPIs = [];
-let _twitterAPIIndex = 0;
-if (_secrets && _secrets.twitter) {
-  _twitterAPIs = _secrets.twitter.map((s, i) => {
-    let props;
-
-    // if (s.bearer_token) {  // use a bearer token if we have it
-    //   props = {
-    //     consumer_key: s.twitter_consumer_key,
-    //     consumer_secret: s.twitter_consumer_secret,
-    //     bearer_token: s.bearer_token
-    //   };
-    // } else {
-      props = {
-        consumer_key: s.twitter_consumer_key,
-        consumer_secret: s.twitter_consumer_secret,
-        access_token_key: s.twitter_access_token_key,
-        access_token_secret: s.twitter_access_token_secret
-      };
-    // }
-
-    return {
-      name: s.name || i.toString(),
-      client: new Twitter(props)
-    };
-  });
-}
 
 // To update wikidata
 // add your username/password into `config/secrets.json`
@@ -173,15 +121,15 @@ Object.keys(_cache.path).forEach(tkv => {
 
       // What to set P31 "instance of" to if missing
       if (osmtag === 'brand') {
-        _qidMetadata[qid] = { p31: 'Q4830453', what: 'business' };
+        _qidMetadata[qid] = { what: 'business', p31: 'Q4830453' };
       } else if (osmtag === 'flag') {
-        _qidMetadata[qid] = { p31: 'Q14660', what: 'flag' };
+        _qidMetadata[qid] = { what: 'flag', p31: 'Q14660' };
       } else if (osmtag === 'network') {
-        _qidMetadata[qid] = { p31: 'Q924286', what: 'transport network' };
+        _qidMetadata[qid] = { what: 'transport network', p31: 'Q924286' };
       } else if (osmtag === 'subject') {
-        _qidMetadata[qid] = { p31: 'Q43229', what: 'subject' };
+        _qidMetadata[qid] = { what: 'subject' };  // skip p31, a subject can be anything - #7661
       } else {
-        _qidMetadata[qid] = { p31: 'Q43229', what: 'organization' };
+        _qidMetadata[qid] = { what: 'organization',  p31: 'Q43229' };
       }
 
       const isMainTag = (wdTag === trees[t].mainTag);
@@ -227,7 +175,7 @@ function doFetch(index) {
 
   let currURL = _urls[index];
   let backoff = false;
-  console.log(colors.yellow.bold(`\nBatch ${index+1}/${_urls.length}`));
+  console.log(chalk.yellow.bold(`\nBatch ${index+1}/${_urls.length}`));
 
   return fetch(currURL, fetchOptions)
     .then(response => {
@@ -236,9 +184,9 @@ function doFetch(index) {
     })
     .then(result => processEntities(result))
     .catch(e => {
-      console.warn(colors.green.bold('fetch error:'));
-      console.warn(colors.white(JSON.stringify(e)));
-      console.warn(colors.green.bold('retrying...'));
+      console.warn(chalk.green.bold('fetch error:'));
+      console.warn(chalk.white(JSON.stringify(e)));
+      console.warn(chalk.green.bold('retrying...'));
       backoff = true;
       --index;
     })
@@ -250,11 +198,10 @@ function doFetch(index) {
 //
 // `processEntities`
 // Here we process the fetched results from the Wikidata API,
-// then schedule followup API calls to the Twitter/Facebook APIs,
+// then schedule followup API calls to the Facebook API,
 // then eventually resolves when all that work is done.
 //
 function processEntities(result) {
-  let twitterQueue = [];
   let facebookQueue = [];
   let wbEditQueue = [];
 
@@ -267,7 +214,7 @@ function processEntities(result) {
     if (Object.prototype.hasOwnProperty.call(entity, 'missing')) {
       label = enLabelForQID(qid) || qid;
       const warning = { qid: qid, msg: `⚠️  Entity for "${label}" was deleted.` };
-      console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
+      console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg));
       _warnings.push(warning);
       return;
     }
@@ -286,7 +233,7 @@ function processEntities(result) {
       } else {   // otherwise raise a warning for the user to deal with.
         label = label || qid;
         const warning = { qid: qid, msg: `Entity for "${label}" missing English label.` };
-        console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
+        console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg));
         _warnings.push(warning);
       }
     }
@@ -297,16 +244,12 @@ function processEntities(result) {
       target.description = description;
     }
 
-    // Get sitelinks to supply missing `*:wikipedia` tags - #4716, #4747
-    if (entity.sitelinks) {
-      checkWikipediaTags(qid, entity.sitelinks);
-    }
-
     // Process claims below here...
     if (!entity.claims) return;
     target.logos = {};
     target.identities = {};
     target.dissolutions = [];
+    target.officialWebsites = [];
 
 
     let imageFile;
@@ -314,22 +257,25 @@ function processEntities(result) {
       // P18 - Image (use this for flags)
       imageFile = getClaimValue(entity, 'P18');
     } else {
-      // P154 - Logo Image
       // P8972 - Small Logo or Icon
-      imageFile = getClaimValue(entity, 'P8972') || getClaimValue(entity, 'P154');
+      // P154 - Logo Image
+      // P94 - Coat of Arms Image
+      imageFile = getClaimValue(entity, 'P8972') || getClaimValue(entity, 'P154') || getClaimValue(entity, 'P94');
     }
     if (imageFile) {
       const re = /\.svg$/i;
       if (re.test(imageFile)) {
-        imageFile = imageFile.replace(/\s/g, '_');   // 'Flag of Alaska.svg' -> 'Flag_of_Alaska.svg'
-        const hash = crypto.createHash('md5').update(imageFile).digest('hex');
-        const x = hash.slice(0, 1);
-        const xx = hash.slice(0, 2);
-        target.logos.wikidata = `https://upload.wikimedia.org/wikipedia/commons/${x}/${xx}/${imageFile}`;
+        target.logos.wikidata = `https://commons.wikimedia.org/wiki/Special:FilePath/${imageFile}`;
       } else {
         target.logos.wikidata = 'https://commons.wikimedia.org/w/index.php?' +
           utilQsString({ title: `Special:Redirect/file/${imageFile}`, width: 150 });
       }
+    }
+
+    // P856 - official website
+    const officialWebsites = getClaimValues(entity, 'P856');
+    if (officialWebsites) {
+      target.officialWebsites = officialWebsites;
     }
 
     // P856 - official website
@@ -338,11 +284,16 @@ function processEntities(result) {
       target.identities.website = officialWebsite;
     }
 
+    // P11707 - location URL match pattern
+    const urlMatchPatterns = getClaimValues(entity, 'P11707');
+    if (urlMatchPatterns) {
+      target.urlMatchPatterns = urlMatchPatterns;
+    }
+
     // P2002 - Twitter username
     const twitterUser = getClaimValue(entity, 'P2002');
     if (twitterUser) {
       target.identities.twitter = twitterUser;
-      twitterQueue.push({ qid: qid, username: twitterUser });    // queue logo fetch
     }
 
     // P2003 - Instagram ID
@@ -376,6 +327,12 @@ function processEntities(result) {
       target.identities.vk = vkUser;
     }
 
+    // P3579 - Sina Weibo user ID
+    const weiboUser = getClaimValue(entity, 'P3579');
+    if (weiboUser) {
+      target.identities.weibo = weiboUser;
+    }
+
     // P3836 - Pinterest ID
     const pinterestUser = getClaimValue(entity, 'P3836');
     if (pinterestUser) {
@@ -386,6 +343,18 @@ function processEntities(result) {
     const linkedinUser = getClaimValue(entity, 'P4264');
     if (linkedinUser) {
       target.identities.linkedin = linkedinUser;
+    }
+
+    // P7085 - TikTok username
+    const tiktokUser = getClaimValue(entity, 'P7085');
+    if (tiktokUser) {
+      target.identities.tiktok = tiktokUser;
+    }
+
+    // P7650 - Weixin (WeChat) ID
+    const weixinUser = getClaimValue(entity, 'P7650');
+    if (weixinUser) {
+      target.identities.weixin = weixinUser;
     }
 
     // P576 - Dissolution date
@@ -422,7 +391,7 @@ function processEntities(result) {
           if (dissolution.countries) {
             warning.msg += `\nThis applies only to the following countries: ${JSON.stringify(dissolution.countries)}.`;
           }
-          console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
+          console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg));
           _warnings.push(warning);
         }
         target.dissolutions.push(dissolution);
@@ -435,7 +404,7 @@ function processEntities(result) {
 
     // If P31 "instance of" is missing, set it to a resonable value.
     const instanceOf = getClaimValue(entity, 'P31');
-    if (!instanceOf) {
+    if (!instanceOf && meta.p31) {
       const msg = `Setting P31 "instance of" = ${meta.p31} "${meta.what}" for ${qid}`;
       wbEditQueue.push({ qid: qid, id: qid, property: 'P31', value: meta.p31, msg: msg });
     }
@@ -487,21 +456,14 @@ function processEntities(result) {
 
   });  // foreach qid
 
-  if (_twitterAPIs.length && twitterQueue.length) {
-    return checkTwitterRateLimit(twitterQueue.length)
-      .then(() => Promise.all( twitterQueue.map(obj => fetchTwitterUserDetails(obj.qid, obj.username)) ))
-      .then(() => Promise.all( facebookQueue.map(obj => fetchFacebookLogo(obj.qid, obj.username)) ))
-      .then(() => processWbEditQueue(wbEditQueue));
-  } else {
-    return Promise.all( facebookQueue.map(obj => fetchFacebookLogo(obj.qid, obj.username)) )
-      .then(() => processWbEditQueue(wbEditQueue));
-  }
+  return Promise.all( facebookQueue.map(obj => fetchFacebookLogo(obj.qid, obj.username)) )
+    .then(() => processWbEditQueue(wbEditQueue));
 }
 
 
 // `getClaimValue`
 // Get the claim value, considering any claim rank..
-//   - disregard any claimes with an end date qualifier in the past
+//   - disregard any claims with an end date qualifier in the past
 //   - disregard any claims with "deprecated" rank
 //   - accept immediately any claim with "preferred" rank
 //   - return the latest claim with "normal" rank
@@ -535,42 +497,62 @@ function getClaimValue(entity, prop) {
   return value;
 }
 
+// `getClaimValues`
+// Get all the claim values
+//   - disregard any claims with an end date qualifier in the past
+//   - disregard any claims with "deprecated" rank
+//   - push any claims with "preferred" rank to the front
+function getClaimValues(entity, prop) {
+  if (!entity.claims) return;
+  if (!entity.claims[prop]) return;
+
+  let values = [];
+  for (let i = 0; i < entity.claims[prop].length; i++) {
+    const c = entity.claims[prop][i];
+    if (c.rank === 'deprecated') continue;
+    if (c.mainsnak.snaktype !== 'value') continue;
+
+    // skip if we find an end time qualifier - P582
+    let ended = false;
+    const qualifiers = (c.qualifiers && c.qualifiers.P582) || [];
+    for (let j = 0; j < qualifiers.length; j++) {
+      const q = qualifiers[j];
+      if (q.snaktype !== 'value') continue;
+      const enddate = wbk.wikibaseTimeToDateObject(q.datavalue.value.time);
+      if (new Date() > enddate) {
+        ended = true;
+        break;
+      }
+    }
+    if (ended) continue;
+
+    if (c.rank === 'preferred'){  // List preferred values first
+      values.unshift(c.mainsnak.datavalue.value);
+    } else {
+      values.push(c.mainsnak.datavalue.value);
+    }
+  }
+  return values;
+}
+
 
 // `finish`
-// Wrap up, write files
-// - wikidata.json
-// - dissolved.json
+// Wrap up, write files:
+// - `warnings.json`
+// - `wikidata.json`
+// - `dissolved.json`
 //
 function finish() {
-  const START = '🏗   ' + colors.yellow('Writing output files');
-  const END = '👍  ' + colors.green('output files updated');
+  const START = '🏗   ' + chalk.yellow('Writing output files');
+  const END = '👍  ' + chalk.green('output files updated');
   console.log('');
   console.log(START);
   console.time(END);
 
-  // update `wikidata.json` and `dissolved.json`
-  let origWikidata;
   let dissolved = {};
-  try {
-    origWikidata = JSON5.parse(fs.readFileSync('./dist/wikidata.json', 'utf8')).wikidata;
-  } catch (err) {
-    origWikidata = {};
-  }
 
   Object.keys(_wikidata).forEach(qid => {
     let target = _wikidata[qid];
-
-    // if we haven't been able to access the Twitter API, don't overwrite the Twitter data - #3569
-    if (!_twitterAPIs.length) {
-      const origTarget = origWikidata[qid];
-      ['identities', 'logos'].forEach(prop => {
-        const origTwitter = origTarget && origTarget[prop] && origTarget[prop].twitter;
-        if (origTwitter) {
-          target[prop] = target[prop] || {};
-          target[prop].twitter = origTwitter;
-        }
-      });
-    }
 
     // sort the properties that we are keeping..
     ['identities', 'logos', 'dissolutions'].forEach(prop => {
@@ -597,74 +579,15 @@ function finish() {
     writeFileWithMeta('dist/warnings.json', stringify({ warnings: _warnings }) + '\n');
     writeFileWithMeta('dist/wikidata.json', stringify({ wikidata: sortObject(_wikidata) }) + '\n');
     writeFileWithMeta('dist/dissolved.json', stringify({ dissolved: sortObject(dissolved) }, { maxLength: 100 }) + '\n');
-
-    // Write filetree too, in case we updated some of these with `*:wikipedia` tags - #4716
-    fileTree.write(_cache);
   }
 
   console.timeEnd(END);
 
-  // output whatever warnings we've gathered
+  // `console.warn` whatever warnings we've gathered
   if (_warnings.length) {
-    console.log(colors.yellow.bold(`\nWarnings:`));
-    _warnings.forEach(warning => console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg)));
+    console.log(chalk.yellow.bold(`\nWarnings:`));
+    _warnings.forEach(warning => console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg)));
   }
-}
-
-
-// check Twitter rate limit status
-// https://developer.twitter.com/en/docs/developer-utilities/rate-limit-status/api-reference/get-application-rate_limit_status
-// rate limit: 900calls / 15min
-function checkTwitterRateLimit(need) {
-  _twitterAPIIndex = (_twitterAPIIndex + 1) % _twitterAPIs.length;  // cycle to next client
-  const twitterAPI = _twitterAPIs[_twitterAPIIndex];
-  const which = twitterAPI.name;
-
-  return twitterAPI.client
-    .get('application/rate_limit_status', { resources: 'users' })
-    .then(result => {
-      const now = Date.now() / 1000;
-      const stats = result.resources.users['/users/:id'];
-      const resetSec = Math.ceil(stats.reset - now) + 30;  // +30sec in case server time is different
-      console.log(colors.green.bold(`Twitter rate status '${which}': need ${need}, remaining ${stats.remaining}, resets in ${resetSec} seconds...`));
-      if (need > stats.remaining) {
-        const delaySec = clamp(resetSec, 10, 60);
-        console.log(colors.green.bold(`Twitter rate limit exceeded, pausing for ${delaySec} seconds...`));
-        return delaySec;
-      } else {
-        return 0;
-      }
-    })
-    .then(sec => {
-      if (sec > 0) {
-        return delay(sec * 1000)
-          .then(() => checkTwitterRateLimit(need));
-      } else {
-        return Promise.resolve();
-      }
-    })
-    .catch(e => {
-      console.warn(colors.green.bold(`Error: Twitter rate limit: ` + JSON.stringify(e)));
-    });
-}
-
-
-// https://developer.twitter.com/en/docs/accounts-and-users/user-profile-images-and-banners.html
-// https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-users-show
-function fetchTwitterUserDetails(qid, username) {
-  const target = _wikidata[qid];
-  const twitterAPI = _twitterAPIs[_twitterAPIIndex];
-
-  return twitterAPI.client
-    .get('users/show', { screen_name: username })
-    .then(user => {
-      target.logos.twitter = user.profile_image_url_https.replace('_normal', '_bigger');
-    })
-    .catch(e => {
-      const warning = { qid: qid, msg: `Twitter username @${username}: ${JSON.stringify(e)}` };
-      console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
-      _warnings.push(warning);
-    });
 }
 
 
@@ -700,7 +623,7 @@ function fetchFacebookLogo(qid, username) {
         return fetchFacebookLogo(qid, userid);   // retry with just the numeric id
       } else {
         const warning = { qid: qid, msg: `Facebook username @${username}: ${e}` };
-        console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
+        console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg));
         _warnings.push(warning);
       }
     });
@@ -738,7 +661,7 @@ function removeOldNsiClaims() {
     })
     .then(processWbEditQueue)
     .catch(e => {
-      console.warn(colors.red(e));
+      console.warn(chalk.red(e));
     });
 }
 
@@ -755,7 +678,7 @@ function processWbEditQueue(queue) {
   const request = queue.pop();
   const qid = request.qid;
   const msg = request.msg;
-  console.log(colors.blue(`Updating Wikidata ${queue.length}:  ${msg}`));
+  console.log(chalk.blue(`Updating Wikidata ${queue.length}:  ${msg}`));
   delete request.qid;
   delete request.msg;
 
@@ -780,169 +703,11 @@ function processWbEditQueue(queue) {
     return task
       .catch(e => {
         const warning = { qid: qid, msg: e };
-        console.warn(colors.yellow(warning.qid.padEnd(12)) + colors.red(warning.msg));
+        console.warn(chalk.yellow(warning.qid.padEnd(12)) + chalk.red(warning.msg));
         _warnings.push(warning);
       })
       .then(() => delay(300))
       .then(() => processWbEditQueue(queue));
-  }
-}
-
-
-// `checkWikipediaTags`
-// Look at the wikidata sitelinks for this qid and
-// - assign `*:wikipedia` tags that are missing - #4716
-// - correct `*:wikipedia` tags that look wrong - #4747
-// Note, skip assigning `*:wikipedia` for 'flags' tree for now.
-function checkWikipediaTags(qid, sitelinks) {
-  // Convert sitelinks to OSM wikipedia tags..
-  let wikis = {};
-  Object.keys(sitelinks).forEach(code => {
-    const sitelink = sitelinks[code];
-    const site = sitelink.site;
-    const title = sitelink.title;
-    if (!site || !title) return null;
-
-    const m = site.match(/(\w+)wiki$/);     // 'enwiki', 'dewiki', 'zh_yuewiki', etc
-    if (!m) return null;
-    if (m[1] === 'commons') return null;    // skip 'commonswiki'
-
-    const lang = m[1].replace(/_/g, '-');   // 'zh_yue' -> 'zh-yue'
-    wikis[lang] = `${lang}:${title}`;
-  });
-
-  const wikiCount = Object.keys(wikis).length;
-
-  // which NSI items use this qid?
-  Array.from(_qidItems[qid]).forEach(id => {
-    const item = _cache.id.get(id);
-    if (item.fromTemplate) return;  // skip items expanded from templates
-
-    ['brand', 'operator', 'network'].forEach(osmkey => {
-      const wd = item.tags[`${osmkey}:wikidata`];
-      const wpOld = item.tags[`${osmkey}:wikipedia`];
-      if (/%25/.test(wpOld)) return;  // Skip if there is an encoded '%' in the value (%25 = '%')
-
-      if (wd && (wd === qid)) {  // `*:wikidata` tag matches
-        if (wpOld && !wikiCount) {            // there was a wikipedia sitelink... but there shouldn't be one for this wikidata qid
-          delete item.tags[`${osmkey}:wikipedia`];
-          const msg = colors.cyan(`${qid} "${item.displayName}" removing old tag "${osmkey}:wikipedia = ${wpOld}" (doesn't match this qid)`);
-          console.warn(msg);
-        } else if (wpOld && wikiCount) {        // there was a wikipedia sitelink...
-          const m = wpOld.match(/^(\w+):/);     // check the language of it  ('en', 'de', 'zh-yue')
-          if (m) {
-            const lang = m[1];
-            let wpNew = wikis[lang];
-            if (wpNew && wpNew !== wpOld) {     // the sitelink we found for this language and qid is different, so replace it
-              item.tags[`${osmkey}:wikipedia`] = wpNew;
-              const msg = colors.cyan(`${qid} "${item.displayName}" updating tag "${osmkey}:wikipedia = ${wpNew}" (was "${wpOld})"`);
-              console.warn(msg);
-            }
-          }
-        } else if (!wpOld) {                    // there was no sitelink before...
-          let wpNew = chooseWiki(item);         // so we will try to pick one
-          if (wpNew) {
-            item.tags[`${osmkey}:wikipedia`] = wpNew;
-            const msg = colors.cyan(`${qid} "${item.displayName}" adding missing tag "${osmkey}:wikipedia = ${wpNew}"`);
-            console.warn(msg);
-          }
-        }
-      }
-    });
-  });
-
-
-  // Attempt to guess what language this item is, and pick a reasonable wikipedia tag for it
-  // This code is terrible and nobody should do this.
-  function chooseWiki(item) {
-    if (!wikiCount) return null;
-
-    const cc = item.locationSet.include[0];   // first location in the locationSet
-    if (typeof cc !== 'string') return null;
-
-    const name = item.displayName;
-    let tryLangs = ['en'];                    // always fallback to enwiki
-
-    // https://en.wikipedia.org/wiki/Unicode_block
-    if (/[\u0370-\u03FF]/.test(name)) {          // Greek
-      tryLangs.push('el');
-    } else if (/[\u0590-\u05FF]/.test(name)) {   // Hebrew
-      tryLangs.push('he');
-    } else if (/[\u0600-\u06FF]/.test(name)) {   // Arabic
-      tryLangs.push('ar');
-    } else if (/[\u0750-\u077F]/.test(name)) {   // Arabic
-      tryLangs.push('ar');
-    } else if (/[\u08A0-\u08FF]/.test(name)) {   // Arabic
-      tryLangs.push('ar');
-    } else if (/[\u0E00-\u0E7F]/.test(name)) {   // Thai
-      tryLangs.push('th');
-    } else if (/[\u1000-\u109F]/.test(name)) {   // Myanmar
-      tryLangs.push('my');
-    } else if (/[\u1100-\u11FF]/.test(name)) {   // Hangul
-      tryLangs.push('ko');
-    } else if (/[\u1700-\u171F]/.test(name)) {   // Tagalog
-      tryLangs.push('tl');
-    } else if (/[\u1800-\u18AF]/.test(name)) {   // Mongolian
-      tryLangs.push('mn');
-    } else if (/[\u1F00-\u1FFF]/.test(name)) {   // Greek
-      tryLangs.push('el');
-    } else if (/[\u3040-\u30FF]/.test(name)) {   // Hirgana or Katakana
-      tryLangs.push('ja');
-    } else if (/[\u3130-\u318F]/.test(name)) {   // Hangul
-      tryLangs.push('ko');
-    } else if (/[\uA960-\uA97F]/.test(name)) {   // Hangul
-      tryLangs.push('ko');
-    } else if (/[\uAC00-\uD7AF]/.test(name)) {   // Hangul
-      tryLangs.push('ko');
-    } else if (cc === 'de' || cc === 'at' || cc === 'ch') {     // German
-      tryLangs.push('de');
-    } else if (cc === 'fr' || cc === 'fx' || cc === 'be') {     // French
-      tryLangs.push('fr');
-    } else if (cc === 'es' || cc === 'mx' || cc === 'ar') {     // Spanish (better include Argentina here or they may get Arabic)
-      tryLangs.push('es');
-    } else if (cc === 'gr' || cc === 'cy') {    // Greek (note gr/el) (better include Cyprus here or they may get Welsh)
-      tryLangs.push('el');
-    } else if (cc === 'pt' || cc === 'br') {    // Portuguese
-      tryLangs.push('pt');
-    } else if (cc === 'ru' || cc === 'by') {    // Russian
-      tryLangs.push('ru');
-    } else if (cc === 'ua') {                   // Ukranian, then Russian (note ua/uk)
-      tryLangs.push('ru', 'uk');
-    } else if (cc === 'dk') {                   // Danish (note dk/da)
-      tryLangs.push('da');
-    } else if (cc === 'se') {                   // Swedish (note se/sv)
-      tryLangs.push('sv');
-    } else if (cc === 'cz') {                   // Czech (note cz/cs)
-      tryLangs.push('cs');
-    } else if (cc === 'jp') {                   // Japanese (note jp/ja)
-      tryLangs.push('ja');
-    } else if (cc === 'rs') {                   // Serbian (note rs/sr)
-      tryLangs.push('sr');
-    } else if (cc === 'in') {                   // India / Hindi
-      tryLangs.push('hi');
-    } else if (cc === 'hk') {                   // Cantonese, then Standard Chinese
-      tryLangs.push('zh', 'zh-yue');
-    } else if (cc === 'cn') {                   // Standard Chinese
-      tryLangs.push('zh');
-    } else if (cc === 'ca') {                   // Canada, pick English (so they don't end up with Catalan)
-      tryLangs.push('en');
-    } else {
-      // Just guess the country code as the language code..
-      // At this point we are hoping that rare wiki languages don't have articles for rare qids
-      tryLangs.push(cc);
-    }
-
-    while (tryLangs.length) {
-      const lang = tryLangs.pop();
-      if (wikis[lang]) return wikis[lang];
-    }
-
-    // We've exhausted the guesses, just return the first wiki we find..
-    for (const lang in wikis) {
-      return wikis[lang];
-    }
-
-    return null;
   }
 }
 

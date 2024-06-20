@@ -7,6 +7,17 @@
   },
   "items": [
     {
+      "displayName": "ADA",
+      "id": "ada-d9531a",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "ADA",
+        "brand:wikidata": "Q57313774",
+        "name": "ADA"
+      }
+    },
+    {
       "displayName": "Alamo",
       "id": "alamo-d9531a",
       "locationSet": {"include": ["001"]},
@@ -14,21 +25,30 @@
         "amenity": "car_rental",
         "brand": "Alamo",
         "brand:wikidata": "Q1429287",
-        "brand:wikipedia": "en:Alamo Rent a Car",
         "name": "Alamo"
+      }
+    },
+    {
+      "displayName": "Apex",
+      "id": "apex-f8249a",
+      "locationSet": {"include": ["nz"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Apex",
+        "brand:wikidata": "Q113312731",
+        "name": "Apex"
       }
     },
     {
       "displayName": "Avis",
       "id": "avis-d9531a",
       "locationSet": {"include": ["001"]},
-      "matchNames": ["avis car rental"],
       "tags": {
         "amenity": "car_rental",
         "brand": "Avis",
         "brand:wikidata": "Q791136",
-        "brand:wikipedia": "en:Avis Car Rental",
-        "name": "Avis"
+        "name": "Avis",
+        "official_name": "Avis Car Rental"
       }
     },
     {
@@ -51,9 +71,30 @@
         "amenity": "car_rental",
         "brand": "Budget",
         "brand:wikidata": "Q1001437",
-        "brand:wikipedia": "en:Budget Rent a Car",
         "name": "Budget",
         "official_name": "Budget Rent a Car"
+      }
+    },
+    {
+      "displayName": "Budget Truck Rental",
+      "id": "budgettruckrental-d50162",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Budget Truck Rental",
+        "brand:wikidata": "Q4985029",
+        "name": "Budget Truck Rental"
+      }
+    },
+    {
+      "displayName": "CarGo",
+      "id": "cargo-8fb45c",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "CarGo",
+        "brand:wikidata": "Q117662226",
+        "name": "CarGo"
       }
     },
     {
@@ -64,9 +105,19 @@
         "amenity": "car_rental",
         "brand": "Dollar",
         "brand:wikidata": "Q1235661",
-        "brand:wikipedia": "en:Dollar Rent A Car",
         "name": "Dollar",
         "official_name": "Dollar Rent A Car"
+      }
+    },
+    {
+      "displayName": "E.Leclerc Location",
+      "id": "eleclerclocation-8fb45c",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "E.Leclerc Location",
+        "brand:wikidata": "Q1273376",
+        "name": "E.Leclerc Location"
       }
     },
     {
@@ -78,7 +129,6 @@
         "amenity": "car_rental",
         "brand": "Enterprise",
         "brand:wikidata": "Q17085454",
-        "brand:wikipedia": "en:Enterprise Rent-A-Car",
         "name": "Enterprise",
         "official_name": "Enterprise Rent-A-Car"
       }
@@ -94,7 +144,6 @@
         "amenity": "car_rental",
         "brand": "Europcar",
         "brand:wikidata": "Q1376256",
-        "brand:wikipedia": "en:Europcar",
         "name": "Europcar"
       }
     },
@@ -110,7 +159,6 @@
         "amenity": "car_rental",
         "brand": "Europcar",
         "brand:wikidata": "Q1376256",
-        "brand:wikipedia": "en:Europcar",
         "name": "Europcar"
       }
     },
@@ -135,8 +183,18 @@
         "amenity": "car_rental",
         "brand": "Hertz",
         "brand:wikidata": "Q1543874",
-        "brand:wikipedia": "en:The Hertz Corporation",
         "name": "Hertz"
+      }
+    },
+    {
+      "displayName": "Jucy",
+      "id": "jucy-fde8ea",
+      "locationSet": {"include": ["au", "nz"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Jucy",
+        "brand:wikidata": "Q22032112",
+        "name": "Jucy"
       }
     },
     {
@@ -147,8 +205,18 @@
         "amenity": "car_rental",
         "brand": "Localiza",
         "brand:wikidata": "Q10319490",
-        "brand:wikipedia": "en:Localiza",
         "name": "Localiza"
+      }
+    },
+    {
+      "displayName": "Movida",
+      "id": "movida-7721c7",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Movida",
+        "brand:wikidata": "Q106632587",
+        "name": "Movida"
       }
     },
     {
@@ -161,9 +229,30 @@
         "amenity": "car_rental",
         "brand": "National",
         "brand:wikidata": "Q1424142",
-        "brand:wikipedia": "en:National Car Rental",
         "name": "National",
         "official_name": "National Car Rental"
+      }
+    },
+    {
+      "displayName": "Payless",
+      "id": "payless-d9531a",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Payless",
+        "brand:wikidata": "Q17084987",
+        "name": "Payless"
+      }
+    },
+    {
+      "displayName": "Redspot Car Rentals",
+      "id": "redspotcarrentals-ba918c",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "Redspot Car Rentals",
+        "brand:wikidata": "Q7306270",
+        "name": "Redspot Car Rentals"
       }
     },
     {
@@ -174,7 +263,6 @@
         "amenity": "car_rental",
         "brand": "SIXT",
         "brand:wikidata": "Q705664",
-        "brand:wikipedia": "en:Sixt",
         "name": "SIXT"
       }
     },
@@ -187,7 +275,6 @@
         "amenity": "car_rental",
         "brand": "Thrifty",
         "brand:wikidata": "Q2429546",
-        "brand:wikipedia": "en:Thrifty Car Rental",
         "name": "Thrifty"
       }
     },
@@ -199,73 +286,113 @@
         "amenity": "car_rental",
         "brand": "Unidas",
         "brand:wikidata": "Q97377626",
-        "brand:wikipedia": "pt:Unidas",
         "name": "Unidas"
       }
     },
     {
       "displayName": "オリックスレンタカー",
-      "id": "orixcarrental-f05847",
+      "id": "orixrentacar-f05847",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "car_rental",
         "brand": "オリックスレンタカー",
-        "brand:en": "ORIX Car Rental",
+        "brand:en": "ORIX Rent-A-Car",
         "brand:ja": "オリックスレンタカー",
         "brand:wikidata": "Q11123021",
-        "brand:wikipedia": "ja:オリックスレンタカー",
         "name": "オリックスレンタカー",
-        "name:en": "ORIX Car Rental",
+        "name:en": "ORIX Rent a Car",
         "name:ja": "オリックスレンタカー"
       }
     },
     {
       "displayName": "トヨタレンタカー",
-      "id": "toyotarentalcar-f05847",
+      "id": "toyotarentacar-f05847",
       "locationSet": {"include": ["jp"]},
       "matchNames": ["トヨタレンタリース"],
       "tags": {
         "amenity": "car_rental",
         "brand": "トヨタレンタカー",
-        "brand:en": "Toyota Rental Car",
+        "brand:en": "TOYOTA Rent a Car",
         "brand:ja": "トヨタレンタカー",
         "brand:wikidata": "Q11321580",
-        "brand:wikipedia": "ja:トヨタレンタリース",
         "name": "トヨタレンタカー",
-        "name:en": "Toyota Rental Car",
+        "name:en": "Toyota Rent a Car",
         "name:ja": "トヨタレンタカー"
       }
     },
     {
+      "displayName": "ニコニコレンタカー",
+      "id": "niconicorentacar-f05847",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "ニコニコレンタカー",
+        "brand:en": "NICONICO RENTACAR",
+        "brand:ja": "ニコニコレンタカー",
+        "brand:wikidata": "Q11324230",
+        "name": "ニコニコレンタカー",
+        "name:en": "Niconico Rentacar",
+        "name:ja": "ニコニコレンタカー"
+      }
+    },
+    {
       "displayName": "ニッポンレンタカー",
-      "id": "nipponcarrental-f05847",
+      "id": "nipponrentacar-f05847",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "car_rental",
         "brand": "ニッポンレンタカー",
-        "brand:en": "Nippon Car Rental",
+        "brand:en": "NIPPON Rent-A-Car",
         "brand:ja": "ニッポンレンタカー",
         "brand:wikidata": "Q11086533",
-        "brand:wikipedia": "ja:ニッポンレンタカー",
         "name": "ニッポンレンタカー",
-        "name:en": "Nippon Car Rental",
+        "name:en": "Nippon Rent-A-Car",
         "name:ja": "ニッポンレンタカー"
       }
     },
     {
+      "displayName": "和運租車",
+      "id": "hotaileasing-9fc5e0",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "和運租車",
+        "brand:en": "Hotai Leasing",
+        "brand:wikidata": "Q10921690",
+        "brand:zh": "和運租車",
+        "name": "和運租車",
+        "name:en": "Hotai Leasing",
+        "name:zh": "和運租車"
+      }
+    },
+    {
       "displayName": "日産レンタカー",
-      "id": "nissancarrental-f05847",
+      "id": "nissanrentacar-f05847",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "car_rental",
         "brand": "日産レンタカー",
-        "brand:en": "Nissan Car Rental",
+        "brand:en": "NISSAN RENT A CAR",
         "brand:ja": "日産レンタカー",
         "brand:wikidata": "Q11086838",
-        "brand:wikipedia": "ja:日産レンタカー",
         "name": "日産レンタカー",
-        "name:en": "Nissan Car Rental",
+        "name:en": "Nissan Rent a Car",
         "name:ja": "日産レンタカー"
+      }
+    },
+    {
+      "displayName": "神州租车",
+      "id": "carinc-bc1c71",
+      "locationSet": {"include": ["cn"]},
+      "tags": {
+        "amenity": "car_rental",
+        "brand": "神州租车",
+        "brand:en": "CAR Inc.",
+        "brand:wikidata": "Q18091357",
+        "brand:zh": "神州租车",
+        "name": "神州租车",
+        "name:en": "CAR Inc.",
+        "name:zh": "神州租车"
       }
     }
   ]

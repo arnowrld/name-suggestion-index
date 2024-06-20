@@ -5,6 +5,7 @@
     "exclude": {
       "generic": [
         "^(car|mécanique)$",
+        "^4s店$",
         "^авто(рынок|запчасти)?$",
         "^автома(г|газин|стерская)?$"
       ]
@@ -18,7 +19,6 @@
       "tags": {
         "brand": "Acura",
         "brand:wikidata": "Q53097",
-        "brand:wikipedia": "en:Acura",
         "name": "Acura",
         "shop": "car"
       }
@@ -30,7 +30,6 @@
       "tags": {
         "brand": "Aixam",
         "brand:wikidata": "Q6751",
-        "brand:wikipedia": "en:Aixam",
         "name": "Aixam",
         "shop": "car"
       }
@@ -42,8 +41,29 @@
       "tags": {
         "brand": "Alfa Romeo",
         "brand:wikidata": "Q26921",
-        "brand:wikipedia": "en:Alfa Romeo",
         "name": "Alfa Romeo",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Alpine",
+      "id": "alpine-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Alpine",
+        "brand:wikidata": "Q26944",
+        "name": "Alpine",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Arnold Clark",
+      "id": "arnoldclark-42e946",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Arnold Clark",
+        "brand:wikidata": "Q29344371",
+        "name": "Arnold Clark",
         "shop": "car"
       }
     },
@@ -54,7 +74,6 @@
       "tags": {
         "brand": "Aston Martin",
         "brand:wikidata": "Q27074",
-        "brand:wikipedia": "en:Aston Martin",
         "name": "Aston Martin",
         "shop": "car"
       }
@@ -66,8 +85,19 @@
       "tags": {
         "brand": "Audi",
         "brand:wikidata": "Q23317",
-        "brand:wikipedia": "en:Audi",
         "name": "Audi",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Avis Car Sales",
+      "id": "avis-71ab24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Avis",
+        "brand:wikidata": "Q791136",
+        "name": "Avis",
+        "second_hand": "only",
         "shop": "car"
       }
     },
@@ -78,7 +108,6 @@
       "tags": {
         "brand": "Bentley",
         "brand:wikidata": "Q27224",
-        "brand:wikipedia": "en:Bentley",
         "name": "Bentley",
         "shop": "car"
       }
@@ -90,8 +119,18 @@
       "tags": {
         "brand": "BMW",
         "brand:wikidata": "Q26678",
-        "brand:wikipedia": "en:BMW",
         "name": "BMW",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Bristol Street Motors",
+      "id": "bristolstreetmotors-5338a7",
+      "locationSet": {"include": ["gb-eng"]},
+      "tags": {
+        "brand": "Bristol Street Motors",
+        "brand:wikidata": "Q117319414",
+        "name": "Bristol Street Motors",
         "shop": "car"
       }
     },
@@ -104,8 +143,33 @@
       "tags": {
         "brand": "Buick",
         "brand:wikidata": "Q27415",
-        "brand:wikipedia": "en:Buick",
         "name": "Buick",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "BYD",
+      "id": "byd-c7952c",
+      "locationSet": {
+        "include": ["001", "hk", "mo"],
+        "exclude": ["cn"]
+      },
+      "matchNames": ["build your dreams"],
+      "tags": {
+        "brand": "BYD Auto",
+        "brand:wikidata": "Q27423",
+        "name": "BYD",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Byrider",
+      "id": "byrider-71ab24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Byrider",
+        "brand:wikidata": "Q6105214",
+        "name": "Byrider",
         "shop": "car"
       }
     },
@@ -116,7 +180,6 @@
       "tags": {
         "brand": "Cadillac",
         "brand:wikidata": "Q27436",
-        "brand:wikipedia": "en:Cadillac",
         "name": "Cadillac",
         "shop": "car"
       }
@@ -128,8 +191,30 @@
       "tags": {
         "brand": "CarMax",
         "brand:wikidata": "Q5037190",
-        "brand:wikipedia": "en:CarMax",
         "name": "CarMax",
+        "second_hand": "only",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "CarShop",
+      "id": "carshop-4f2218",
+      "locationSet": {"include": ["gb", "us"]},
+      "tags": {
+        "brand": "CarShop",
+        "brand:wikidata": "Q109308461",
+        "name": "CarShop",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Cazoo",
+      "id": "cazoo-42e946",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Cazoo",
+        "brand:wikidata": "Q83948954",
+        "name": "Cazoo",
         "second_hand": "only",
         "shop": "car"
       }
@@ -141,7 +226,6 @@
       "tags": {
         "brand": "Chevrolet",
         "brand:wikidata": "Q29570",
-        "brand:wikipedia": "en:Chevrolet",
         "name": "Chevrolet",
         "shop": "car"
       }
@@ -153,7 +237,6 @@
       "tags": {
         "brand": "Chrysler",
         "brand:wikidata": "Q181114",
-        "brand:wikipedia": "en:Chrysler",
         "name": "Chrysler",
         "shop": "car"
       }
@@ -165,8 +248,18 @@
       "tags": {
         "brand": "Citroën",
         "brand:wikidata": "Q6746",
-        "brand:wikipedia": "fr:Citroën",
         "name": "Citroën",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Cupra",
+      "id": "cupra-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Cupra",
+        "brand:wikidata": "Q8352675",
+        "name": "Cupra",
         "shop": "car"
       }
     },
@@ -177,7 +270,6 @@
       "tags": {
         "brand": "Dacia",
         "brand:wikidata": "Q27460",
-        "brand:wikipedia": "en:Automobile Dacia",
         "name": "Dacia",
         "shop": "car"
       }
@@ -189,7 +281,6 @@
       "tags": {
         "brand": "Dodge",
         "brand:wikidata": "Q27564",
-        "brand:wikipedia": "en:Dodge",
         "name": "Dodge",
         "shop": "car"
       }
@@ -201,7 +292,6 @@
       "tags": {
         "brand": "DriveTime",
         "brand:wikidata": "Q5307879",
-        "brand:wikipedia": "en:DriveTime",
         "name": "DriveTime",
         "second_hand": "only",
         "shop": "car"
@@ -215,8 +305,30 @@
       "tags": {
         "brand": "DS Automobiles",
         "brand:wikidata": "Q16040593",
-        "brand:wikipedia": "en:DS Automobiles",
         "name": "DS Automobiles",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Enterprise Car Sales",
+      "id": "enterprisecarsales-71ab24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Enterprise Car Sales",
+        "brand:wikidata": "Q5380295",
+        "name": "Enterprise Car Sales",
+        "second_hand": "only",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Ferrari",
+      "id": "ferrari-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Ferrari",
+        "brand:wikidata": "Q27586",
+        "name": "Ferrari",
         "shop": "car"
       }
     },
@@ -227,7 +339,6 @@
       "tags": {
         "brand": "Fiat",
         "brand:wikidata": "Q27597",
-        "brand:wikipedia": "en:Fiat",
         "name": "Fiat",
         "shop": "car"
       }
@@ -239,7 +350,6 @@
       "tags": {
         "brand": "Ford",
         "brand:wikidata": "Q44294",
-        "brand:wikipedia": "en:Ford Motor Company",
         "name": "Ford",
         "shop": "car"
       }
@@ -251,7 +361,6 @@
       "tags": {
         "brand": "Freightliner",
         "brand:wikidata": "Q1420724",
-        "brand:wikipedia": "en:Freightliner Trucks",
         "name": "Freightliner",
         "shop": "car"
       }
@@ -263,8 +372,22 @@
       "tags": {
         "brand": "Geely",
         "brand:wikidata": "Q739000",
-        "brand:wikipedia": "en:Geely",
         "name": "Geely",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Genesis",
+      "id": "genesis-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "matchNames": [
+        "genesis motor",
+        "genesis motors"
+      ],
+      "tags": {
+        "brand": "Genesis",
+        "brand:wikidata": "Q21451523",
+        "name": "Genesis",
         "shop": "car"
       }
     },
@@ -275,8 +398,19 @@
       "tags": {
         "brand": "GMC",
         "brand:wikidata": "Q28993",
-        "brand:wikipedia": "en:GMC (automobile)",
         "name": "GMC",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Hertz Car Sales",
+      "id": "hertzcarsales-71ab24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Hertz Car Sales",
+        "brand:wikidata": "Q18349283",
+        "name": "Hertz Car Sales",
+        "second_hand": "only",
         "shop": "car"
       }
     },
@@ -287,7 +421,6 @@
       "tags": {
         "brand": "Holden",
         "brand:wikidata": "Q29281",
-        "brand:wikipedia": "en:Holden",
         "name": "Holden",
         "shop": "car"
       }
@@ -300,7 +433,6 @@
       "tags": {
         "brand": "Honda",
         "brand:wikidata": "Q9584",
-        "brand:wikipedia": "en:Honda",
         "name": "Honda",
         "shop": "car"
       }
@@ -312,7 +444,6 @@
       "tags": {
         "brand": "Hyundai",
         "brand:wikidata": "Q55931",
-        "brand:wikipedia": "en:Hyundai Motor Company",
         "name": "Hyundai",
         "shop": "car"
       }
@@ -324,7 +455,6 @@
       "tags": {
         "brand": "Infiniti",
         "brand:wikidata": "Q29714",
-        "brand:wikipedia": "en:Infiniti",
         "name": "Infiniti",
         "shop": "car"
       }
@@ -336,7 +466,6 @@
       "tags": {
         "brand": "Isuzu",
         "brand:wikidata": "Q29803",
-        "brand:wikipedia": "en:Isuzu",
         "name": "Isuzu",
         "shop": "car"
       }
@@ -347,8 +476,7 @@
       "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Jaguar",
-        "brand:wikidata": "Q26742231",
-        "brand:wikipedia": "en:Jaguar (marque)",
+        "brand:wikidata": "Q21170490",
         "name": "Jaguar",
         "shop": "car"
       }
@@ -360,8 +488,33 @@
       "tags": {
         "brand": "Jeep",
         "brand:wikidata": "Q30113",
-        "brand:wikipedia": "en:Jeep",
         "name": "Jeep",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Karma",
+      "id": "karma-40d0fc",
+      "locationSet": {
+        "include": [
+          "be",
+          "ca",
+          "cn",
+          "ec",
+          "es",
+          "fr",
+          "il",
+          "is",
+          "nl",
+          "pa",
+          "se",
+          "us"
+        ]
+      },
+      "tags": {
+        "brand": "Karma Automotive",
+        "brand:wikidata": "Q22671741",
+        "name": "Karma",
         "shop": "car"
       }
     },
@@ -373,8 +526,42 @@
       "tags": {
         "brand": "Kia",
         "brand:wikidata": "Q35349",
-        "brand:wikipedia": "en:Kia",
         "name": "Kia",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Koenigsegg",
+      "id": "koenigsegg-45c2de",
+      "locationSet": {
+        "include": [
+          "ae",
+          "au",
+          "ca",
+          "ch",
+          "cn",
+          "de",
+          "es",
+          "gb",
+          "jp",
+          "kr",
+          "lb",
+          "mx",
+          "my",
+          "om",
+          "pl",
+          "se",
+          "sg",
+          "th",
+          "tw",
+          "us",
+          "za"
+        ]
+      },
+      "tags": {
+        "brand": "Koenigsegg",
+        "brand:wikidata": "Q35594",
+        "name": "Koenigsegg",
         "shop": "car"
       }
     },
@@ -387,10 +574,20 @@
         "brand:en": "Lada",
         "brand:ru": "Лада",
         "brand:wikidata": "Q35676",
-        "brand:wikipedia": "en:Lada",
         "name": "Lada",
         "name:en": "Lada",
         "name:ru": "Лада",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Lamborghini",
+      "id": "lamborghini-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Lamborghini",
+        "brand:wikidata": "Q35886",
+        "name": "Lamborghini",
         "shop": "car"
       }
     },
@@ -401,7 +598,6 @@
       "tags": {
         "brand": "Land Rover",
         "brand:wikidata": "Q26777551",
-        "brand:wikipedia": "en:Land Rover (marque)",
         "name": "Land Rover",
         "shop": "car"
       }
@@ -413,7 +609,6 @@
       "tags": {
         "brand": "Lexus",
         "brand:wikidata": "Q35919",
-        "brand:wikipedia": "en:Lexus",
         "name": "Lexus",
         "shop": "car"
       }
@@ -425,8 +620,40 @@
       "tags": {
         "brand": "Lincoln",
         "brand:wikidata": "Q216796",
-        "brand:wikipedia": "en:Lincoln Motor Company",
         "name": "Lincoln",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Lotus Cars",
+      "id": "lotuscars-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Lotus Cars",
+        "brand:wikidata": "Q35935",
+        "name": "Lotus Cars",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Lucid Motors",
+      "id": "lucidmotors-870a08",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Lucid Motors",
+        "brand:wikidata": "Q28027517",
+        "name": "Lucid Motors",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Lynk & Co",
+      "id": "lynkandco-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Lynk & Co",
+        "brand:wikidata": "Q27555283",
+        "name": "Lynk & Co",
         "shop": "car"
       }
     },
@@ -437,7 +664,6 @@
       "tags": {
         "brand": "Maruti Suzuki",
         "brand:wikidata": "Q963718",
-        "brand:wikipedia": "en:Maruti Suzuki",
         "name": "Maruti Suzuki",
         "shop": "car"
       }
@@ -449,7 +675,6 @@
       "tags": {
         "brand": "Maserati",
         "brand:wikidata": "Q35962",
-        "brand:wikipedia": "en:Maserati",
         "name": "Maserati",
         "shop": "car"
       }
@@ -461,7 +686,6 @@
       "tags": {
         "brand": "Mazda",
         "brand:wikidata": "Q35996",
-        "brand:wikipedia": "en:Mazda",
         "name": "Mazda",
         "shop": "car"
       }
@@ -474,8 +698,18 @@
       "tags": {
         "brand": "Mercedes-Benz",
         "brand:wikidata": "Q36008",
-        "brand:wikipedia": "en:Mercedes-Benz",
         "name": "Mercedes-Benz",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "MG",
+      "id": "mg-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "MG",
+        "brand:wikidata": "Q1881443",
+        "name": "MG",
         "shop": "car"
       }
     },
@@ -486,7 +720,6 @@
       "tags": {
         "brand": "Mini",
         "brand:wikidata": "Q116232",
-        "brand:wikipedia": "en:Mini (marque)",
         "name": "Mini",
         "shop": "car"
       }
@@ -499,7 +732,6 @@
       "tags": {
         "brand": "Mitsubishi",
         "brand:wikidata": "Q36033",
-        "brand:wikipedia": "en:Mitsubishi Motors",
         "name": "Mitsubishi",
         "shop": "car"
       }
@@ -511,20 +743,35 @@
       "tags": {
         "brand": "Netz",
         "brand:wikidata": "Q11325416",
-        "brand:wikipedia": "ja:ネッツ店",
         "name": "Netz",
         "shop": "car"
       }
     },
     {
-      "displayName": "NIO",
-      "id": "nio-13eeb7",
-      "locationSet": {"include": ["001"]},
+      "displayName": "NIO House",
+      "id": "niohouse-465d1f",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["cn"]
+      },
       "tags": {
         "brand": "NIO",
         "brand:wikidata": "Q29921278",
-        "brand:wikipedia": "en:NIO (car company)",
-        "name": "NIO",
+        "name": "NIO House",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "NIO Space",
+      "id": "niospace-465d1f",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["cn"]
+      },
+      "tags": {
+        "brand": "NIO",
+        "brand:wikidata": "Q29921278",
+        "name": "NIO Space",
         "shop": "car"
       }
     },
@@ -535,7 +782,6 @@
       "tags": {
         "brand": "Nissan",
         "brand:wikidata": "Q20165",
-        "brand:wikipedia": "ja:日産自動車",
         "name": "Nissan",
         "shop": "car"
       }
@@ -547,7 +793,6 @@
       "tags": {
         "brand": "Opel",
         "brand:wikidata": "Q40966",
-        "brand:wikipedia": "en:Opel",
         "name": "Opel",
         "shop": "car"
       }
@@ -556,12 +801,11 @@
       "displayName": "Perodua",
       "id": "perodua-fca759",
       "locationSet": {
-        "include": ["my", "sg", "uk"]
+        "include": ["gb", "my", "sg"]
       },
       "tags": {
         "brand": "Perodua",
         "brand:wikidata": "Q1476369",
-        "brand:wikipedia": "en:Perodua",
         "name": "Perodua",
         "shop": "car"
       }
@@ -573,7 +817,6 @@
       "tags": {
         "brand": "Peterbilt",
         "brand:wikidata": "Q944640",
-        "brand:wikipedia": "en:Peterbilt",
         "name": "Peterbilt",
         "shop": "car"
       }
@@ -585,7 +828,6 @@
       "tags": {
         "brand": "Peugeot",
         "brand:wikidata": "Q6742",
-        "brand:wikipedia": "en:Peugeot",
         "name": "Peugeot",
         "shop": "car"
       }
@@ -610,7 +852,6 @@
       "tags": {
         "brand": "Polestar",
         "brand:wikidata": "Q4047174",
-        "brand:wikipedia": "en:Polestar",
         "name": "Polestar",
         "shop": "car"
       }
@@ -622,7 +863,6 @@
       "tags": {
         "brand": "Porsche",
         "brand:wikidata": "Q40993",
-        "brand:wikipedia": "en:Porsche",
         "name": "Porsche",
         "shop": "car"
       }
@@ -643,7 +883,6 @@
       "tags": {
         "brand": "Proton",
         "brand:wikidata": "Q827306",
-        "brand:wikipedia": "en:Proton Holdings",
         "name": "Proton",
         "shop": "car"
       }
@@ -655,7 +894,6 @@
       "tags": {
         "brand": "Ram",
         "brand:wikidata": "Q165708",
-        "brand:wikipedia": "en:Ram Trucks",
         "name": "Ram",
         "shop": "car"
       }
@@ -667,8 +905,53 @@
       "tags": {
         "brand": "Renault",
         "brand:wikidata": "Q6686",
-        "brand:wikipedia": "fr:Renault",
         "name": "Renault",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Rimac",
+      "id": "rimac-0f1e04",
+      "locationSet": {
+        "include": [
+          "ae",
+          "ca",
+          "cn",
+          "de",
+          "es",
+          "gb",
+          "jp",
+          "mx",
+          "sg",
+          "us"
+        ]
+      },
+      "tags": {
+        "brand": "Rimac",
+        "brand:wikidata": "Q7334368",
+        "name": "Rimac",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Rivian Spaces",
+      "id": "rivianspaces-13eeb7",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Rivian Spaces",
+        "brand:wikidata": "Q7338847",
+        "name": "Rivian Spaces",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Rolls-Royce Motor Cars",
+      "id": "rollsroycemotorcars-13eeb7",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Rolls-Royce Motor Cars",
+        "brand:wikidata": "Q234803",
+        "name": "Rolls-Royce Motor Cars",
         "shop": "car"
       }
     },
@@ -679,7 +962,6 @@
       "tags": {
         "brand": "Seat",
         "brand:wikidata": "Q188217",
-        "brand:wikipedia": "en:SEAT",
         "name": "Seat",
         "shop": "car"
       }
@@ -692,8 +974,18 @@
       "tags": {
         "brand": "Škoda",
         "brand:wikidata": "Q29637",
-        "brand:wikipedia": "en:Škoda Auto",
         "name": "Škoda",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "Smart",
+      "id": "smart-b77732",
+      "locationSet": {"include": ["150", "cn"]},
+      "tags": {
+        "brand": "Smart",
+        "brand:wikidata": "Q156490",
+        "name": "Smart",
         "shop": "car"
       }
     },
@@ -704,7 +996,6 @@
       "tags": {
         "brand": "Subaru",
         "brand:wikidata": "Q172741",
-        "brand:wikipedia": "en:Subaru",
         "name": "Subaru",
         "shop": "car"
       }
@@ -719,7 +1010,6 @@
       "tags": {
         "brand": "Suzuki",
         "brand:wikidata": "Q181642",
-        "brand:wikipedia": "en:Suzuki",
         "name": "Suzuki",
         "shop": "car"
       }
@@ -732,20 +1022,21 @@
       "tags": {
         "brand": "Tata",
         "brand:wikidata": "Q188514",
-        "brand:wikipedia": "en:Tata Motors",
         "name": "Tata",
         "shop": "car"
       }
     },
     {
       "displayName": "Tesla",
-      "id": "tesla-13eeb7",
-      "locationSet": {"include": ["001"]},
+      "id": "tesla-8ae848",
+      "locationSet": {
+        "include": ["001", "hk", "mo"],
+        "exclude": ["cn", "tw"]
+      },
       "matchNames": ["tesla motors"],
       "tags": {
         "brand": "Tesla",
         "brand:wikidata": "Q478214",
-        "brand:wikipedia": "en:Tesla, Inc.",
         "name": "Tesla",
         "shop": "car"
       }
@@ -757,7 +1048,6 @@
       "tags": {
         "brand": "Toyota",
         "brand:wikidata": "Q53268",
-        "brand:wikipedia": "en:Toyota",
         "name": "Toyota",
         "shop": "car"
       }
@@ -769,7 +1059,6 @@
       "tags": {
         "brand": "Vauxhall",
         "brand:wikidata": "Q59187",
-        "brand:wikipedia": "en:Vauxhall Motors",
         "name": "Vauxhall",
         "shop": "car"
       }
@@ -782,7 +1071,6 @@
       "tags": {
         "brand": "Volkswagen",
         "brand:wikidata": "Q246",
-        "brand:wikipedia": "en:Volkswagen",
         "name": "Volkswagen",
         "shop": "car"
       }
@@ -794,19 +1082,31 @@
       "tags": {
         "brand": "Volvo",
         "brand:wikidata": "Q215293",
-        "brand:wikipedia": "en:Volvo Cars",
         "name": "Volvo",
         "shop": "car"
       }
     },
     {
+      "displayName": "We Buy Any Car",
+      "id": "webuyanycar-42e946",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "We Buy Any Car",
+        "brand:wikidata": "Q7977432",
+        "name": "We Buy Any Car",
+        "shop": "car"
+      }
+    },
+    {
       "displayName": "Xpeng",
-      "id": "xpeng-13eeb7",
-      "locationSet": {"include": ["001"]},
+      "id": "xpeng-465d1f",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["cn"]
+      },
       "tags": {
         "brand": "Xpeng",
         "brand:wikidata": "Q63035278",
-        "brand:wikipedia": "en:XPeng",
         "name": "Xpeng",
         "shop": "car"
       }
@@ -821,7 +1121,6 @@
         "brand:en": "Autoworld",
         "brand:ru": "Автомир",
         "brand:wikidata": "Q4056321",
-        "brand:wikipedia": "ru:Автомир (автодилер)",
         "name": "Автомир",
         "name:en": "Autoworld",
         "name:ru": "Автомир",
@@ -837,7 +1136,6 @@
         "brand:en": "Saipa",
         "brand:fa": "سایپا",
         "brand:wikidata": "Q116234",
-        "brand:wikipedia": "en:SAIPA",
         "name": "سایپا",
         "name:en": "Saipa",
         "name:fa": "سایپا",
@@ -853,10 +1151,21 @@
         "brand:en": "Gulliver",
         "brand:ja": "ガリバー",
         "brand:wikidata": "Q11296264",
-        "brand:wikipedia": "ja:IDOM",
         "name": "ガリバー",
         "name:en": "Gulliver",
         "name:ja": "ガリバー",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "スズキアリーナ",
+      "id": "b8fc2e-27c9bc",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "brand": "スズキアリーナ",
+        "brand:ja": "スズキアリーナ",
+        "name": "スズキアリーナ",
+        "name:ja": "スズキアリーナ",
         "shop": "car"
       }
     },
@@ -869,7 +1178,6 @@
         "brand:en": "Daihatsu",
         "brand:ja": "ダイハツ",
         "brand:wikidata": "Q27511",
-        "brand:wikipedia": "ja:ダイハツ工業",
         "name": "ダイハツ",
         "name:en": "Daihatsu",
         "name:ja": "ダイハツ",
@@ -886,10 +1194,39 @@
         "brand:en": "Toyota",
         "brand:ja": "トヨタ",
         "brand:wikidata": "Q53268",
-        "brand:wikipedia": "ja:トヨタ自動車",
         "name": "トヨタ",
         "name:en": "Toyota",
         "name:ja": "トヨタ",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "ネクステージ",
+      "id": "nextage-27c9bc",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "brand": "ネクステージ",
+        "brand:en": "NEXTAGE",
+        "brand:ja": "ネクステージ",
+        "brand:wikidata": "Q18338759",
+        "name": "ネクステージ",
+        "name:en": "Nextage",
+        "name:ja": "ネクステージ",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "ビッグモーター",
+      "id": "bigmotor-27c9bc",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "brand": "ビッグモーター",
+        "brand:en": "BIGMOTOR",
+        "brand:ja": "ビッグモーター",
+        "brand:wikidata": "Q11330789",
+        "name": "ビッグモーター",
+        "name:en": "Bigmotor",
+        "name:ja": "ビッグモーター",
         "shop": "car"
       }
     },
@@ -902,7 +1239,6 @@
         "brand:en": "Honda",
         "brand:ja": "ホンダ",
         "brand:wikidata": "Q9584",
-        "brand:wikipedia": "ja:本田技研工業",
         "name": "ホンダ",
         "name:en": "Honda",
         "name:ja": "ホンダ",
@@ -910,16 +1246,17 @@
       }
     },
     {
-      "displayName": "小鹏汽车",
+      "displayName": "小鹏",
       "id": "xpeng-115502",
       "locationSet": {"include": ["cn"]},
       "tags": {
-        "brand": "小鹏汽车",
+        "brand": "小鹏",
         "brand:en": "Xpeng",
         "brand:wikidata": "Q63035278",
-        "brand:wikipedia": "en:XPeng",
-        "name": "小鹏汽车",
+        "brand:zh": "小鹏",
+        "name": "小鹏",
         "name:en": "Xpeng",
+        "name:zh": "小鹏",
         "shop": "car"
       }
     },
@@ -932,7 +1269,6 @@
         "brand:en": "Nissan",
         "brand:ja": "日産",
         "brand:wikidata": "Q20165",
-        "brand:wikipedia": "ja:日産自動車",
         "name": "日産",
         "name:en": "Nissan",
         "name:ja": "日産",
@@ -940,30 +1276,114 @@
       }
     },
     {
-      "displayName": "理想汽车",
-      "id": "liauto-115502",
+      "displayName": "极氪",
+      "id": "zeekr-115502",
       "locationSet": {"include": ["cn"]},
       "tags": {
-        "brand": "理想汽车",
-        "brand:en": "Li Auto",
-        "brand:wikidata": "Q98139925",
-        "brand:wikipedia": "en:Li Auto",
-        "name": "理想汽车",
-        "name:en": "Li Auto",
+        "brand": "极氪",
+        "brand:en": "Zeekr",
+        "brand:wikidata": "Q106621124",
+        "brand:zh": "极氪",
+        "name": "极氪",
+        "name:en": "Zeekr",
+        "name:zh": "极氪",
         "shop": "car"
       }
     },
     {
-      "displayName": "蔚来汽车",
-      "id": "nio-115502",
+      "displayName": "比亚迪",
+      "id": "byd-985889",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["比亚迪汽车"],
+      "tags": {
+        "brand": "比亚迪",
+        "brand:en": "BYD",
+        "brand:wikidata": "Q27423",
+        "brand:zh": "比亚迪",
+        "name": "比亚迪",
+        "name:en": "BYD",
+        "name:zh": "比亚迪",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "特斯拉",
+      "id": "tesla-7e0cc6",
+      "locationSet": {
+        "include": ["cn", "tw"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "brand": "特斯拉",
+        "brand:en": "Tesla",
+        "brand:wikidata": "Q478214",
+        "brand:zh": "特斯拉",
+        "name": "特斯拉",
+        "name:en": "Tesla",
+        "name:zh": "特斯拉",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "理想",
+      "id": "liauto-115502",
       "locationSet": {"include": ["cn"]},
       "tags": {
-        "brand": "蔚来汽车",
+        "brand": "理想",
+        "brand:en": "Li Auto",
+        "brand:wikidata": "Q98139925",
+        "brand:zh": "理想",
+        "name": "理想",
+        "name:en": "Li Auto",
+        "name:zh": "理想",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "蔚来中心",
+      "id": "niohouse-115502",
+      "locationSet": {"include": ["cn"]},
+      "tags": {
+        "brand": "蔚来",
         "brand:en": "NIO",
         "brand:wikidata": "Q29921278",
-        "brand:wikipedia": "en:NIO (car company)",
-        "name": "蔚来汽车",
-        "name:en": "NIO",
+        "brand:zh": "蔚来",
+        "name": "蔚来中心",
+        "name:en": "NIO House",
+        "name:zh": "蔚来中心",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "蔚来空间",
+      "id": "niospace-115502",
+      "locationSet": {"include": ["cn"]},
+      "tags": {
+        "brand": "蔚来",
+        "brand:en": "NIO",
+        "brand:wikidata": "Q29921278",
+        "brand:zh": "蔚来",
+        "name": "蔚来空间",
+        "name:en": "NIO Space",
+        "name:zh": "蔚来空间",
+        "shop": "car"
+      }
+    },
+    {
+      "displayName": "零跑汽车",
+      "id": "leapmotor-115502",
+      "locationSet": {"include": ["cn"]},
+      "tags": {
+        "brand": "零跑汽车",
+        "brand:en": "LeapMotor",
+        "brand:wikidata": "Q99510294",
+        "brand:zh": "零跑汽车",
+        "name": "零跑汽车",
+        "name:en": "LeapMotor",
+        "name:zh": "零跑汽车",
         "shop": "car"
       }
     }

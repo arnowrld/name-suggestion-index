@@ -6,18 +6,6 @@
   },
   "items": [
     {
-      "displayName": "Amazon",
-      "id": "amazon-93b2a6",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "amenity": "post_depot",
-        "operator": "Amazon",
-        "operator:type": "private",
-        "operator:wikidata": "Q3884",
-        "operator:wikipedia": "en:Amazon (company)"
-      }
-    },
-    {
       "displayName": "An Post",
       "id": "anpost-2f7b40",
       "locationSet": {"include": ["ie"]},
@@ -26,23 +14,35 @@
         "name": "An Post",
         "operator": "An Post",
         "operator:type": "public",
-        "operator:wikidata": "Q482490",
-        "operator:wikipedia": "en:An Post"
+        "operator:wikidata": "Q482490"
       }
     },
     {
       "displayName": "Canada Post",
-      "id": "canadapost-c92f48",
+      "id": "canadapost-dd0253",
       "locationSet": {
         "include": ["ca"],
-        "exclude": ["quebec.geojson"]
+        "exclude": ["ca-qc.geojson"]
       },
       "tags": {
         "amenity": "post_depot",
         "operator": "Canada Post",
         "operator:type": "public",
-        "operator:wikidata": "Q1032001",
-        "operator:wikipedia": "en:Canada Post"
+        "operator:wikidata": "Q1032001"
+      }
+    },
+    {
+      "displayName": "Centro de Distribuição dos Correios",
+      "id": "empresabrasileiradecorreiosetelegrafos-28fd5c",
+      "locationSet": {"include": ["br"]},
+      "matchNames": ["ebct", "ect"],
+      "tags": {
+        "amenity": "post_depot",
+        "name": "Centro de Distribuição dos Correios",
+        "operator": "Empresa Brasileira de Correios e Telégrafos",
+        "operator:short": "Correios",
+        "operator:type": "public",
+        "operator:wikidata": "Q3375004"
       }
     },
     {
@@ -55,50 +55,18 @@
         "name": "Deutsche Post",
         "operator": "Deutsche Post",
         "operator:type": "private",
-        "operator:wikidata": "Q157645",
-        "operator:wikipedia": "de:Deutsche Post AG"
+        "operator:wikidata": "Q157645"
       }
     },
     {
-      "displayName": "DHL",
-      "id": "dhl-93b2a6",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Evri",
+      "id": "evri-a473cc",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["hermes"],
       "tags": {
         "amenity": "post_depot",
-        "name": "DHL",
-        "operator": "DHL",
-        "operator:type": "private",
-        "operator:wikidata": "Q489815",
-        "operator:wikipedia": "de:DHL"
-      }
-    },
-    {
-      "displayName": "DPD",
-      "id": "dpd-93b2a6",
-      "locationSet": {"include": ["001"]},
-      "matchNames": [
-        "dpd dynamic parcel distribution"
-      ],
-      "tags": {
-        "amenity": "post_depot",
-        "name": "DPD",
-        "operator": "DPD",
-        "operator:type": "private",
-        "operator:wikidata": "Q541030",
-        "operator:wikipedia": "de:DPDgroup"
-      }
-    },
-    {
-      "displayName": "FedEx",
-      "id": "fedex-93b2a6",
-      "locationSet": {"include": ["001"]},
-      "matchNames": ["federal express"],
-      "tags": {
-        "amenity": "post_depot",
-        "operator": "FedEx",
-        "operator:type": "private",
-        "operator:wikidata": "Q459477",
-        "operator:wikipedia": "en:FedEx"
+        "operator": "Evri",
+        "operator:wikidata": "Q115200168"
       }
     },
     {
@@ -110,8 +78,40 @@
         "name": "La Poste",
         "operator": "La Poste",
         "operator:type": "public",
-        "operator:wikidata": "Q373724",
-        "operator:wikipedia": "fr:La Poste (entreprise française)"
+        "operator:wikidata": "Q373724"
+      }
+    },
+    {
+      "displayName": "MRW",
+      "id": "mrw-93b2a6",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_depot",
+        "operator": "MRW"
+      }
+    },
+    {
+      "displayName": "New Zealand Post",
+      "id": "newzealandpost-6b0f2e",
+      "locationSet": {"include": ["nz"]},
+      "matchNames": ["nz post"],
+      "tags": {
+        "amenity": "post_depot",
+        "operator": "New Zealand Post",
+        "operator:wikidata": "Q1144511"
+      }
+    },
+    {
+      "displayName": "Postes Canada",
+      "id": "postescanada-7b7f06",
+      "locationSet": {
+        "include": ["ca-qc.geojson"]
+      },
+      "tags": {
+        "amenity": "post_depot",
+        "operator": "Postes Canada",
+        "operator:type": "public",
+        "operator:wikidata": "Q1032001"
       }
     },
     {
@@ -123,8 +123,16 @@
         "name": "Royal Mail",
         "operator": "Royal Mail",
         "operator:type": "private",
-        "operator:wikidata": "Q638098",
-        "operator:wikipedia": "en:Royal Mail"
+        "operator:wikidata": "Q638098"
+      }
+    },
+    {
+      "displayName": "SEUR",
+      "id": "seur-93b2a6",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_depot",
+        "operator": "SEUR"
       }
     },
     {
@@ -134,40 +142,9 @@
       "tags": {
         "amenity": "post_depot",
         "operator": "United States Postal Service",
+        "operator:short": "USPS",
         "operator:type": "public",
-        "operator:wikidata": "Q668687",
-        "operator:wikipedia": "en:United States Postal Service",
-        "short_name": "USPS"
-      }
-    },
-    {
-      "displayName": "UPS",
-      "id": "ups-93b2a6",
-      "locationSet": {"include": ["001"]},
-      "matchNames": ["united parcel service"],
-      "tags": {
-        "amenity": "post_depot",
-        "operator": "UPS",
-        "operator:type": "private",
-        "operator:wikidata": "Q155026",
-        "operator:wikipedia": "en:United Parcel Service"
-      }
-    },
-    {
-      "displayName": "Yodel",
-      "id": "yodel-a473cc",
-      "locationSet": {"include": ["gb"]},
-      "matchNames": [
-        "hdn",
-        "home delivery network"
-      ],
-      "tags": {
-        "amenity": "post_depot",
-        "name": "Yodel",
-        "operator": "Yodel",
-        "operator:type": "private",
-        "operator:wikidata": "Q17020712",
-        "operator:wikipedia": "en:Yodel (company)"
+        "operator:wikidata": "Q668687"
       }
     }
   ]

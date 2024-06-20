@@ -4,8 +4,12 @@
     "exclude": {
       "generic": [
         "^(edicola|newsagent|tabac presse|trafika?)$",
-        "^(печать|пресса|табак(ерка)?)$"
-      ]
+        "^печать$",
+        "^преса$",
+        "^пресса$",
+        "^табак$"
+      ],
+      "named": ["^табакерка$"]
     }
   },
   "items": [
@@ -23,9 +27,21 @@
       }
     },
     {
-      "displayName": "Cigo",
-      "id": "cigo-401e3d",
-      "locationSet": {"include": ["de", "nl"]},
+      "displayName": "Cigo (Germany)",
+      "id": "cigo-ae6a07",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "brand": "Cigo",
+        "brand:wikidata": "Q113290782",
+        "name": "Cigo",
+        "shop": "newsagent",
+        "tobacco": "yes"
+      }
+    },
+    {
+      "displayName": "Cigo (Netherlands)",
+      "id": "cigo-308ab8",
+      "locationSet": {"include": ["nl"]},
       "tags": {
         "brand": "Cigo",
         "brand:wikidata": "Q62391977",
@@ -34,15 +50,48 @@
       }
     },
     {
-      "displayName": "Hudson",
-      "id": "hudson-a0252c",
-      "locationSet": {"include": ["ca", "us"]},
-      "matchNames": ["hudson news"],
+      "displayName": "CNN Newsstand",
+      "id": "cnnnewsstand-fa8cad",
+      "locationSet": {"include": ["us"]},
       "tags": {
-        "brand": "Hudson",
-        "brand:wikidata": "Q5928682",
-        "brand:wikipedia": "en:Hudson Group",
-        "name": "Hudson",
+        "brand": "CNN Newsstand",
+        "brand:wikidata": "Q113695436",
+        "name": "CNN Newsstand",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "GECO",
+      "id": "geco-5d4c3a",
+      "locationSet": {"include": ["cz", "sk"]},
+      "matchNames": ["geco tabak"],
+      "tags": {
+        "brand": "GECO",
+        "brand:wikidata": "Q12017963",
+        "name": "GECO",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "Hudson News",
+      "id": "hudsonnews-a0252c",
+      "locationSet": {"include": ["ca", "us"]},
+      "matchNames": ["hudson"],
+      "tags": {
+        "brand": "Hudson News",
+        "brand:wikidata": "Q5928787",
+        "name": "Hudson News",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "inmedio",
+      "id": "inmedio-1fb2fe",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "inmedio",
+        "brand:wikidata": "Q114053635",
+        "name": "inmedio",
         "shop": "newsagent"
       }
     },
@@ -54,18 +103,20 @@
       },
       "tags": {
         "brand": "Inmedio",
+        "brand:wikidata": "Q108599411",
         "name": "Inmedio",
         "shop": "newsagent"
       }
     },
     {
       "displayName": "k kiosk",
-      "id": "kkiosk-49035c",
-      "locationSet": {"include": ["ch"]},
+      "id": "kkiosk-3673ad",
+      "locationSet": {
+        "include": ["ch", "de", "li", "lu"]
+      },
       "tags": {
         "brand": "k kiosk",
         "brand:wikidata": "Q60381703",
-        "brand:wikipedia": "it:K Kiosk",
         "name": "k kiosk",
         "shop": "newsagent"
       }
@@ -74,11 +125,9 @@
       "displayName": "Kolporter",
       "id": "kolporter-4bc172",
       "locationSet": {"include": ["pl"]},
-      "matchTags": ["shop/kiosk"],
       "tags": {
         "brand": "Kolporter",
         "brand:wikidata": "Q6427874",
-        "brand:wikipedia": "pl:Kolporter (przedsiębiorstwo)",
         "name": "Kolporter",
         "shop": "newsagent"
       }
@@ -111,16 +160,17 @@
       "locationSet": {"include": ["gb"]},
       "tags": {
         "brand": "Martin's",
-        "brand:wikidata": "Q16997477",
-        "brand:wikipedia": "en:McColl's",
+        "brand:wikidata": "Q116779207",
         "name": "Martin's",
         "shop": "newsagent"
       }
     },
     {
       "displayName": "Press & Books",
-      "id": "pressandbooks-ae6a07",
-      "locationSet": {"include": ["de"]},
+      "id": "pressandbooks-b35c93",
+      "locationSet": {
+        "include": ["at", "ch", "de", "lu"]
+      },
       "matchNames": ["p&k"],
       "tags": {
         "brand": "Press & Books",
@@ -136,7 +186,6 @@
       "tags": {
         "brand": "Primera",
         "brand:wikidata": "Q2176149",
-        "brand:wikipedia": "nl:Primera (winkelketen)",
         "name": "Primera",
         "shop": "newsagent"
       }
@@ -145,11 +194,9 @@
       "displayName": "Relay",
       "id": "relay-e6d891",
       "locationSet": {"include": ["001"]},
-      "matchTags": ["shop/kiosk"],
       "tags": {
         "brand": "Relay",
         "brand:wikidata": "Q3424298",
-        "brand:wikipedia": "en:Relay (shop)",
         "name": "Relay",
         "shop": "newsagent"
       }
@@ -161,8 +208,29 @@
       "tags": {
         "brand": "Ruch",
         "brand:wikidata": "Q1260314",
-        "brand:wikipedia": "pl:Ruch (przedsiębiorstwo)",
         "name": "Ruch",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "Świat Prasy",
+      "id": "swiatprasy-e6d891",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Świat Prasy",
+        "name": "Świat Prasy",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "Tabak Press",
+      "id": "tabakpress-5d4c3a",
+      "locationSet": {"include": ["cz", "sk"]},
+      "matchNames": ["gg tabak"],
+      "tags": {
+        "brand": "Tabak Press",
+        "brand:wikidata": "Q110264693",
+        "name": "Tabak Press",
         "shop": "newsagent"
       }
     },
@@ -170,14 +238,10 @@
       "displayName": "WHSmith",
       "id": "whsmith-e6d891",
       "locationSet": {"include": ["001"]},
-      "matchTags": [
-        "shop/kiosk",
-        "shop/stationery"
-      ],
+      "matchTags": ["shop/stationery"],
       "tags": {
         "brand": "WHSmith",
         "brand:wikidata": "Q1548712",
-        "brand:wikipedia": "en:WHSmith",
         "name": "WHSmith",
         "shop": "newsagent"
       }
@@ -190,12 +254,30 @@
         "белсоюзпечать",
         "витебскоблсоюзпечать"
       ],
-      "matchTags": ["shop/kiosk"],
       "tags": {
         "brand": "БелДрук",
         "brand:wikidata": "Q63986228",
-        "brand:wikipedia": "be-x-old:Белсаюздрук",
         "name": "БелДрук",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "Белсаюздрук",
+      "id": "28555b-e6d891",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Белсаюздрук",
+        "name": "Белсаюздрук",
+        "shop": "newsagent"
+      }
+    },
+    {
+      "displayName": "Віцебскаблсаюздрук",
+      "id": "e998e8-e6d891",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Віцебскаблсаюздрук",
+        "name": "Віцебскаблсаюздрук",
         "shop": "newsagent"
       }
     },
@@ -211,16 +293,6 @@
       }
     },
     {
-      "displayName": "Преса",
-      "id": "6007bd-0307ab",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "brand": "Преса",
-        "name": "Преса",
-        "shop": "newsagent"
-      }
-    },
-    {
       "displayName": "Роспечать",
       "id": "5506ed-313f17",
       "locationSet": {"include": ["ru"]},
@@ -232,13 +304,11 @@
     },
     {
       "displayName": "Союзпечать",
-      "id": "6aba18-b88745",
-      "locationSet": {"include": ["ru", "ua"]},
-      "matchTags": ["shop/kiosk"],
+      "id": "6aba18-313f17",
+      "locationSet": {"include": ["ru"]},
       "tags": {
         "brand": "Союзпечать",
         "brand:wikidata": "Q4430611",
-        "brand:wikipedia": "ru:Союзпечать",
         "name": "Союзпечать",
         "shop": "newsagent"
       }
@@ -253,7 +323,6 @@
         "brand:en": "The Nikkei",
         "brand:ja": "日本経済新聞",
         "brand:wikidata": "Q1077694",
-        "brand:wikipedia": "ja:日本経済新聞",
         "name": "日本経済新聞",
         "name:en": "The Nikkei",
         "name:ja": "日本経済新聞",
@@ -268,7 +337,6 @@
         "brand": "朝日新聞",
         "brand:en": "Asahi Shimbun",
         "brand:wikidata": "Q720503",
-        "brand:wikipedia": "ja:朝日新聞",
         "name": "朝日新聞",
         "name:en": "Asahi Shimbun",
         "shop": "newsagent"
@@ -284,7 +352,6 @@
         "brand:en": "Mainichi Shimbun",
         "brand:ja": "毎日新聞",
         "brand:wikidata": "Q1136866",
-        "brand:wikipedia": "ja:毎日新聞",
         "name": "毎日新聞",
         "name:en": "Mainichi Shimbun",
         "name:ja": "毎日新聞",
@@ -301,7 +368,6 @@
         "brand:en": "Sankei Shimbun",
         "brand:ja": "産経新聞",
         "brand:wikidata": "Q1197261",
-        "brand:wikipedia": "ja:産経新聞",
         "name": "産経新聞",
         "name:en": "Sankei Shimbun",
         "name:ja": "産経新聞",
@@ -316,7 +382,6 @@
         "brand": "読売新聞",
         "brand:en": "Yomiuri Shimbun",
         "brand:wikidata": "Q645218",
-        "brand:wikipedia": "en:Yomiuri Shimbun",
         "name": "読売新聞",
         "name:en": "Yomiuri Shimbun",
         "shop": "newsagent"

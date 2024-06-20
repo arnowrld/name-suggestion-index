@@ -1,16 +1,18 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPinterestSquare } from '@fortawesome/free-brands-svg-icons';
 import { faSnapchatSquare } from '@fortawesome/free-brands-svg-icons';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faVk } from '@fortawesome/free-brands-svg-icons';
+import { faWeibo } from '@fortawesome/free-brands-svg-icons';
+import { faWeixin } from '@fortawesome/free-brands-svg-icons';
 import { faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 
-export default function CategoryRowSocialLinks(props) {
+
+export function CategoryRowSocialLinks(props) {
   let items = [];
   let href;
 
@@ -32,6 +34,12 @@ export default function CategoryRowSocialLinks(props) {
       <a key='instagram' target='_blank' href={href}><FontAwesomeIcon icon={faInstagram} size='lg' /></a>
     );
   }
+  if (props.tiktok) {
+    href = 'https://tiktok.com/@' + props.tiktok;
+    items.push(
+      <a key='tiktok' target='_blank' href={href}><FontAwesomeIcon icon={faTiktok} size='lg' /></a>
+    );
+  }
   if (props.pinterest) {
     href = 'https://www.pinterest.com/' + props.pinterest;
     items.push(
@@ -48,6 +56,18 @@ export default function CategoryRowSocialLinks(props) {
     href = 'https://vk.com/' + props.vk;
     items.push(
       <a key='vk' target='_blank' href={href}><FontAwesomeIcon icon={faVk} size='lg' /></a>
+    );
+  }
+  if (props.weibo) {
+    href = 'https://weibo.com/' + props.weibo;
+    items.push(
+      <a key='weibo' target='_blank' href={href}><FontAwesomeIcon icon={faWeibo} size='lg' /></a>
+    );
+  }
+  if (props.weixin) {
+    href = 'https://open.weixin.qq.com/qr/code?username=' + props.weixin;
+    items.push(
+      <a key='weixin' target='_blank' href={href}><FontAwesomeIcon icon={faWeixin} size='lg' /></a>
     );
   }
   if (props.snapchat) {

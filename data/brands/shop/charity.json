@@ -11,8 +11,20 @@
       "tags": {
         "brand": "Age UK",
         "brand:wikidata": "Q4691850",
-        "brand:wikipedia": "en:Age UK",
         "name": "Age UK",
+        "shop": "charity"
+      }
+    },
+    {
+      "displayName": "AMVETS Thrift Store",
+      "id": "amvetsthriftstore-fca2e3",
+      "locationSet": {"include": ["us"]},
+      "matchNames": ["american veterans"],
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "AMVETS",
+        "brand:wikidata": "Q2819279",
+        "name": "AMVETS Thrift Store",
         "shop": "charity"
       }
     },
@@ -34,7 +46,6 @@
       "tags": {
         "brand": "Barnardo's",
         "brand:wikidata": "Q2884670",
-        "brand:wikipedia": "en:Barnardo's",
         "name": "Barnardo's",
         "shop": "charity"
       }
@@ -46,7 +57,6 @@
       "tags": {
         "brand": "Blue Cross",
         "brand:wikidata": "Q3520039",
-        "brand:wikipedia": "en:Blue Cross (animal charity)",
         "name": "Blue Cross",
         "shop": "charity"
       }
@@ -69,7 +79,6 @@
       "tags": {
         "brand": "British Heart Foundation",
         "brand:wikidata": "Q4970039",
-        "brand:wikipedia": "en:British Heart Foundation",
         "name": "British Heart Foundation",
         "shop": "charity"
       }
@@ -80,10 +89,10 @@
       "locationSet": {
         "include": ["gb", "gg", "im"]
       },
+      "matchNames": ["british red cross shop"],
       "tags": {
         "brand": "British Red Cross",
         "brand:wikidata": "Q4970966",
-        "brand:wikipedia": "en:British Red Cross",
         "name": "British Red Cross",
         "shop": "charity"
       }
@@ -95,7 +104,6 @@
       "tags": {
         "brand": "Cancer Research UK",
         "brand:wikidata": "Q326079",
-        "brand:wikipedia": "en:Cancer Research UK",
         "name": "Cancer Research UK",
         "shop": "charity"
       }
@@ -107,7 +115,6 @@
       "tags": {
         "brand": "Cats Protection",
         "brand:wikidata": "Q5053998",
-        "brand:wikipedia": "en:Cats Protection",
         "name": "Cats Protection",
         "shop": "charity"
       }
@@ -121,8 +128,33 @@
       "tags": {
         "brand": "Children's Hospice South West",
         "brand:wikidata": "Q5098112",
-        "brand:wikipedia": "en:Children's Hospice South West",
         "name": "Children's Hospice South West",
+        "shop": "charity"
+      }
+    },
+    {
+      "displayName": "Crisis",
+      "id": "crisis-23e499",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "tags": {
+        "brand": "Crisis",
+        "brand:wikidata": "Q5185945",
+        "name": "Crisis",
+        "shop": "charity"
+      }
+    },
+    {
+      "displayName": "Dansk Røde Kors Genbrug",
+      "id": "danskrodekorsgenbrug-40689c",
+      "locationSet": {"include": ["dk"]},
+      "matchNames": ["genbrug", "røde kors"],
+      "tags": {
+        "brand": "Dansk Røde Kors Genbrug",
+        "brand:wikidata": "Q12307527",
+        "name": "Dansk Røde Kors Genbrug",
+        "second_hand": "only",
         "shop": "charity"
       }
     },
@@ -144,27 +176,23 @@
       "tags": {
         "brand": "Mouvement Emmaüs",
         "brand:wikidata": "Q989437",
-        "brand:wikipedia": "fr:Mouvement Emmaüs",
         "name": "Emmaüs",
         "operator": "Mouvement Emmaüs",
         "operator:wikidata": "Q989437",
-        "operator:wikipedia": "fr:Mouvement Emmaüs",
         "shop": "charity"
       }
     },
     {
-      "displayName": "Goodwill",
-      "id": "goodwill-110526",
-      "locationSet": {"include": ["ca", "us"]},
-      "matchTags": [
-        "shop/clothes",
-        "shop/second_hand"
-      ],
+      "displayName": "Frelsens Hær Genbrug",
+      "id": "frelsenshaergenbrug-40689c",
+      "locationSet": {"include": ["dk"]},
+      "matchNames": ["frelleren", "genbrug"],
       "tags": {
-        "brand": "Goodwill",
-        "brand:wikidata": "Q5583655",
-        "brand:wikipedia": "en:Goodwill Industries",
-        "name": "Goodwill",
+        "brand": "Frelsens Hær Genbrug",
+        "brand:wikidata": "Q188307",
+        "name": "Frelsens Hær Genbrug",
+        "ref:DK:cvr": "43417312",
+        "second_hand": "only",
         "shop": "charity"
       }
     },
@@ -177,8 +205,7 @@
       "matchTags": [
         "shop/doityourself",
         "shop/furniture",
-        "shop/hardware",
-        "shop/second_hand"
+        "shop/hardware"
       ],
       "tags": {
         "alt_name": "ReStore",
@@ -208,7 +235,6 @@
       "tags": {
         "brand": "Havens Hospices",
         "brand:wikidata": "Q60775684",
-        "brand:wikipedia": "en:Havens Hospices",
         "name": "Havens Hospices",
         "shop": "charity"
       }
@@ -218,14 +244,9 @@
       "id": "humana-bf05c1",
       "locationSet": {"include": ["001"]},
       "matchNames": ["humana people to people"],
-      "matchTags": [
-        "shop/clothes",
-        "shop/second_hand"
-      ],
       "tags": {
         "brand": "Humana",
         "brand:wikidata": "Q1636581",
-        "brand:wikipedia": "de:Humana People to People",
         "name": "Humana",
         "shop": "charity"
       }
@@ -237,7 +258,6 @@
       "tags": {
         "brand": "Kirkens Korshær Genbrug",
         "brand:wikidata": "Q12321915",
-        "brand:wikipedia": "da:Kirkens Korshær",
         "name": "Kirkens Korshær Genbrug",
         "shop": "charity"
       }
@@ -249,7 +269,6 @@
       "tags": {
         "brand": "Marie Curie",
         "brand:wikidata": "Q16997351",
-        "brand:wikipedia": "en:Marie Curie (charity)",
         "name": "Marie Curie",
         "shop": "charity"
       }
@@ -261,7 +280,6 @@
       "tags": {
         "brand": "Mencap",
         "brand:wikidata": "Q6816514",
-        "brand:wikipedia": "en:Mencap",
         "name": "Mencap",
         "official_name": "Royal Mencap Society",
         "shop": "charity"
@@ -274,7 +292,6 @@
       "tags": {
         "brand": "Mind",
         "brand:wikidata": "Q3314763",
-        "brand:wikipedia": "en:Mind (charity)",
         "name": "Mind",
         "shop": "charity"
       }
@@ -283,14 +300,9 @@
       "displayName": "Myrorna",
       "id": "myrorna-ef3d1a",
       "locationSet": {"include": ["se"]},
-      "matchTags": [
-        "shop/clothes",
-        "shop/second_hand"
-      ],
       "tags": {
         "brand": "Myrorna",
         "brand:wikidata": "Q10592609",
-        "brand:wikipedia": "sv:Myrorna",
         "name": "Myrorna",
         "shop": "charity"
       }
@@ -304,7 +316,6 @@
       "tags": {
         "brand": "Oxfam",
         "brand:wikidata": "Q267941",
-        "brand:wikipedia": "en:Oxfam",
         "name": "Oxfam",
         "shop": "charity"
       }
@@ -316,7 +327,6 @@
       "tags": {
         "brand": "PDSA",
         "brand:wikidata": "Q7165541",
-        "brand:wikipedia": "en:People's Dispensary for Sick Animals",
         "name": "PDSA",
         "shop": "charity"
       }
@@ -331,7 +341,6 @@
       "tags": {
         "brand": "RNLI Shop",
         "brand:wikidata": "Q2166873",
-        "brand:wikipedia": "en:Royal National Lifeboat Institution",
         "name": "RNLI Shop",
         "shop": "charity"
       }
@@ -343,7 +352,6 @@
       "tags": {
         "brand": "RSPCA",
         "brand:wikidata": "Q584819",
-        "brand:wikipedia": "en:Royal Society for the Prevention of Cruelty to Animals",
         "name": "RSPCA",
         "shop": "charity"
       }
@@ -364,11 +372,7 @@
         "the society of saint vincent de paul",
         "the society of st vincent de paul"
       ],
-      "matchTags": [
-        "shop/clothes",
-        "shop/department_store",
-        "shop/second_hand"
-      ],
+      "matchTags": ["shop/department_store"],
       "tags": {
         "brand": "Saint Vincent de Paul Thrift Store",
         "brand:wikidata": "Q66581837",
@@ -384,7 +388,6 @@
       "tags": {
         "brand": "Samaritans",
         "brand:wikidata": "Q7408851",
-        "brand:wikipedia": "en:Samaritans (charity)",
         "name": "Samaritans",
         "shop": "charity"
       }
@@ -396,7 +399,6 @@
       "tags": {
         "brand": "Save the Children",
         "brand:wikidata": "Q215934",
-        "brand:wikipedia": "en:Save the Children",
         "name": "Save the Children",
         "shop": "charity"
       }
@@ -408,8 +410,20 @@
       "tags": {
         "brand": "Scope",
         "brand:wikidata": "Q7434435",
-        "brand:wikipedia": "en:Scope (charity)",
         "name": "Scope",
+        "shop": "charity"
+      }
+    },
+    {
+      "displayName": "SCT (Spitalfields Crypt Trust)",
+      "id": "sct-23e499",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "tags": {
+        "brand": "Spitalfields Crypt Trust",
+        "brand:wikidata": "Q107463316",
+        "name": "SCT",
         "shop": "charity"
       }
     },
@@ -431,7 +445,6 @@
       "tags": {
         "brand": "Sense Scotland",
         "brand:wikidata": "Q7450977",
-        "brand:wikipedia": "en:Sense Scotland",
         "name": "Sense Scotland",
         "shop": "charity"
       }
@@ -443,7 +456,6 @@
       "tags": {
         "brand": "Shaw Trust",
         "brand:wikidata": "Q7491206",
-        "brand:wikipedia": "en:Shaw Trust",
         "name": "Shaw Trust",
         "shop": "charity"
       }
@@ -455,7 +467,6 @@
       "tags": {
         "brand": "Shelter",
         "brand:wikidata": "Q7493943",
-        "brand:wikipedia": "en:Shelter (charity)",
         "name": "Shelter",
         "shop": "charity"
       }
@@ -475,10 +486,10 @@
       "displayName": "Sue Ryder",
       "id": "sueryder-f84d6b",
       "locationSet": {"include": ["gb", "ie"]},
+      "matchNames": ["sue ryder care shop"],
       "tags": {
         "brand": "Sue Ryder",
         "brand:wikidata": "Q7634271",
-        "brand:wikipedia": "en:Sue Ryder (charity)",
         "name": "Sue Ryder",
         "shop": "charity"
       }
@@ -490,7 +501,6 @@
       "tags": {
         "brand": "The Children's Society",
         "brand:wikidata": "Q7722484",
-        "brand:wikipedia": "en:The Children's Society",
         "name": "The Children's Society",
         "shop": "charity"
       }
@@ -501,11 +511,13 @@
       "locationSet": {
         "include": ["au", "ca", "gb", "us"]
       },
-      "matchNames": ["salvation army"],
+      "matchNames": [
+        "salvation army",
+        "the salvation army charity shop"
+      ],
       "tags": {
         "brand": "The Salvation Army",
         "brand:wikidata": "Q188307",
-        "brand:wikipedia": "en:The Salvation Army",
         "name": "The Salvation Army",
         "shop": "charity"
       }
@@ -516,6 +528,7 @@
       "locationSet": {"include": ["au"]},
       "tags": {
         "brand": "Vinnies",
+        "brand:wikidata": "Q117547405",
         "name": "Vinnies",
         "shop": "charity"
       }
@@ -527,7 +540,6 @@
       "tags": {
         "brand": "YMCA",
         "brand:wikidata": "Q157169",
-        "brand:wikipedia": "en:YMCA",
         "name": "YMCA",
         "shop": "charity"
       }

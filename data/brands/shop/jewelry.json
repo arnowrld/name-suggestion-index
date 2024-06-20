@@ -10,6 +10,26 @@
   },
   "items": [
     {
+      "displayName": "585 Gold",
+      "id": "585gold-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "585 Gold",
+        "name": "585 Gold",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "585 Золотой",
+      "id": "79c341-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "585 Золотой",
+        "name": "585 Золотой",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "7 карат",
       "id": "a6c984-007daa",
       "locationSet": {"include": ["by"]},
@@ -37,7 +57,6 @@
       "tags": {
         "brand": "Alex and Ani",
         "brand:wikidata": "Q16198810",
-        "brand:wikipedia": "en:Alex and Ani",
         "name": "Alex and Ani",
         "shop": "jewelry"
       }
@@ -49,8 +68,20 @@
       "tags": {
         "brand": "Altınbaş",
         "brand:wikidata": "Q19610501",
-        "brand:wikipedia": "tr:Altınbaş Holding",
         "name": "Altınbaş",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "American Swiss",
+      "id": "americanswiss-45575e",
+      "locationSet": {
+        "include": ["bw", "ls", "na", "za", "zm"]
+      },
+      "tags": {
+        "brand": "American Swiss",
+        "brand:wikidata": "Q116430764",
+        "name": "American Swiss",
         "shop": "jewelry"
       }
     },
@@ -61,7 +92,6 @@
       "tags": {
         "brand": "Angus and Coote",
         "brand:wikidata": "Q18162112",
-        "brand:wikipedia": "en:Angus & Coote",
         "name": "Angus and Coote",
         "shop": "jewelry"
       }
@@ -73,8 +103,18 @@
       "tags": {
         "brand": "Apart",
         "brand:wikidata": "Q11686561",
-        "brand:wikipedia": "pl:Apart",
         "name": "Apart",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Aristocrazy",
+      "id": "aristocrazy-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Aristocrazy",
+        "brand:wikidata": "Q117802848",
+        "name": "Aristocrazy",
         "shop": "jewelry"
       }
     },
@@ -85,7 +125,6 @@
       "tags": {
         "brand": "Arthus Bertrand",
         "brand:wikidata": "Q3278594",
-        "brand:wikipedia": "fr:Arthus-Bertrand (entreprise)",
         "name": "Arthus Bertrand",
         "shop": "jewelry"
       }
@@ -103,8 +142,9 @@
     },
     {
       "displayName": "Banter by Piercing Pagoda",
-      "id": "banterbypiercingpagoda-70f101",
-      "locationSet": {"include": ["us"]},
+      "id": "banterbypiercingpagoda-30e94f",
+      "locationSet": {"include": ["ca", "us"]},
+      "matchNames": ["banter", "piercing pagoda"],
       "tags": {
         "brand": "Banter by Piercing Pagoda",
         "brand:wikidata": "Q108410448",
@@ -119,7 +159,6 @@
       "tags": {
         "brand": "Beaverbrooks",
         "brand:wikidata": "Q4878226",
-        "brand:wikipedia": "en:Beaverbrooks",
         "name": "Beaverbrooks",
         "shop": "jewelry"
       }
@@ -131,8 +170,18 @@
       "tags": {
         "brand": "Ben Bridge",
         "brand:wikidata": "Q20708050",
-        "brand:wikipedia": "en:Ben Bridge Jeweler",
         "name": "Ben Bridge",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Bevilles Jewellers",
+      "id": "bevillesjewellers-0359a8",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "brand": "Bevilles Jewellers",
+        "brand:wikidata": "Q117837188",
+        "name": "Bevilles Jewellers",
         "shop": "jewelry"
       }
     },
@@ -143,7 +192,6 @@
       "tags": {
         "brand": "Bijou Brigitte",
         "brand:wikidata": "Q599545",
-        "brand:wikipedia": "de:Bijou Brigitte",
         "name": "Bijou Brigitte",
         "shop": "jewelry"
       }
@@ -155,7 +203,6 @@
       "tags": {
         "brand": "Blue Nile",
         "brand:wikidata": "Q4929570",
-        "brand:wikipedia": "en:Blue Nile (company)",
         "name": "Blue Nile",
         "shop": "jewelry"
       }
@@ -168,7 +215,6 @@
       "tags": {
         "brand": "Buccellati",
         "brand:wikidata": "Q15994135",
-        "brand:wikipedia": "en:Buccellati",
         "name": "Buccellati",
         "shop": "jewelry"
       }
@@ -180,7 +226,6 @@
       "tags": {
         "brand": "Cartier",
         "brand:wikidata": "Q538587",
-        "brand:wikipedia": "en:Cartier (jeweler)",
         "name": "Cartier",
         "shop": "jewelry"
       }
@@ -196,8 +241,18 @@
       "tags": {
         "brand": "Charm Diamond Centres",
         "brand:wikidata": "Q5086396",
-        "brand:wikipedia": "en:Charm Diamond Centres",
         "name": "Charm Diamond Centres",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Chaumet",
+      "id": "chaumet-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Chaumet",
+        "brand:wikidata": "Q2961620",
+        "name": "Chaumet",
         "shop": "jewelry"
       }
     },
@@ -234,8 +289,18 @@
       "tags": {
         "brand": "Christ",
         "brand:wikidata": "Q1077957",
-        "brand:wikipedia": "de:Christ (Juwelier)",
         "name": "Christ",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Colours & Beauty",
+      "id": "coloursandbeauty-60a080",
+      "locationSet": {"include": ["it"]},
+      "tags": {
+        "brand": "Colours & Beauty",
+        "brand:wikidata": "Q113291420",
+        "name": "Colours & Beauty",
         "shop": "jewelry"
       }
     },
@@ -250,13 +315,23 @@
       }
     },
     {
+      "displayName": "Daniel's",
+      "id": "daniels-70f101",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Daniel's Jewelers",
+        "brand:wikidata": "Q120763875",
+        "name": "Daniel's",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "David Yurman",
       "id": "davidyurman-70f101",
       "locationSet": {"include": ["us"]},
       "tags": {
         "brand": "David Yurman",
         "brand:wikidata": "Q5241390",
-        "brand:wikipedia": "en:David Yurman",
         "name": "David Yurman",
         "shop": "jewelry"
       }
@@ -274,13 +349,40 @@
       }
     },
     {
+      "displayName": "Don Roberto Jewelers",
+      "id": "donrobertojewelers-080e86",
+      "locationSet": {
+        "include": ["us-ca.geojson"]
+      },
+      "tags": {
+        "brand": "Don Roberto Jewelers",
+        "brand:wikidata": "Q109371600",
+        "name": "Don Roberto Jewelers",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "DR钻戒",
+      "id": "darryring-cb063c",
+      "locationSet": {"include": ["cn"]},
+      "tags": {
+        "brand": "DR钻戒",
+        "brand:en": "Darry Ring",
+        "brand:wikidata": "Q48919886",
+        "brand:zh": "DR钻戒",
+        "name": "DR钻戒",
+        "name:en": "Darry Ring",
+        "name:zh": "DR钻戒",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "Ernest Jones",
       "id": "ernestjones-f07ca3",
       "locationSet": {"include": ["gb"]},
       "tags": {
         "brand": "Ernest Jones",
         "brand:wikidata": "Q5393358",
-        "brand:wikipedia": "en:Ernest Jones (retailer)",
         "name": "Ernest Jones",
         "shop": "jewelry"
       }
@@ -292,7 +394,6 @@
       "tags": {
         "brand": "F.Hinds",
         "brand:wikidata": "Q5423915",
-        "brand:wikipedia": "en:F. Hinds",
         "name": "F.Hinds",
         "shop": "jewelry"
       }
@@ -310,14 +411,14 @@
       }
     },
     {
-      "displayName": "Fred Meyer",
-      "id": "fredmeyer-70f101",
+      "displayName": "Fred Meyer Jewelers",
+      "id": "fredmeyerjewelers-70f101",
       "locationSet": {"include": ["us"]},
+      "matchNames": ["fred meyer"],
       "tags": {
-        "brand": "Fred Meyer",
-        "brand:wikidata": "Q5495932",
-        "brand:wikipedia": "en:Fred Meyer",
-        "name": "Fred Meyer",
+        "brand": "Fred Meyer Jewelers",
+        "brand:wikidata": "Q5495935",
+        "name": "Fred Meyer Jewelers",
         "shop": "jewelry"
       }
     },
@@ -328,8 +429,18 @@
       "tags": {
         "brand": "Goldsmiths",
         "brand:wikidata": "Q16993095",
-        "brand:wikipedia": "en:Goldsmiths (retailer)",
         "name": "Goldsmiths",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Gorjana",
+      "id": "gorjana-70f101",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Gorjana",
+        "brand:wikidata": "Q115200885",
+        "name": "Gorjana",
         "shop": "jewelry"
       }
     },
@@ -340,8 +451,30 @@
       "tags": {
         "brand": "Guldfynd",
         "brand:wikidata": "Q49099223",
-        "brand:wikipedia": "sv:Guldfynd",
         "name": "Guldfynd",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "H. Stern",
+      "id": "hstern-5f2e62",
+      "locationSet": {
+        "include": [
+          "ar",
+          "br",
+          "fr",
+          "gb",
+          "il",
+          "mx",
+          "pe",
+          "ru",
+          "us"
+        ]
+      },
+      "tags": {
+        "brand": "H. Stern",
+        "brand:wikidata": "Q2660388",
+        "name": "H. Stern",
         "shop": "jewelry"
       }
     },
@@ -352,7 +485,6 @@
       "tags": {
         "brand": "H.Samuel",
         "brand:wikidata": "Q5628558",
-        "brand:wikipedia": "en:H. Samuel",
         "name": "H.Samuel",
         "shop": "jewelry"
       }
@@ -375,7 +507,6 @@
       "tags": {
         "brand": "Helzberg Diamonds",
         "brand:wikidata": "Q16995161",
-        "brand:wikipedia": "en:Helzberg Diamonds",
         "name": "Helzberg Diamonds",
         "shop": "jewelry"
       }
@@ -411,7 +542,6 @@
       "tags": {
         "brand": "James Avery Jewelry",
         "brand:wikidata": "Q6129024",
-        "brand:wikipedia": "en:James Avery Artisan Jewelry",
         "name": "James Avery Jewelry",
         "shop": "jewelry"
       }
@@ -424,6 +554,7 @@
         "brand": "Jared",
         "brand:wikidata": "Q62029282",
         "name": "Jared",
+        "official_name": "Jared The Galleria of Jewelry",
         "shop": "jewelry"
       }
     },
@@ -434,7 +565,6 @@
       "tags": {
         "brand": "Jos Alukkas",
         "brand:wikidata": "Q6279093",
-        "brand:wikipedia": "en:Jos Alukka & Sons",
         "name": "Jos Alukkas",
         "shop": "jewelry"
       }
@@ -471,7 +601,6 @@
       "tags": {
         "brand": "Joyalukkas",
         "brand:wikidata": "Q6297357",
-        "brand:wikipedia": "en:Joyalukkas",
         "name": "Joyalukkas",
         "shop": "jewelry"
       }
@@ -494,7 +623,6 @@
       "tags": {
         "brand": "Juwelier Kraemer",
         "brand:wikidata": "Q1785938",
-        "brand:wikipedia": "de:Kraemer-Gruppe",
         "name": "Juwelier Kraemer",
         "shop": "jewelry"
       }
@@ -506,7 +634,6 @@
       "tags": {
         "brand": "Kalyan Jewellers",
         "brand:wikidata": "Q6354854",
-        "brand:wikipedia": "en:Kalyan Jewellers",
         "name": "Kalyan Jewellers",
         "shop": "jewelry"
       }
@@ -523,13 +650,23 @@
       }
     },
     {
+      "displayName": "Life Vivara",
+      "id": "lifevivara-c81860",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "brand": "Life Vivara",
+        "brand:wikidata": "Q72611919",
+        "name": "Life Vivara",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "Lovisa",
       "id": "lovisa-a038d2",
       "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Lovisa",
         "brand:wikidata": "Q106298409",
-        "brand:wikipedia": "en:Lovisa Jewellery",
         "name": "Lovisa",
         "shop": "jewelry"
       }
@@ -541,7 +678,6 @@
       "tags": {
         "brand": "Lucardi",
         "brand:wikidata": "Q13774940",
-        "brand:wikipedia": "nl:Lucardi",
         "name": "Lucardi",
         "shop": "jewelry"
       }
@@ -566,8 +702,18 @@
       "tags": {
         "brand": "Malabar Gold and Diamonds",
         "brand:wikidata": "Q60748883",
-        "brand:wikipedia": "en:Malabar Gold and Diamonds",
         "name": "Malabar Gold and Diamonds",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Manège à Bijoux",
+      "id": "manegeabijoux-05afc6",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "brand": "Manège à Bijoux",
+        "brand:wikidata": "Q1273376",
+        "name": "Manège à Bijoux",
         "shop": "jewelry"
       }
     },
@@ -589,7 +735,6 @@
       "tags": {
         "brand": "Mauboussin",
         "brand:wikidata": "Q3300085",
-        "brand:wikipedia": "fr:Mauboussin",
         "name": "Mauboussin",
         "shop": "jewelry"
       }
@@ -614,7 +759,6 @@
       "tags": {
         "brand": "Michael Hill",
         "brand:wikidata": "Q3308250",
-        "brand:wikipedia": "en:Michael Hill Jeweller",
         "name": "Michael Hill",
         "shop": "jewelry"
       }
@@ -670,7 +814,6 @@
       "tags": {
         "brand": "Pandora",
         "brand:wikidata": "Q2241604",
-        "brand:wikipedia": "en:Pandora (jewelry)",
         "name": "Pandora",
         "shop": "jewelry"
       }
@@ -682,7 +825,6 @@
       "tags": {
         "brand": "PC Jeweller",
         "brand:wikidata": "Q17082520",
-        "brand:wikipedia": "en:PC Jeweller",
         "name": "PC Jeweller",
         "shop": "jewelry"
       }
@@ -706,18 +848,7 @@
       "tags": {
         "brand": "Piaget",
         "brand:wikidata": "Q658961",
-        "brand:wikipedia": "en:Piaget SA",
         "name": "Piaget",
-        "shop": "jewelry"
-      }
-    },
-    {
-      "displayName": "Piercing Pagoda",
-      "id": "piercingpagoda-70f101",
-      "locationSet": {"include": ["us"]},
-      "tags": {
-        "brand": "Piercing Pagoda",
-        "name": "Piercing Pagoda",
         "shop": "jewelry"
       }
     },
@@ -739,8 +870,40 @@
       "tags": {
         "brand": "PNJ",
         "brand:wikidata": "Q61129183",
-        "brand:wikipedia": "vi:PNJ",
         "name": "PNJ",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Shane Co.",
+      "id": "shaneco-70f101",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Shane Co.",
+        "brand:wikidata": "Q7488019",
+        "name": "Shane Co.",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "SOFIA",
+      "id": "sofia-584c2c",
+      "locationSet": {"include": ["sk"]},
+      "tags": {
+        "brand": "SOFIA",
+        "brand:wikidata": "Q116885611",
+        "name": "SOFIA",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Sterns",
+      "id": "sterns-d5d8d2",
+      "locationSet": {"include": ["za"]},
+      "tags": {
+        "brand": "Sterns",
+        "brand:wikidata": "Q116430300",
+        "name": "Sterns",
         "shop": "jewelry"
       }
     },
@@ -750,7 +913,18 @@
       "locationSet": {"include": ["it"]},
       "tags": {
         "brand": "Stroili Oro",
+        "brand:wikidata": "Q106611306",
         "name": "Stroili Oro",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Sunlight",
+      "id": "sunlight-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Sunlight",
+        "name": "Sunlight",
         "shop": "jewelry"
       }
     },
@@ -761,7 +935,6 @@
       "tags": {
         "brand": "Swarovski",
         "brand:wikidata": "Q611115",
-        "brand:wikipedia": "en:Swarovski",
         "name": "Swarovski",
         "shop": "jewelry"
       }
@@ -772,9 +945,10 @@
       "locationSet": {"include": ["in"]},
       "tags": {
         "brand": "Tanishq",
+        "brand:en": "Tanishq",
         "brand:wikidata": "Q13117711",
-        "brand:wikipedia": "en:Tanishq",
         "name": "Tanishq",
+        "name:en": "Tanishq",
         "shop": "jewelry"
       }
     },
@@ -785,7 +959,6 @@
       "tags": {
         "brand": "Thomas Sabo",
         "brand:wikidata": "Q13415716",
-        "brand:wikipedia": "en:Thomas Sabo",
         "name": "Thomas Sabo",
         "shop": "jewelry"
       }
@@ -798,7 +971,6 @@
       "tags": {
         "brand": "Tiffany & Company",
         "brand:wikidata": "Q1066858",
-        "brand:wikipedia": "en:Tiffany & Co.",
         "name": "Tiffany & Company",
         "official_name": "Tiffany & Co.",
         "shop": "jewelry"
@@ -811,8 +983,39 @@
       "tags": {
         "brand": "Tous",
         "brand:wikidata": "Q3815128",
-        "brand:wikipedia": "en:Tous (company)",
         "name": "Tous",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Valmano",
+      "id": "valmano-634c4f",
+      "locationSet": {
+        "include": [
+          "at",
+          "be",
+          "dk",
+          "fr",
+          "it",
+          "nl",
+          "se"
+        ]
+      },
+      "tags": {
+        "brand": "Valmano",
+        "brand:wikidata": "Q116151710",
+        "name": "Valmano",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "Vivara",
+      "id": "vivara-c81860",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "brand": "Vivara",
+        "brand:wikidata": "Q72611919",
+        "name": "Vivara",
         "shop": "jewelry"
       }
     },
@@ -823,7 +1026,6 @@
       "tags": {
         "brand": "Warren James",
         "brand:wikidata": "Q19604616",
-        "brand:wikipedia": "en:Warren James Jewellers",
         "name": "Warren James",
         "shop": "jewelry"
       }
@@ -844,7 +1046,6 @@
       "tags": {
         "brand": "Wempe",
         "brand:wikidata": "Q1483424",
-        "brand:wikipedia": "de:Gerhard D. Wempe",
         "name": "Wempe",
         "shop": "jewelry"
       }
@@ -856,8 +1057,8 @@
       "tags": {
         "brand": "Zales",
         "brand:wikidata": "Q8065305",
-        "brand:wikipedia": "en:Zale Corporation",
         "name": "Zales",
+        "official_name": "Zales The Diamond Store",
         "shop": "jewelry"
       }
     },
@@ -911,12 +1112,13 @@
       }
     },
     {
-      "displayName": "Золотий вік",
+      "displayName": "Золотий Вік",
       "id": "cc67fd-a7f1e4",
       "locationSet": {"include": ["ua"]},
       "tags": {
-        "brand": "Золотий вік",
-        "name": "Золотий вік",
+        "brand": "Золотий Вік",
+        "brand:wikidata": "Q113335928",
+        "name": "Золотий Вік",
         "shop": "jewelry"
       }
     },
@@ -941,6 +1143,16 @@
       }
     },
     {
+      "displayName": "Царское Золото",
+      "id": "39bbc8-a038d2",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Царское Золото",
+        "name": "Царское Золото",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "ツツミ",
       "id": "tsutsumi-36e4b3",
       "locationSet": {"include": ["jp"]},
@@ -949,7 +1161,6 @@
         "brand:en": "Tsutsumi",
         "brand:ja": "ツツミ",
         "brand:wikidata": "Q11318759",
-        "brand:wikipedia": "ja:ツツミ",
         "name": "ツツミ",
         "name:en": "Tsutsumi",
         "name:ja": "ツツミ",
@@ -961,7 +1172,7 @@
     },
     {
       "displayName": "六福珠宝",
-      "id": "lukfookjewellery-b792ed",
+      "id": "lukfookjewellery-7fe408",
       "locationSet": {
         "include": [
           "au",
@@ -971,23 +1182,43 @@
           "my",
           "sg",
           "us"
-        ]
+        ],
+        "exclude": ["hk", "mo"]
       },
       "tags": {
         "brand": "六福珠宝",
-        "brand:en": "LukFook Jewellery",
+        "brand:en": "Lukfook Jewellery",
         "brand:wikidata": "Q10893397",
-        "brand:wikipedia": "en:Lukfook",
         "brand:zh": "六福珠宝",
         "name": "六福珠宝",
-        "name:en": "LukFook Jewellery",
+        "name:en": "Lukfook Jewellery",
         "name:zh": "六福珠宝",
         "shop": "jewelry"
       }
     },
     {
+      "displayName": "六福珠寶 Lukfook Jewellery",
+      "id": "lukfookjewellery-2f2ea0",
+      "locationSet": {"include": ["hk", "mo"]},
+      "matchNames": ["六福"],
+      "tags": {
+        "brand": "六福珠寶 Lukfook Jewellery",
+        "brand:en": "Lukfook Jewellery",
+        "brand:wikidata": "Q10893397",
+        "brand:zh": "六福珠寶",
+        "brand:zh-Hans": "六福珠宝",
+        "brand:zh-Hant": "六福珠寶",
+        "name": "六福珠寶 Lukfook Jewellery",
+        "name:en": "Lukfook Jewellery",
+        "name:zh": "六福珠寶",
+        "name:zh-Hans": "六福珠宝",
+        "name:zh-Hant": "六福珠寶",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "周大福",
-      "id": "chowtaifook-9d8a9e",
+      "id": "chowtaifook-4629af",
       "locationSet": {
         "include": [
           "cn",
@@ -997,13 +1228,13 @@
           "sg",
           "tw",
           "us"
-        ]
+        ],
+        "exclude": ["hk", "mo"]
       },
       "tags": {
         "brand": "周大福",
         "brand:en": "Chow Tai Fook",
         "brand:wikidata": "Q48880993",
-        "brand:wikipedia": "en:Chow Tai Fook Jewellery Group",
         "brand:zh": "周大福",
         "name": "周大福",
         "name:en": "Chow Tai Fook",
@@ -1012,14 +1243,35 @@
       }
     },
     {
+      "displayName": "周大福 Chow Tai Fook",
+      "id": "chowtaifook-2f2ea0",
+      "locationSet": {"include": ["hk", "mo"]},
+      "tags": {
+        "brand": "周大福 Chow Tai Fook",
+        "brand:en": "Chow Tai Fook",
+        "brand:wikidata": "Q48880993",
+        "brand:zh": "周大福",
+        "brand:zh-Hans": "周大福",
+        "brand:zh-Hant": "周大福",
+        "name": "周大福 Chow Tai Fook",
+        "name:en": "Chow Tai Fook",
+        "name:zh": "周大福",
+        "name:zh-Hans": "周大福",
+        "name:zh-Hant": "周大福",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "周生生",
-      "id": "chowsangsang-d54b30",
-      "locationSet": {"include": ["cn", "tw"]},
+      "id": "chowsangsang-7fd42c",
+      "locationSet": {
+        "include": ["cn", "tw"],
+        "exclude": ["hk", "mo"]
+      },
       "tags": {
         "brand": "周生生",
         "brand:en": "Chow Sang Sang",
         "brand:wikidata": "Q10920877",
-        "brand:wikipedia": "en:Chow Sang Sang",
         "brand:zh": "周生生",
         "name": "周生生",
         "name:en": "Chow Sang Sang",
@@ -1028,20 +1280,120 @@
       }
     },
     {
+      "displayName": "周生生 Chow Sang Sang",
+      "id": "chowsangsang-2f2ea0",
+      "locationSet": {"include": ["hk", "mo"]},
+      "tags": {
+        "brand": "周生生 Chow Sang Sang",
+        "brand:en": "Chow Sang Sang",
+        "brand:wikidata": "Q10920877",
+        "brand:zh": "周生生",
+        "brand:zh-Hans": "周生生",
+        "brand:zh-Hant": "周生生",
+        "name": "周生生 Chow Sang Sang",
+        "name:en": "Chow Sang Sang",
+        "name:zh": "周生生",
+        "name:zh-Hans": "周生生",
+        "name:zh-Hant": "周生生",
+        "shop": "jewelry"
+      }
+    },
+    {
       "displayName": "老凤祥",
-      "id": "laofengxiang-c03559",
+      "id": "laofengxiang-45876e",
       "locationSet": {
-        "include": ["au", "ca", "cn", "us"]
+        "include": ["au", "ca", "cn", "us"],
+        "exclude": ["hk", "mo"]
       },
       "tags": {
         "brand": "老凤祥",
         "brand:en": "Lao Feng Xiang",
         "brand:wikidata": "Q15910313",
-        "brand:wikipedia": "en:Lao Feng Xiang",
         "brand:zh": "老凤祥",
         "name": "老凤祥",
         "name:en": "Lao Feng Xiang",
         "name:zh": "老凤祥",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "老鳳祥銀樓 Lao Feng Xiang Jewellery",
+      "id": "laofengxiang-2f2ea0",
+      "locationSet": {"include": ["hk", "mo"]},
+      "matchNames": ["老鳳祥"],
+      "tags": {
+        "brand": "老鳳祥銀樓 Lao Feng Xiang Jewellery",
+        "brand:en": "Lao Feng Xiang Jewellery",
+        "brand:wikidata": "Q15910313",
+        "brand:zh": "老鳳祥銀樓",
+        "brand:zh-Hans": "老凤祥银楼",
+        "brand:zh-Hant": "老鳳祥銀樓",
+        "name": "老鳳祥銀樓 Lao Feng Xiang Jewellery",
+        "name:en": "Lao Feng Xiang",
+        "name:zh": "老鳳祥銀樓",
+        "name:zh-Hans": "老凤祥银楼",
+        "name:zh-Hant": "老鳳祥銀樓",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "謝瑞麟珠寶 TSL Jewellery",
+      "id": "tsl-2f2ea0",
+      "locationSet": {"include": ["hk", "mo"]},
+      "matchNames": ["謝瑞麟"],
+      "tags": {
+        "brand": "謝瑞麟珠寶 TSL Jewellery",
+        "brand:en": "TSL",
+        "brand:wikidata": "Q13164530",
+        "brand:zh": "謝瑞麟珠寶",
+        "brand:zh-Hans": "谢瑞麟珠宝",
+        "brand:zh-Hant": "謝瑞麟珠寶",
+        "name": "謝瑞麟 TSL",
+        "name:en": "TSL",
+        "name:zh-Hans": "谢瑞麟",
+        "name:zh-Hant": "謝瑞麟",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "谢瑞麟珠宝",
+      "id": "tsl-7fb071",
+      "locationSet": {
+        "include": ["cn", "my"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["謝瑞麟"],
+      "tags": {
+        "brand": "谢瑞麟珠宝",
+        "brand:en": "TSL",
+        "brand:wikidata": "Q13164530",
+        "brand:zh": "谢瑞麟珠宝",
+        "brand:zh-Hans": "谢瑞麟珠宝",
+        "brand:zh-Hant": "謝瑞麟珠寶",
+        "name": "谢瑞麟",
+        "name:en": "TSL",
+        "name:zh-Hans": "谢瑞麟",
+        "name:zh-Hant": "謝瑞麟",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "displayName": "金至尊珠寶 3DG Jewellery",
+      "id": "3dgjewellery-f29a00",
+      "locationSet": {"include": ["hk"]},
+      "matchNames": ["金至尊"],
+      "tags": {
+        "brand": "金至尊珠寶 3DG Jewellery",
+        "brand:en": "3DG Jewellery",
+        "brand:wikidata": "Q15921454",
+        "brand:zh": "金至尊珠寶",
+        "brand:zh-Hans": "金至尊珠宝",
+        "brand:zh-Hant": "金至尊珠寶",
+        "name": "金至尊珠寶 3DG Jewellery",
+        "name:en": "3DG Jewellery",
+        "name:zh": "金至尊珠寶",
+        "name:zh-Hans": "金至尊珠宝",
+        "name:zh-Hant": "金至尊珠寶",
         "shop": "jewelry"
       }
     }

@@ -9,6 +9,17 @@
   },
   "items": [
     {
+      "displayName": "E-REDES",
+      "id": "eredes-3edaec",
+      "locationSet": {"include": ["pt"]},
+      "tags": {
+        "name": "E-REDES",
+        "office": "energy_supplier",
+        "operator": "E-REDES",
+        "operator:wikidata": "Q111843687"
+      }
+    },
+    {
       "displayName": "Elpedison",
       "id": "elpedison-d62fd2",
       "locationSet": {"include": ["gr"]},
@@ -27,8 +38,7 @@
         "name": "Endesa",
         "office": "energy_supplier",
         "operator": "Endesa",
-        "operator:wikidata": "Q1275336",
-        "operator:wikipedia": "es:Endesa"
+        "operator:wikidata": "Q1275336"
       }
     },
     {
@@ -39,8 +49,19 @@
         "name": "Enel",
         "office": "energy_supplier",
         "operator": "Enel",
-        "operator:wikidata": "Q651222",
-        "operator:wikipedia": "en:Enel"
+        "operator:wikidata": "Q651222"
+      }
+    },
+    {
+      "displayName": "EVN България",
+      "id": "02fa7d-8661b0",
+      "locationSet": {"include": ["bg"]},
+      "matchNames": ["evn"],
+      "tags": {
+        "name": "EVN България",
+        "office": "energy_supplier",
+        "operator": "EVN България",
+        "operator:wikidata": "Q20498243"
       }
     },
     {
@@ -51,8 +72,21 @@
         "name": "Iberdrola",
         "office": "energy_supplier",
         "operator": "Iberdrola",
-        "operator:wikidata": "Q1437502",
-        "operator:wikipedia": "es:Iberdrola"
+        "operator:wikidata": "Q1437502"
+      }
+    },
+    {
+      "displayName": "Jacksonville Electric Authority",
+      "id": "jacksonvilleelectricauthority-5c8e71",
+      "locationSet": {
+        "include": [[-81.66, 30.34, 40]]
+      },
+      "tags": {
+        "name": "Jacksonville Electric Authority",
+        "office": "energy_supplier",
+        "operator": "Jacksonville Electric Authority",
+        "operator:short": "JEA",
+        "operator:wikidata": "Q17068270"
       }
     },
     {
@@ -64,7 +98,6 @@
         "office": "energy_supplier",
         "operator": "Kerala State Electricity Board",
         "operator:wikidata": "Q6393422",
-        "operator:wikipedia": "en:Kerala State Electricity Board",
         "short_name": "KSEB"
       }
     },
@@ -109,8 +142,7 @@
         "name": "Naturgy",
         "office": "energy_supplier",
         "operator": "Naturgy",
-        "operator:wikidata": "Q474690",
-        "operator:wikipedia": "es:Naturgy"
+        "operator:wikidata": "Q474690"
       }
     },
     {
@@ -121,20 +153,19 @@
         "name": "Public Power Corporation SA",
         "office": "energy_supplier",
         "operator": "Public Power Corporation SA",
-        "operator:wikidata": "Q326345",
-        "operator:wikipedia": "el:Δημόσια Επιχείρηση Ηλεκτρισμού"
+        "operator:wikidata": "Q326345"
       }
     },
     {
-      "displayName": "Punto Enel",
-      "id": "puntoenel-7c1c4a",
+      "displayName": "Spazio Enel",
+      "id": "enel-7c1c4a",
       "locationSet": {"include": ["it"]},
+      "matchNames": ["punto enel"],
       "tags": {
-        "name": "Punto Enel",
+        "name": "Spazio Enel",
         "office": "energy_supplier",
-        "operator": "Punto Enel",
-        "operator:wikidata": "Q651222",
-        "operator:wikipedia": "en:Enel"
+        "operator": "Enel",
+        "operator:wikidata": "Q651222"
       }
     },
     {
@@ -145,17 +176,41 @@
         "name": "Watt+Volt",
         "office": "energy_supplier",
         "operator": "Watt+Volt",
-        "operator:wikidata": "Q25047624",
-        "operator:wikipedia": "en:Watt+Volt"
+        "operator:wikidata": "Q25047624"
       }
     },
     {
       "displayName": "АО «Петроэлектросбыт»",
-      "id": "d96aa3-39d306",
-      "locationSet": {"include": ["001"]},
+      "id": "d96aa3-100467",
+      "locationSet": {"include": ["ru"]},
       "tags": {
         "office": "energy_supplier",
         "operator": "АО «Петроэлектросбыт»"
+      }
+    },
+    {
+      "displayName": "Електрохолд",
+      "id": "0d7f82-8661b0",
+      "locationSet": {"include": ["bg"]},
+      "matchNames": ["чез"],
+      "tags": {
+        "alt_name": "ЕРМ Запад",
+        "name": "Електрохолд",
+        "office": "energy_supplier",
+        "official_name": "Електрохолд Продажби",
+        "operator": "Електрохолд",
+        "operator:wikidata": "Q61140077"
+      }
+    },
+    {
+      "displayName": "Енерго-Про",
+      "id": "2dfabb-8661b0",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "name": "Енерго-Про",
+        "office": "energy_supplier",
+        "operator": "Енерго-Про",
+        "operator:wikidata": "Q115592513"
       }
     },
     {
@@ -171,7 +226,6 @@
         "operator": "台灣電力公司",
         "operator:en": "Taipower",
         "operator:wikidata": "Q711691",
-        "operator:wikipedia": "en:Taiwan Power Company",
         "operator:zh": "台灣電力公司",
         "operator:zh-Hant": "台灣電力公司"
       }
@@ -189,8 +243,7 @@
         "operator": "東京電力",
         "operator:en": "TEPCO",
         "operator:ja": "東京電力",
-        "operator:wikidata": "Q333894",
-        "operator:wikipedia": "ja:東京電力ホールディングス"
+        "operator:wikidata": "Q333894"
       }
     },
     {
@@ -205,8 +258,7 @@
         "operator": "関西電力",
         "operator:en": "KEPCO",
         "operator:ja": "関西電力",
-        "operator:wikidata": "Q1365015",
-        "operator:wikipedia": "ja:関西電力"
+        "operator:wikidata": "Q1365015"
       }
     }
   ]

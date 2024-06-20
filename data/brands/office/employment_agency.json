@@ -7,13 +7,23 @@
   },
   "items": [
     {
+      "displayName": "Accent Jobs",
+      "id": "accentjobs-26db9d",
+      "locationSet": {"include": ["be"]},
+      "tags": {
+        "brand": "Accent Jobs",
+        "brand:wikidata": "Q2939495",
+        "name": "Accent Jobs",
+        "office": "employment_agency"
+      }
+    },
+    {
       "displayName": "Adecco",
       "id": "adecco-0baa05",
       "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Adecco",
         "brand:wikidata": "Q353494",
-        "brand:wikipedia": "en:The Adecco Group",
         "name": "Adecco",
         "office": "employment_agency"
       }
@@ -25,7 +35,6 @@
       "tags": {
         "brand": "Agentur für Arbeit",
         "brand:wikidata": "Q1478016",
-        "brand:wikipedia": "de:Bundesagentur für Arbeit",
         "name": "Agentur für Arbeit",
         "office": "employment_agency"
       }
@@ -41,17 +50,6 @@
       }
     },
     {
-      "displayName": "Cordant People",
-      "id": "cordantpeople-e4b4b7",
-      "locationSet": {"include": ["gb"]},
-      "tags": {
-        "brand": "Cordant People",
-        "brand:wikidata": "Q85311605",
-        "name": "Cordant People",
-        "office": "employment_agency"
-      }
-    },
-    {
       "displayName": "Driver Hire",
       "id": "driverhire-e4b4b7",
       "locationSet": {"include": ["gb"]},
@@ -63,26 +61,52 @@
       }
     },
     {
+      "displayName": "Express Employment Professionals",
+      "id": "expressemploymentprofessionals-867cf6",
+      "locationSet": {
+        "include": ["au", "ca", "nz", "us", "za"]
+      },
+      "matchNames": ["express employment"],
+      "tags": {
+        "brand": "Express Employment Professionals",
+        "brand:wikidata": "Q117351404",
+        "name": "Express Employment Professionals",
+        "office": "employment_agency"
+      }
+    },
+    {
       "displayName": "İŞKUR",
       "id": "iskur-591089",
       "locationSet": {"include": ["tr"]},
       "tags": {
         "brand": "İŞKUR",
         "brand:wikidata": "Q6001879",
-        "brand:wikipedia": "tr:Türkiye İş Kurumu",
         "name": "İŞKUR",
         "office": "employment_agency",
         "official_name": "Türkiye İş Kurumu"
       }
     },
     {
+      "displayName": "Jobcenter",
+      "id": "jobcenter-d474df",
+      "locationSet": {"include": ["de"]},
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Jobcenter",
+        "brand:wikidata": "Q56292847",
+        "name": "Jobcenter",
+        "office": "employment_agency"
+      }
+    },
+    {
       "displayName": "Jobcentre Plus",
       "id": "jobcentreplus-e4b4b7",
       "locationSet": {"include": ["gb"]},
+      "matchNames": ["jobcentre"],
+      "matchTags": ["office/company"],
       "tags": {
         "brand": "Jobcentre Plus",
         "brand:wikidata": "Q6206793",
-        "brand:wikipedia": "en:Jobcentre Plus",
         "name": "Jobcentre Plus",
         "office": "employment_agency"
       }
@@ -94,7 +118,6 @@
       "tags": {
         "brand": "Manpower",
         "brand:wikidata": "Q1472539",
-        "brand:wikipedia": "en:ManpowerGroup",
         "name": "Manpower",
         "office": "employment_agency"
       }
@@ -117,7 +140,6 @@
       "tags": {
         "brand": "Pôle Emploi",
         "brand:wikidata": "Q8901192",
-        "brand:wikipedia": "en:Pôle emploi",
         "name": "Pôle Emploi",
         "office": "employment_agency"
       }
@@ -129,7 +151,6 @@
       "tags": {
         "brand": "Proman",
         "brand:wikidata": "Q24189171",
-        "brand:wikipedia": "fr:PROMAN",
         "name": "Proman",
         "office": "employment_agency"
       }
@@ -141,8 +162,18 @@
       "tags": {
         "brand": "Randstad",
         "brand:wikidata": "Q267840",
-        "brand:wikipedia": "en:Randstad NV",
         "name": "Randstad",
+        "office": "employment_agency"
+      }
+    },
+    {
+      "displayName": "Start People",
+      "id": "startpeople-3ac139",
+      "locationSet": {"include": ["be", "nl"]},
+      "tags": {
+        "brand": "Start People",
+        "brand:wikidata": "Q2646530",
+        "name": "Start People",
         "office": "employment_agency"
       }
     },
@@ -153,8 +184,32 @@
       "tags": {
         "brand": "Synergie",
         "brand:wikidata": "Q3508830",
-        "brand:wikipedia": "fr:Synergie (entreprise)",
         "name": "Synergie",
+        "office": "employment_agency"
+      }
+    },
+    {
+      "displayName": "Tempo-Team",
+      "id": "tempoteam-a6688c",
+      "locationSet": {
+        "include": ["be", "de", "nl"]
+      },
+      "tags": {
+        "brand": "Tempo-Team",
+        "brand:wikidata": "Q1996250",
+        "name": "Tempo-Team",
+        "office": "employment_agency"
+      }
+    },
+    {
+      "displayName": "The Recruitment Co",
+      "id": "therecruitmentco-e4b4b7",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["cordant people"],
+      "tags": {
+        "brand": "The Recruitment Co",
+        "brand:wikidata": "Q85311605",
+        "name": "The Recruitment Co",
         "office": "employment_agency"
       }
     },
@@ -167,7 +222,6 @@
         "brand:en": "Pasona",
         "brand:ja": "パソナ",
         "brand:wikidata": "Q7142290",
-        "brand:wikipedia": "ja:パソナ",
         "name": "パソナ",
         "name:en": "Pasona",
         "name:ja": "パソナ",
@@ -178,18 +232,19 @@
       "displayName": "ハローワーク",
       "id": "hellowork-ea06d3",
       "locationSet": {"include": ["jp"]},
+      "preserveTags": ["^name", "^official_name"],
       "tags": {
         "brand": "ハローワーク",
         "brand:en": "Hello Work",
         "brand:ja": "ハローワーク",
         "brand:wikidata": "Q5016578",
-        "brand:wikipedia": "ja:公共職業安定所",
         "name": "ハローワーク",
         "name:en": "Hello Work",
         "name:ja": "ハローワーク",
         "office": "employment_agency",
         "official_name": "公共職業安定所",
-        "official_name:en": "Public Employment Security Office"
+        "official_name:en": "Public Employment Security Office",
+        "official_name:ja": "公共職業安定所"
       }
     }
   ]

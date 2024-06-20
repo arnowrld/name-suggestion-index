@@ -4,7 +4,13 @@
     "preserveTags": ["^name"],
     "exclude": {
       "generic": [
-        "^(host(a|e)l|hospedaje|общежитие)$"
+        "^(host(a|e)l|hospedaje|общежитие)$",
+        "^ger$",
+        "^nhà ở$"
+      ],
+      "named": [
+        "^albergue de peregrinos$",
+        "^girls hostel$"
       ]
     }
   },
@@ -18,58 +24,28 @@
           "cz",
           "de",
           "dk",
+          "gb",
           "hu",
           "it",
           "nl",
-          "pl",
-          "uk"
+          "pl"
         ]
       },
       "tags": {
         "brand": "A&O",
         "brand:wikidata": "Q15890910",
-        "brand:wikipedia": "de:A&O Hotels and Hostels",
         "name": "A&O",
         "tourism": "hostel"
       }
     },
     {
-      "displayName": "Albergue de Peregrinos",
-      "id": "alberguedeperegrinos-840e3b",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Forenom",
+      "id": "forenomhostel-8d88d8",
+      "locationSet": {"include": ["fi", "se"]},
       "tags": {
-        "brand": "Albergue de Peregrinos",
-        "name": "Albergue de Peregrinos",
-        "tourism": "hostel"
-      }
-    },
-    {
-      "displayName": "Ger",
-      "id": "ger-840e3b",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "brand": "Ger",
-        "name": "Ger",
-        "tourism": "hostel"
-      }
-    },
-    {
-      "displayName": "Girls Hostel",
-      "id": "girlshostel-840e3b",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "brand": "Girls Hostel",
-        "name": "Girls Hostel",
-        "tourism": "hostel"
-      }
-    },
-    {
-      "displayName": "nhà ở",
-      "id": "nhao-840e3b",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "brand": "nhà ở",
-        "name": "nhà ở",
+        "brand": "Forenom",
+        "brand:wikidata": "Q101142662",
+        "name": "Forenom Hostel",
         "tourism": "hostel"
       }
     },
@@ -81,8 +57,35 @@
       "tags": {
         "brand": "STF",
         "brand:wikidata": "Q1492844",
-        "brand:wikipedia": "sv:Svenska Turistföreningen",
         "name": "STF",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "displayName": "YHA",
+      "id": "yha-99878c",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "YHA",
+        "brand:wikidata": "Q118234608",
+        "name": "YHA",
+        "tourism": "hostel"
+      }
+    },
+    {
+      "displayName": "ナインアワーズ",
+      "id": "9hninehours-81b07a",
+      "locationSet": {"include": ["jp"]},
+      "matchNames": ["9hours", "nine hours"],
+      "matchTags": ["tourism/hotel"],
+      "tags": {
+        "brand": "ナインアワーズ",
+        "brand:en": "9h nine hours",
+        "brand:ja": "ナインアワーズ",
+        "brand:wikidata": "Q111079792",
+        "name": "ナインアワーズ",
+        "name:en": "9h nine hours",
+        "name:ja": "ナインアワーズ",
         "tourism": "hostel"
       }
     }

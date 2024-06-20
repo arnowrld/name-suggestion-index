@@ -11,8 +11,18 @@
       "tags": {
         "brand": "Bastide le confort médical",
         "brand:wikidata": "Q2887693",
-        "brand:wikipedia": "fr:Bastide Le Confort Médical",
         "name": "Bastide",
+        "shop": "medical_supply"
+      }
+    },
+    {
+      "displayName": "National Seating & Mobility",
+      "id": "nationalseatingandmobility-e652bb",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "National Seating & Mobility",
+        "brand:wikidata": "Q116770969",
+        "name": "National Seating & Mobility",
         "shop": "medical_supply"
       }
     },

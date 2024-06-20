@@ -27,7 +27,6 @@
       "tags": {
         "brand": "Brighton Collectibles",
         "brand:wikidata": "Q4967623",
-        "brand:wikipedia": "en:Brighton Collectibles",
         "name": "Brighton Collectibles",
         "shop": "fashion_accessories"
       }
@@ -39,8 +38,27 @@
       "tags": {
         "brand": "Bulgari",
         "brand:wikidata": "Q752515",
-        "brand:wikipedia": "en:Bulgari",
         "name": "Bvlgari",
+        "shop": "fashion_accessories"
+      }
+    },
+    {
+      "displayName": "Chilli Beans",
+      "id": "chillibeans-a3a9e0",
+      "locationSet": {
+        "include": [
+          "br",
+          "co",
+          "kw",
+          "pe",
+          "pt",
+          "us"
+        ]
+      },
+      "tags": {
+        "brand": "Chilli Beans",
+        "brand:wikidata": "Q18463851",
+        "name": "Chilli Beans",
         "shop": "fashion_accessories"
       }
     },
@@ -52,7 +70,6 @@
       "tags": {
         "brand": "claire's",
         "brand:wikidata": "Q2974996",
-        "brand:wikipedia": "en:Claire's",
         "name": "claire's",
         "shop": "fashion_accessories"
       }
@@ -65,7 +82,6 @@
       "tags": {
         "brand": "Dooney & Bourke",
         "brand:wikidata": "Q5297166",
-        "brand:wikipedia": "en:Dooney & Bourke",
         "name": "Dooney & Bourke",
         "shop": "fashion_accessories"
       }
@@ -77,7 +93,6 @@
       "tags": {
         "brand": "Longchamp",
         "brand:wikidata": "Q1869471",
-        "brand:wikipedia": "en:Longchamp (company)",
         "name": "Longchamp",
         "shop": "fashion_accessories"
       }
@@ -89,7 +104,6 @@
       "tags": {
         "brand": "MCM",
         "brand:wikidata": "Q835487",
-        "brand:wikipedia": "en:MCM Worldwide",
         "name": "MCM",
         "shop": "fashion_accessories"
       }
@@ -101,7 +115,6 @@
       "tags": {
         "brand": "Montblanc",
         "brand:wikidata": "Q142691",
-        "brand:wikipedia": "en:Montblanc (company)",
         "name": "Montblanc",
         "shop": "fashion_accessories"
       }
@@ -135,33 +148,17 @@
       "tags": {
         "brand": "Mulberry",
         "brand:wikidata": "Q3866987",
-        "brand:wikipedia": "en:Mulberry (company)",
         "name": "Mulberry",
         "shop": "fashion_accessories"
       }
     },
     {
       "displayName": "Parfois",
-      "id": "parfois-87714a",
-      "locationSet": {
-        "include": [
-          "be",
-          "de",
-          "es",
-          "fr",
-          "gb",
-          "hu",
-          "ie",
-          "it",
-          "nl",
-          "pl",
-          "pt"
-        ]
-      },
+      "id": "parfois-afbfc9",
+      "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Parfois",
         "brand:wikidata": "Q7136948",
-        "brand:wikipedia": "en:Parfois",
         "name": "Parfois",
         "shop": "fashion_accessories"
       }
@@ -174,7 +171,6 @@
       "tags": {
         "brand": "Porsche Design",
         "brand:wikidata": "Q1534581",
-        "brand:wikipedia": "en:Porsche Design",
         "name": "Porsche Design",
         "shop": "fashion_accessories"
       }
@@ -186,7 +182,6 @@
       "tags": {
         "brand": "Radley London",
         "brand:wikidata": "Q7281436",
-        "brand:wikipedia": "en:Radley (company)",
         "name": "Radley London",
         "shop": "fashion_accessories",
         "short_name": "Radley"
@@ -200,7 +195,6 @@
       "tags": {
         "brand": "Van Cleef & Arpels",
         "brand:wikidata": "Q2708181",
-        "brand:wikipedia": "en:Van Cleef & Arpels",
         "name": "Van Cleef & Arpels",
         "shop": "fashion_accessories"
       }

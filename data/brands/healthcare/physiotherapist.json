@@ -3,7 +3,9 @@
     "path": "brands/healthcare/physiotherapist",
     "exclude": {
       "generic": [
-        "^(praxis für )?physiotherapi(e|st)$"
+        "^(praxis für )?physiotherapi(e|st)$",
+        "^поликлиника$",
+        "^поліклініка$"
       ]
     }
   },
@@ -16,7 +18,6 @@
       "tags": {
         "brand": "Athletico Physical Therapy",
         "brand:wikidata": "Q85743525",
-        "brand:wikipedia": "en:Athletico Physical Therapy",
         "healthcare": "physiotherapist",
         "name": "Athletico Physical Therapy"
       }
@@ -28,7 +29,6 @@
       "tags": {
         "brand": "ATI Physical Therapy",
         "brand:wikidata": "Q50039703",
-        "brand:wikipedia": "en:ATI Physical Therapy",
         "healthcare": "physiotherapist",
         "name": "ATI Physical Therapy"
       }
@@ -43,6 +43,29 @@
         "brand:wikidata": "Q108601732",
         "healthcare": "physiotherapist",
         "name": "Doctors of Physical Therapy"
+      }
+    },
+    {
+      "displayName": "Lifemark Physiotherapy",
+      "id": "lifemarkphysiotherapy-a46221",
+      "locationSet": {"include": ["ca"]},
+      "matchNames": ["lifemark"],
+      "tags": {
+        "brand": "Lifemark Physiotherapy",
+        "brand:wikidata": "Q113004730",
+        "healthcare": "physiotherapist",
+        "name": "Lifemark Physiotherapy"
+      }
+    },
+    {
+      "displayName": "Therapydia",
+      "id": "therapydia-61735f",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Therapydia",
+        "brand:wikidata": "Q116927594",
+        "healthcare": "physiotherapist",
+        "name": "Therapydia"
       }
     }
   ]

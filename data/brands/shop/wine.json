@@ -5,14 +5,45 @@
   },
   "items": [
     {
+      "displayName": "Darwina.pl",
+      "id": "darwinapl-7f7747",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Darwina.pl",
+        "brand:wikidata": "Q113308102",
+        "name": "Darwina.pl",
+        "shop": "wine"
+      }
+    },
+    {
       "displayName": "Jacques’ Wein-Depot",
       "id": "jacquesweindepot-f93b7c",
       "locationSet": {"include": ["at", "de"]},
       "tags": {
         "brand": "Jacques’ Wein-Depot",
         "brand:wikidata": "Q1678150",
-        "brand:wikipedia": "de:Jacques’ Wein-Depot",
         "name": "Jacques’ Wein-Depot",
+        "shop": "wine"
+      }
+    },
+    {
+      "displayName": "OKWINE",
+      "id": "okwine-fd1c0f",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "brand": "OKWINE",
+        "brand:wikidata": "Q116871133",
+        "name": "OKWINE",
+        "shop": "wine"
+      }
+    },
+    {
+      "displayName": "Rindchen's Weinkontor",
+      "id": "rindchensweinkontor-074acf",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "brand": "Rindchen's Weinkontor",
+        "brand:wikidata": "Q110713478",
         "shop": "wine"
       }
     },
@@ -24,6 +55,17 @@
         "brand": "Wine Rack",
         "brand:wikidata": "Q86707661",
         "name": "Wine Rack",
+        "shop": "wine"
+      }
+    },
+    {
+      "displayName": "WINETIME",
+      "id": "winetime-fd1c0f",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "brand": "WINETIME",
+        "brand:wikidata": "Q116698397",
+        "name": "WINETIME",
         "shop": "wine"
       }
     }

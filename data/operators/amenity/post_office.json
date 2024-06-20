@@ -9,16 +9,18 @@
         "^kantor( pos)?$",
         "^po[sš]t[aeo]$",
         "^post\\s?(agentur|filiale|office|partner|stelle)?$",
-        "^главпочтамт|еконт$",
+        "^главпочтамт$",
         "^по(чт|шт|щ)а$",
         "^почтовое отделение$",
         "^اداره پست$",
         "^مكتب البريد$",
+        "^邮局$",
+        "^邮政局$",
         "^郵局$"
       ],
       "named": [
         "^(co-?op( food)?|(the )?co-?operative( food)?)$",
-        "^(costcutter|londis|mccoll'?s|one stop|premier( stores)?|spar|whsmith)$"
+        "^(costcutter|londis|mccoll'?s|one stop|premier( stores)?|royal mail|spar|whsmith)$"
       ]
     }
   },
@@ -34,17 +36,28 @@
         "amenity": "post_office",
         "official_name": "Servicios Postales Nacionales",
         "operator": "4-72",
-        "operator:wikidata": "Q85800448",
-        "operator:wikipedia": "es:4-72"
+        "operator:wikidata": "Q85800448"
       }
     },
     {
-      "displayName": "Aerocav C.A",
-      "id": "aerocavca-de64fe",
+      "displayName": "Aerocav",
+      "id": "aerocav-de64fe",
       "locationSet": {"include": ["ve"]},
+      "matchNames": ["aerocav c.a"],
       "tags": {
         "amenity": "post_office",
-        "operator": "Aerocav C.A"
+        "operator": "Aerocav",
+        "operator:wikidata": "Q109606766"
+      }
+    },
+    {
+      "displayName": "Åland Post",
+      "id": "alandpost-3edbf0",
+      "locationSet": {"include": ["ax"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Åland Post",
+        "operator:wikidata": "Q1951188"
       }
     },
     {
@@ -56,8 +69,7 @@
         "operator": "Algérie Poste",
         "operator:ar": "بريد الجزائر",
         "operator:fr": "Algérie Poste",
-        "operator:wikidata": "Q2836029",
-        "operator:wikipedia": "fr:Algérie Poste"
+        "operator:wikidata": "Q2836029"
       }
     },
     {
@@ -67,8 +79,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "An Post",
-        "operator:wikidata": "Q482490",
-        "operator:wikipedia": "en:An Post"
+        "operator:wikidata": "Q482490"
       }
     },
     {
@@ -78,8 +89,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Aras Kargo",
-        "operator:wikidata": "Q6094691",
-        "operator:wikipedia": "tr:Aras Kargo"
+        "operator:wikidata": "Q6094691"
       }
     },
     {
@@ -90,19 +100,18 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Australia Post",
-        "operator:wikidata": "Q1142936",
-        "operator:wikipedia": "en:Australia Post"
+        "operator:wikidata": "Q1142936"
       }
     },
     {
-      "displayName": "Azerpost",
-      "id": "azerpost-ab1104",
+      "displayName": "Azərpoçt",
+      "id": "3a476b-ab1104",
       "locationSet": {"include": ["az"]},
+      "matchNames": ["azerpost"],
       "tags": {
         "amenity": "post_office",
-        "operator": "Azerpost",
-        "operator:wikidata": "Q2660860",
-        "operator:wikipedia": "en:Azərpoçt"
+        "operator": "Azərpoçt",
+        "operator:wikidata": "Q2660860"
       }
     },
     {
@@ -118,24 +127,31 @@
         "alt_name:fr": "Barid Al-Maghrib",
         "amenity": "post_office",
         "operator": "Poste Maroc",
-        "operator:wikidata": "Q3399778",
-        "operator:wikipedia": "fr:Poste Maroc"
+        "operator:wikidata": "Q3399778"
       }
     },
     {
-      "displayName": "Best Express",
-      "id": "bestexpress-df0c61",
-      "locationSet": {
-        "include": ["in", "my", "sg", "th"],
-        "exclude": ["cn"]
-      },
+      "displayName": "BH Pošta",
+      "id": "bhposta-736d07",
+      "locationSet": {"include": ["ba"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Best Express",
-        "operator:en": "Best Express",
-        "operator:wikidata": "Q22099540",
-        "operator:wikipedia": "zh:百世快递",
-        "operator:zh": "百世快递"
+        "operator": "BH Pošta",
+        "operator:wikidata": "Q4835619"
+      }
+    },
+    {
+      "displayName": "Blue Dart",
+      "id": "bluedartexpress-45da12",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Blue Dart Express",
+        "brand:short": "Blue Dart",
+        "brand:wikidata": "Q54621493",
+        "operator": "Blue Dart Express",
+        "operator:short": "Blue Dart",
+        "operator:wikidata": "Q54621493"
       }
     },
     {
@@ -145,23 +161,30 @@
       "tags": {
         "amenity": "post_office",
         "operator": "bpost",
-        "operator:wikidata": "Q740553",
-        "operator:wikipedia": "de:Bpost"
+        "operator:wikidata": "Q740553"
+      }
+    },
+    {
+      "displayName": "Bưu điện Trung tâm 3",
+      "id": "buudientrungtam3-91a3cc",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Bưu điện Trung tâm 3"
       }
     },
     {
       "displayName": "Canada Post",
-      "id": "canadapost-a47b7d",
+      "id": "canadapost-17c815",
       "locationSet": {
         "include": ["ca"],
-        "exclude": ["quebec.geojson"]
+        "exclude": ["ca-qc.geojson"]
       },
       "matchNames": ["canada post/ poste canada"],
       "tags": {
         "amenity": "post_office",
         "operator": "Canada Post",
-        "operator:wikidata": "Q1032001",
-        "operator:wikipedia": "en:Canada Post"
+        "operator:wikidata": "Q1032001"
       }
     },
     {
@@ -171,20 +194,18 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Cargus",
-        "operator:wikidata": "Q12723442",
-        "operator:wikipedia": "ro:Urgent Cargus"
+        "operator:wikidata": "Q12723442"
       }
     },
     {
       "displayName": "Česká pošta",
-      "id": "ceskaposta-aa9270",
+      "id": "ceskapostasp-aa9270",
       "locationSet": {"include": ["cz"]},
-      "matchNames": ["česká pošta sp"],
+      "matchNames": ["česká pošta"],
       "tags": {
         "amenity": "post_office",
-        "operator": "Česká pošta",
-        "operator:wikidata": "Q341090",
-        "operator:wikipedia": "cz:Česká pošta"
+        "operator": "Česká pošta, s.p.",
+        "operator:wikidata": "Q341090"
       }
     },
     {
@@ -204,8 +225,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Chronopost",
-        "operator:wikidata": "Q2967313",
-        "operator:wikipedia": "fr:Chronopost"
+        "operator:wikidata": "Q2967313"
       }
     },
     {
@@ -220,22 +240,6 @@
       }
     },
     {
-      "displayName": "Correios",
-      "id": "correios-e82118",
-      "locationSet": {"include": ["br"]},
-      "matchNames": [
-        "ebct",
-        "ect",
-        "empresa brasileira de correios e telégrafos"
-      ],
-      "tags": {
-        "amenity": "post_office",
-        "operator": "Correios",
-        "operator:wikidata": "Q3375004",
-        "operator:wikipedia": "en:Correios"
-      }
-    },
-    {
       "displayName": "Correo Argentino",
       "id": "correoargentino-debce4",
       "locationSet": {"include": ["ar"]},
@@ -246,8 +250,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Correo Argentino",
-        "operator:wikidata": "Q4036566",
-        "operator:wikipedia": "en:Correo Argentino"
+        "operator:wikidata": "Q4036566"
       }
     },
     {
@@ -263,8 +266,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Correos",
-        "operator:wikidata": "Q776605",
-        "operator:wikipedia": "es:Correos (España)"
+        "operator:wikidata": "Q776605"
       }
     },
     {
@@ -274,8 +276,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Correos de Chile",
-        "operator:wikidata": "Q5172893",
-        "operator:wikipedia": "en:Correos de Chile"
+        "operator:wikidata": "Q5172893"
       }
     },
     {
@@ -285,8 +286,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Correos de Costa Rica",
-        "operator:wikidata": "Q5172894",
-        "operator:wikipedia": "en:Correos de Costa Rica"
+        "operator:wikidata": "Q5172894"
       }
     },
     {
@@ -296,19 +296,19 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Correos de Cuba",
-        "operator:wikidata": "Q5789322",
-        "operator:wikipedia": "es:Correos de Cuba"
+        "operator:wikidata": "Q5789322"
       }
     },
     {
       "displayName": "Correos de México",
       "id": "correosdemexico-0b19e1",
       "locationSet": {"include": ["mx"]},
+      "matchNames": ["sepomex"],
       "tags": {
         "amenity": "post_office",
+        "name": "Correos de México",
         "operator": "Correos de México",
-        "operator:wikidata": "Q5172898",
-        "operator:wikipedia": "en:Correos de México"
+        "operator:wikidata": "Q5172898"
       }
     },
     {
@@ -318,8 +318,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "CTT",
-        "operator:wikidata": "Q909429",
-        "operator:wikipedia": "en:CTT (Macau)"
+        "operator:wikidata": "Q909429"
       }
     },
     {
@@ -329,8 +328,41 @@
       "tags": {
         "amenity": "post_office",
         "operator": "CTT",
-        "operator:wikidata": "Q1024518",
-        "operator:wikipedia": "en:CTT Correios de Portugal, S.A."
+        "operator:wikidata": "Q1024518"
+      }
+    },
+    {
+      "displayName": "Cyprus Post",
+      "id": "cypruspost-28cbc0",
+      "locationSet": {"include": ["cy"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Cyprus Post",
+        "operator:wikidata": "Q5200484"
+      }
+    },
+    {
+      "displayName": "Delhivery",
+      "id": "delhivery-45da12",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "amenity": "post_office",
+        "brand": "Delhivery",
+        "brand:wikidata": "Q55609321",
+        "operator": "Delhivery",
+        "operator:wikidata": "Q55609321"
+      }
+    },
+    {
+      "displayName": "Delivery",
+      "id": "delivery-970b0c",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Делівері",
+        "operator:en": "Delivery",
+        "operator:uk": "Делівері",
+        "operator:wikidata": "Q104092221"
       }
     },
     {
@@ -347,24 +379,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Deutsche Post",
-        "operator:wikidata": "Q157645",
-        "operator:wikipedia": "de:Deutsche Post AG"
-      }
-    },
-    {
-      "displayName": "DHL",
-      "id": "dhl-91a3cc",
-      "locationSet": {"include": ["001"]},
-      "matchNames": [
-        "dhl paketshop",
-        "dhl vertrieb"
-      ],
-      "tags": {
-        "amenity": "post_office",
-        "operator": "DHL",
-        "operator:type": "private",
-        "operator:wikidata": "Q489815",
-        "operator:wikipedia": "en:DHL"
+        "operator:wikidata": "Q157645"
       }
     },
     {
@@ -387,8 +402,7 @@
         "operator:fr": "La Poste",
         "operator:it": "La Posta",
         "operator:rm": "La Posta",
-        "operator:wikidata": "Q614803",
-        "operator:wikipedia": "de:Die Schweizerische Post"
+        "operator:wikidata": "Q614803"
       }
     },
     {
@@ -397,27 +411,31 @@
       "locationSet": {"include": ["ve"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Domesa"
+        "operator": "Domesa",
+        "operator:wikidata": "Q109606566"
       }
     },
     {
-      "displayName": "DPD",
-      "id": "dpd-f556cb",
-      "locationSet": {
-        "include": ["001"],
-        "exclude": ["bg"]
-      },
-      "matchNames": [
-        "direct parcel distribution cz sro.",
-        "dpd dynamic parcel distribution",
-        "dpd paketshop"
-      ],
-      "note": "Named 'Speedy' in Bulgaria, but uses the DPD logo - #4674",
+      "displayName": "DTDC",
+      "id": "desktodeskcourierandcargo-45da12",
+      "locationSet": {"include": ["in"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "DPD",
-        "operator:wikidata": "Q541030",
-        "operator:wikipedia": "de:DPDgroup"
+        "brand": "Desk to Desk Courier & Cargo",
+        "brand:short": "DTDC",
+        "brand:wikidata": "Q55608802",
+        "operator": "Desk to Desk Courier & Cargo",
+        "operator:short": "DTDC",
+        "operator:wikidata": "Q55608802"
+      }
+    },
+    {
+      "displayName": "Edeka",
+      "id": "edeka-91a3cc",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Edeka"
       }
     },
     {
@@ -427,8 +445,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Eesti Post",
-        "operator:wikidata": "Q282457",
-        "operator:wikipedia": "et:Eesti Post"
+        "operator:wikidata": "Q282457"
       }
     },
     {
@@ -438,8 +455,16 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Emirates Post",
-        "operator:wikidata": "Q5372577",
-        "operator:wikipedia": "en:Emirates Post"
+        "operator:wikidata": "Q5372577"
+      }
+    },
+    {
+      "displayName": "Envía",
+      "id": "envia-91a3cc",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Envía"
       }
     },
     {
@@ -449,21 +474,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Fancourier",
-        "operator:wikidata": "Q12727984",
-        "operator:wikipedia": "ro:FAN Courier Express"
-      }
-    },
-    {
-      "displayName": "FedEx",
-      "id": "fedex-91a3cc",
-      "locationSet": {"include": ["001"]},
-      "matchNames": ["federal express"],
-      "tags": {
-        "amenity": "post_office",
-        "operator": "FedEx",
-        "operator:type": "private",
-        "operator:wikidata": "Q459477",
-        "operator:wikipedia": "en:FedEx"
+        "operator:wikidata": "Q12727984"
       }
     },
     {
@@ -473,8 +484,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "General Logistics Systems Germany",
-        "operator:wikidata": "Q46495823",
-        "operator:wikipedia": "de:General Logistics Systems Germany"
+        "operator:wikidata": "Q46495823"
       }
     },
     {
@@ -484,8 +494,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Georgian Post",
-        "operator:wikidata": "Q12869041",
-        "operator:wikipedia": "en:Georgian Post"
+        "operator:wikidata": "Q12869041"
       }
     },
     {
@@ -495,8 +504,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Ghana Post",
-        "operator:wikidata": "Q4351971",
-        "operator:wikipedia": "en:Ghana Post"
+        "operator:wikidata": "Q4351971"
       }
     },
     {
@@ -507,8 +515,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "GLS",
-        "operator:wikidata": "Q366182",
-        "operator:wikipedia": "en:GLS Group"
+        "operator:wikidata": "Q366182"
       }
     },
     {
@@ -521,6 +528,16 @@
       }
     },
     {
+      "displayName": "Guernsey Post",
+      "id": "guernseypost-36d418",
+      "locationSet": {"include": ["gg"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Guernsey Post",
+        "operator:wikidata": "Q5614904"
+      }
+    },
+    {
       "displayName": "HayPost",
       "id": "haypost-1aee57",
       "locationSet": {"include": ["am"]},
@@ -529,8 +546,7 @@
         "operator": "HayPost",
         "operator:en": "HayPost",
         "operator:hy": "Հայփոստ",
-        "operator:wikidata": "Q3128876",
-        "operator:wikipedia": "en:HayPost"
+        "operator:wikidata": "Q3128876"
       }
     },
     {
@@ -545,8 +561,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Hermes",
-        "operator:wikidata": "Q1613532",
-        "operator:wikipedia": "en:Hermes Group"
+        "operator:wikidata": "Q1613532"
       }
     },
     {
@@ -556,8 +571,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Hrvatska pošta",
-        "operator:wikidata": "Q507289",
-        "operator:wikipedia": "hr:Hrvatska pošta"
+        "operator:wikidata": "Q507289"
       }
     },
     {
@@ -567,8 +581,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Hrvatska pošta Mostar",
-        "operator:wikidata": "Q5307025",
-        "operator:wikipedia": "bs:Hrvatska pošta Mostar"
+        "operator:wikidata": "Q5307025"
       }
     },
     {
@@ -582,8 +595,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "India Post",
-        "operator:wikidata": "Q3519720",
-        "operator:wikipedia": "en:India Post"
+        "operator:wikidata": "Q3519720"
       }
     },
     {
@@ -593,8 +605,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "InPost",
-        "operator:wikidata": "Q3182097",
-        "operator:wikipedia": "pl:InPost"
+        "operator:wikidata": "Q3182097"
       }
     },
     {
@@ -605,8 +616,7 @@
         "alt_name": "IPOSTEL",
         "amenity": "post_office",
         "operator": "Instituto Postal Telegráfico de Venezuela",
-        "operator:wikidata": "Q30061585",
-        "operator:wikipedia": "es:Instituto Postal Telegráfico de Venezuela"
+        "operator:wikidata": "Q30061585"
       }
     },
     {
@@ -616,17 +626,19 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Íslandspóstur",
-        "operator:wikidata": "Q291809",
-        "operator:wikipedia": "is:Íslandspóstur"
+        "operator:wikidata": "Q291809"
       }
     },
     {
-      "displayName": "Itella",
-      "id": "itella-7504a1",
-      "locationSet": {"include": ["fi"]},
+      "displayName": "Isle of Man Post Office",
+      "id": "isleofmanpostoffice-9ad038",
+      "locationSet": {"include": ["im"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Itella"
+        "operator": "Isle of Man Post Office",
+        "operator:en": "Isle of Man Post Office",
+        "operator:gv": "Oik Postagh Ellan Vannin",
+        "operator:wikidata": "Q3432267"
       }
     },
     {
@@ -638,8 +650,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "J&T Express",
-        "operator:wikidata": "Q95690344",
-        "operator:wikipedia": "id:J&T Express"
+        "operator:wikidata": "Q95690344"
       }
     },
     {
@@ -649,8 +660,27 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Jersey Post",
-        "operator:wikidata": "Q6184914",
-        "operator:wikipedia": "en:Jersey Post"
+        "operator:wikidata": "Q6184914"
+      }
+    },
+    {
+      "displayName": "Justin",
+      "id": "justin-970b0c",
+      "locationSet": {"include": ["ua"]},
+      "matchNames": ["джаст ін"],
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Justin",
+        "operator:wikidata": "Q63828668"
+      }
+    },
+    {
+      "displayName": "Kirkburton Post Office",
+      "id": "kirkburtonpostoffice-91a3cc",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Kirkburton Post Office"
       }
     },
     {
@@ -660,8 +690,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "La Poste",
-        "operator:wikidata": "Q373724",
-        "operator:wikipedia": "fr:La Poste (entreprise française)"
+        "operator:wikidata": "Q373724"
       }
     },
     {
@@ -673,8 +702,7 @@
         "operator": "La Poste Tunisienne",
         "operator:ar": "البريد التونسي",
         "operator:fr": "La Poste Tunisienne",
-        "operator:wikidata": "Q3399820",
-        "operator:wikipedia": "fr:Poste tunisienne"
+        "operator:wikidata": "Q3399820"
       }
     },
     {
@@ -684,8 +712,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Latvijas Pasts",
-        "operator:wikidata": "Q1807088",
-        "operator:wikipedia": "lv:Latvijas Pasts"
+        "operator:wikidata": "Q1807088"
       }
     },
     {
@@ -696,8 +723,17 @@
       "tags": {
         "amenity": "post_office",
         "operator": "LBC",
-        "operator:wikidata": "Q17075584",
-        "operator:wikipedia": "en:LBC Express"
+        "operator:wikidata": "Q17075584"
+      }
+    },
+    {
+      "displayName": "Liechtensteinische Post",
+      "id": "liechtensteinischepost-55a398",
+      "locationSet": {"include": ["li"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Liechtensteinische Post",
+        "operator:wikidata": "Q1840786"
       }
     },
     {
@@ -707,8 +743,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Lietuvos paštas",
-        "operator:wikidata": "Q175964",
-        "operator:wikipedia": "lt:Lietuvos paštas"
+        "operator:wikidata": "Q175964"
       }
     },
     {
@@ -719,43 +754,32 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Magyar Posta",
-        "operator:wikidata": "Q145614",
-        "operator:wikipedia": "hu:Magyar Posta Zrt."
+        "operator:wikidata": "Q145614"
       }
     },
     {
-      "displayName": "Mail Boxes Etc.",
-      "id": "mailboxesetc-91a3cc",
-      "locationSet": {"include": ["001"]},
+      "displayName": "MaltaPost",
+      "id": "maltapost-ed0160",
+      "locationSet": {"include": ["mt"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Mail Boxes Etc.",
-        "operator:wikidata": "Q1139182",
-        "operator:wikipedia": "en:Mail Boxes Etc."
+        "operator": "MaltaPost",
+        "operator:wikidata": "Q4171158"
       }
     },
     {
       "displayName": "Meest",
       "id": "meest-970b0c",
       "locationSet": {"include": ["ua"]},
+      "matchNames": [
+        "meest express",
+        "міст",
+        "міст експрес"
+      ],
       "tags": {
         "amenity": "post_office",
         "operator": "Meest",
-        "operator:en": "Meest",
-        "operator:uk": "Міст"
-      }
-    },
-    {
-      "displayName": "Meest Express",
-      "id": "meestexpress-970b0c",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "Meest Express",
-        "operator:en": "Meest Express",
-        "operator:uk": "Міст Експрес",
-        "operator:wikidata": "Q25432124",
-        "operator:wikipedia": "uk:Meest"
+        "operator:wikidata": "Q25432124"
       }
     },
     {
@@ -765,8 +789,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "MNG Kargo",
-        "operator:wikidata": "Q20472590",
-        "operator:wikipedia": "tr:MNG Kargo"
+        "operator:wikidata": "Q20472590"
       }
     },
     {
@@ -778,8 +801,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "MRW",
-        "operator:wikidata": "Q23767821",
-        "operator:wikipedia": "es:MRW"
+        "operator:wikidata": "Q23767821"
       }
     },
     {
@@ -790,20 +812,53 @@
       "tags": {
         "amenity": "post_office",
         "operator": "New Zealand Post",
-        "operator:wikidata": "Q1144511",
-        "operator:wikipedia": "en:NZ Post"
+        "operator:wikidata": "Q1144511"
       }
     },
     {
-      "displayName": "O’zbеkiston Pochtasi",
-      "id": "b5e0b2-9811e4",
-      "locationSet": {"include": ["uz"]},
-      "matchNames": ["ozbеkiston pochtasi aj"],
+      "displayName": "Nisa Local",
+      "id": "nisalocal-91a3cc",
+      "locationSet": {"include": ["001"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "O’zbеkiston Pochtasi",
-        "operator:wikidata": "Q105227651",
-        "operator:wikipedia": "en:O′zbekiston Pochtasi"
+        "operator": "Nisa Local"
+      }
+    },
+    {
+      "displayName": "Nova Poshta",
+      "id": "novaposhta-48c390",
+      "locationSet": {"include": ["md"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Nova Poshta",
+        "operator:wikidata": "Q97191085"
+      }
+    },
+    {
+      "displayName": "Nova Post",
+      "id": "novapost-78f484",
+      "locationSet": {
+        "include": ["cz", "lt", "pl"]
+      },
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Nova Post",
+        "operator:wikidata": "Q118613846"
+      }
+    },
+    {
+      "displayName": "Oʻzbekiston Pochtasi",
+      "id": "4e9bff-9811e4",
+      "locationSet": {"include": ["uz"]},
+      "matchNames": [
+        "ozbekiston pochtasi",
+        "ozbеkiston pochtasi",
+        "ozbеkiston pochtasi aj"
+      ],
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Oʻzbekiston Pochtasi",
+        "operator:wikidata": "Q105227651"
       }
     },
     {
@@ -813,8 +868,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Omniva",
-        "operator:wikidata": "Q282457",
-        "operator:wikipedia": "en:Omniva"
+        "operator:wikidata": "Q282457"
       }
     },
     {
@@ -824,8 +878,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "OPT",
-        "operator:wikidata": "Q3349602",
-        "operator:wikipedia": "fr:Office des postes et télécommunications de Polynésie française"
+        "operator:wikidata": "Q3349602"
       }
     },
     {
@@ -836,7 +889,6 @@
         "amenity": "post_office",
         "operator": "Organización Coordinadora Argentina",
         "operator:wikidata": "Q5172887",
-        "operator:wikipedia": "es:Correo OCA",
         "short_name": "OCA"
       }
     },
@@ -847,8 +899,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Österreichische Post AG",
-        "operator:wikidata": "Q1763505",
-        "operator:wikipedia": "de:Österreichische Post"
+        "operator:wikidata": "Q1763505"
       }
     },
     {
@@ -858,8 +909,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "P&T",
-        "operator:wikidata": "Q1570910",
-        "operator:wikipedia": "de:Post Luxembourg"
+        "operator:wikidata": "Q1570910"
       }
     },
     {
@@ -869,8 +919,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Pakistan Post",
-        "operator:wikidata": "Q4046330",
-        "operator:wikipedia": "en:Pakistan Post"
+        "operator:wikidata": "Q4046330"
       }
     },
     {
@@ -880,8 +929,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Palestine Post",
-        "operator:wikidata": "Q4351991",
-        "operator:wikipedia": "en:Palestine Post"
+        "operator:wikidata": "Q4351991"
       }
     },
     {
@@ -893,8 +941,7 @@
         "amenity": "post_office",
         "official_name": "Philippine Postal Corporation",
         "operator": "PHLPost",
-        "operator:wikidata": "Q1406037",
-        "operator:wikipedia": "en:Philippine Postal Corporation"
+        "operator:wikidata": "Q1406037"
       }
     },
     {
@@ -908,8 +955,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Poczta Polska",
-        "operator:wikidata": "Q168833",
-        "operator:wikipedia": "pl:Poczta Polska"
+        "operator:wikidata": "Q168833"
       }
     },
     {
@@ -921,8 +967,7 @@
         "alt_name": "Kantor Pos",
         "amenity": "post_office",
         "operator": "Pos Indonesia",
-        "operator:wikidata": "Q4273095",
-        "operator:wikipedia": "id:Pos Indonesia"
+        "operator:wikidata": "Q4273095"
       }
     },
     {
@@ -932,8 +977,17 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Pos Malaysia",
-        "operator:wikidata": "Q6112623",
-        "operator:wikipedia": "en:Pos Malaysia"
+        "operator:wikidata": "Q6112623"
+      }
+    },
+    {
+      "displayName": "Post Aruba",
+      "id": "postaruba-2b7fe6",
+      "locationSet": {"include": ["aw"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Post Aruba",
+        "operator:wikidata": "Q7233623"
       }
     },
     {
@@ -943,23 +997,37 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Post Danmark",
-        "operator:wikidata": "Q1334647",
-        "operator:wikipedia": "da:PostNord Danmark"
+        "operator:wikidata": "Q1334647"
       }
     },
     {
-      "displayName": "Post Office (UK)",
-      "id": "postoffice-2ecbba",
-      "locationSet": {"include": ["gb"]},
-      "matchNames": [
-        "post office ltd",
-        "the post office"
-      ],
+      "displayName": "Posta",
+      "id": "posta-c7bca3",
+      "locationSet": {"include": ["fo"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Post Office",
-        "operator:wikidata": "Q1783168",
-        "operator:wikipedia": "en:Post Office Ltd"
+        "operator": "Posta",
+        "operator:wikidata": "Q946337"
+      }
+    },
+    {
+      "displayName": "Pošta Crne Gore",
+      "id": "postacrnegore-96ab16",
+      "locationSet": {"include": ["me"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Pošta Crne Gore",
+        "operator:wikidata": "Q1320833"
+      }
+    },
+    {
+      "displayName": "Posta e Kosovës",
+      "id": "postaekosoves-9e2709",
+      "locationSet": {"include": ["xk"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Posta e Kosovës",
+        "operator:wikidata": "Q2105934"
       }
     },
     {
@@ -969,8 +1037,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Poșta Moldovei",
-        "operator:wikidata": "Q2085731",
-        "operator:wikipedia": "en:Poșta Moldovei"
+        "operator:wikidata": "Q2085731"
       }
     },
     {
@@ -980,8 +1047,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Poșta Română",
-        "operator:wikidata": "Q283175",
-        "operator:wikipedia": "ro:Poșta Română"
+        "operator:wikidata": "Q283175"
       }
     },
     {
@@ -991,8 +1057,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Posta Shqiptare",
-        "operator:wikidata": "Q1334419",
-        "operator:wikipedia": "sq:Posta Shqiptare"
+        "operator:wikidata": "Q1334419"
       }
     },
     {
@@ -1002,8 +1067,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Pošta Slovenije",
-        "operator:wikidata": "Q6522631",
-        "operator:wikipedia": "sl:Pošta Slovenije"
+        "operator:wikidata": "Q6522631"
       }
     },
     {
@@ -1033,8 +1097,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "postcon",
-        "operator:wikidata": "Q2384619",
-        "operator:wikipedia": "de:Postcon"
+        "operator:wikidata": "Q2384619"
       }
     },
     {
@@ -1045,25 +1108,24 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Poste Italiane",
-        "operator:wikidata": "Q495026",
-        "operator:wikipedia": "en:Poste italiane"
+        "operator:wikidata": "Q495026"
       }
     },
     {
-      "displayName": "Posten (Norge)",
-      "id": "posten-03f567",
-      "locationSet": {"include": ["no"]},
-      "note": "see https://github.com/osmlab/name-suggestion-index/issues/5561",
+      "displayName": "Pošte Srpske",
+      "id": "postesrpske-736d07",
+      "locationSet": {"include": ["ba"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Posten"
+        "operator": "Pošte Srpske",
+        "operator:wikidata": "Q5245881"
       }
     },
     {
       "displayName": "Postes Canada",
-      "id": "postescanada-d8ff35",
+      "id": "postescanada-525cac",
       "locationSet": {
-        "include": ["quebec.geojson"]
+        "include": ["ca-qc.geojson"]
       },
       "matchNames": [
         "canada post/ poste canada",
@@ -1072,19 +1134,18 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Postes Canada",
-        "operator:wikidata": "Q1032001",
-        "operator:wikipedia": "fr:Postes Canada"
+        "operator:wikidata": "Q1032001"
       }
     },
     {
       "displayName": "Posti",
       "id": "posti-7504a1",
       "locationSet": {"include": ["fi"]},
+      "matchNames": ["itella"],
       "tags": {
         "amenity": "post_office",
         "operator": "Posti",
-        "operator:wikidata": "Q843453",
-        "operator:wikipedia": "fi:Posti Group"
+        "operator:wikidata": "Q843453"
       }
     },
     {
@@ -1094,30 +1155,18 @@
       "tags": {
         "amenity": "post_office",
         "operator": "PostNL",
-        "operator:wikidata": "Q5921598",
-        "operator:wikipedia": "nl:PostNL"
+        "operator:wikidata": "Q5921598"
       }
     },
     {
       "displayName": "PostNord",
       "id": "postnord-85beed",
       "locationSet": {"include": ["dk", "se"]},
+      "matchNames": ["postnord ab"],
       "tags": {
         "amenity": "post_office",
         "operator": "PostNord",
-        "operator:wikidata": "Q3181430",
-        "operator:wikipedia": "sv:Postnord"
-      }
-    },
-    {
-      "displayName": "PostNord AB",
-      "id": "postnordab-286ddb",
-      "locationSet": {"include": ["se"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "PostNord AB",
-        "operator:wikidata": "Q3181430",
-        "operator:wikipedia": "sv:Postnord"
+        "operator:wikidata": "Q3181430"
       }
     },
     {
@@ -1127,19 +1176,17 @@
       "tags": {
         "amenity": "post_office",
         "operator": "PTT",
-        "operator:wikidata": "Q3079259",
-        "operator:wikipedia": "tr:PTT"
+        "operator:wikidata": "Q3079259"
       }
     },
     {
-      "displayName": "Royal Mail",
-      "id": "royalmail-2ecbba",
-      "locationSet": {"include": ["gb"]},
+      "displayName": "Royal Gibraltar Post Office",
+      "id": "royalgibraltarpostoffice-6023ac",
+      "locationSet": {"include": ["gi"]},
       "tags": {
         "amenity": "post_office",
-        "operator": "Royal Mail",
-        "operator:wikidata": "Q638098",
-        "operator:wikipedia": "en:Royal Mail"
+        "operator": "Royal Gibraltar Post Office",
+        "operator:wikidata": "Q32784"
       }
     },
     {
@@ -1155,8 +1202,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Serpost",
-        "operator:wikidata": "Q19521863",
-        "operator:wikipedia": "es:Servicios Postales del Perú"
+        "operator:wikidata": "Q19521863"
       }
     },
     {
@@ -1185,8 +1231,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Singapore Post",
-        "operator:wikidata": "Q4049531",
-        "operator:wikipedia": "en:Singapore Post"
+        "operator:wikidata": "Q4049531"
       }
     },
     {
@@ -1197,8 +1242,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Slovenská pošta",
-        "operator:wikidata": "Q1191849",
-        "operator:wikipedia": "en:Slovenská pošta"
+        "operator:wikidata": "Q1191849"
       }
     },
     {
@@ -1209,22 +1253,7 @@
         "amenity": "post_office",
         "operator": "South African Post Office",
         "operator:wikidata": "Q7565777",
-        "operator:wikipedia": "en:South African Post Office",
         "short_name": "SAPO"
-      }
-    },
-    {
-      "displayName": "Speedy",
-      "id": "dpd-03f0fb",
-      "locationSet": {"include": ["bg"]},
-      "note": "Operated by DPD, and uses the DPD logo - #4674",
-      "tags": {
-        "alt_name": "Speedy",
-        "amenity": "post_office",
-        "brand": "Speedy",
-        "operator": "DPD",
-        "operator:wikidata": "Q541030",
-        "operator:wikipedia": "en:DPDgroup"
       }
     },
     {
@@ -1234,8 +1263,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Sürat Kargo",
-        "operator:wikidata": "Q6051265",
-        "operator:wikipedia": "tr:Sürat Kargo"
+        "operator:wikidata": "Q6051265"
       }
     },
     {
@@ -1247,7 +1275,6 @@
         "old_name": "Transcomerco",
         "operator": "TCC",
         "operator:wikidata": "Q27968821",
-        "operator:wikipedia": "es:TCC (Colombia)",
         "short_name": "TCC"
       }
     },
@@ -1258,7 +1285,8 @@
       "matchNames": ["tealca ca"],
       "tags": {
         "amenity": "post_office",
-        "operator": "TEALCA"
+        "operator": "TEALCA",
+        "operator:wikidata": "Q109606654"
       }
     },
     {
@@ -1270,26 +1298,7 @@
         "operator": "Thailand Post",
         "operator:en": "Thailand Post",
         "operator:th": "ไปรษณีย์ไทย",
-        "operator:wikidata": "Q6676271",
-        "operator:wikipedia": "th:ไปรษณีย์ไทย (บริษัท)"
-      }
-    },
-    {
-      "displayName": "The UPS Store",
-      "id": "theupsstore-2da3fc",
-      "locationSet": {"include": ["ca", "us"]},
-      "matchNames": [
-        "united parcel service",
-        "ups store"
-      ],
-      "matchTags": ["shop/copyshop"],
-      "tags": {
-        "amenity": "post_office",
-        "operator": "The UPS Store",
-        "operator:type": "private",
-        "operator:wikidata": "Q7771029",
-        "operator:wikipedia": "en:The UPS Store",
-        "short_name": "UPS"
+        "operator:wikidata": "Q6676271"
       }
     },
     {
@@ -1299,8 +1308,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "TNT",
-        "operator:wikidata": "Q1105744",
-        "operator:wikipedia": "en:TNT Express"
+        "operator:wikidata": "Q1105744"
       }
     },
     {
@@ -1310,8 +1318,17 @@
       "tags": {
         "amenity": "post_office",
         "operator": "TTPost",
-        "operator:wikidata": "Q7671960",
-        "operator:wikipedia": "en:TTPost"
+        "operator:wikidata": "Q7671960"
+      }
+    },
+    {
+      "displayName": "Tusass",
+      "id": "tusass-acd619",
+      "locationSet": {"include": ["gl"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Tusass",
+        "operator:wikidata": "Q1138785"
       }
     },
     {
@@ -1328,10 +1345,23 @@
       "tags": {
         "amenity": "post_office",
         "operator": "United States Postal Service",
+        "operator:short": "USPS",
         "operator:type": "public",
-        "operator:wikidata": "Q668687",
-        "operator:wikipedia": "en:United States Postal Service",
-        "short_name": "USPS"
+        "operator:wikidata": "Q668687"
+      }
+    },
+    {
+      "displayName": "Vietnam Post",
+      "id": "vietnampost-c0dded",
+      "locationSet": {"include": ["vn"]},
+      "matchNames": [
+        "vietnam post corporation",
+        "vnpost"
+      ],
+      "tags": {
+        "amenity": "post_office",
+        "operator": "Vietnam Post",
+        "operator:wikidata": "Q112150791"
       }
     },
     {
@@ -1341,8 +1371,16 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Volg",
-        "operator:wikidata": "Q2530746",
-        "operator:wikipedia": "de:Volg"
+        "operator:wikidata": "Q2530746"
+      }
+    },
+    {
+      "displayName": "WH Smith",
+      "id": "whsmith-91a3cc",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "post_office",
+        "operator": "WH Smith"
       }
     },
     {
@@ -1352,8 +1390,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Yurtiçi Kargo",
-        "operator:wikidata": "Q6505802",
-        "operator:wikipedia": "tr:Yurtiçi Kargo"
+        "operator:wikidata": "Q6505802"
       }
     },
     {
@@ -1363,8 +1400,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Zásilkovna",
-        "operator:wikidata": "Q25454926",
-        "operator:wikipedia": "cs:Zásilkovna"
+        "operator:wikidata": "Q25454926"
       }
     },
     {
@@ -1374,7 +1410,8 @@
       "matchNames": ["grupo zoom ca"],
       "tags": {
         "amenity": "post_office",
-        "operator": "Zoom"
+        "operator": "Zoom",
+        "operator:wikidata": "Q109606671"
       }
     },
     {
@@ -1387,7 +1424,6 @@
         "operator:el": "Ελληνικά Ταχυδρομεία",
         "operator:en": "Hellenic Post",
         "operator:wikidata": "Q1275135",
-        "operator:wikipedia": "el:Ελληνικά Ταχυδρομεία",
         "short_name": "ΕΛΤΑ"
       }
     },
@@ -1400,8 +1436,7 @@
         "operator": "Автолюкс",
         "operator:en": "Autolux",
         "operator:uk": "Автолюкс",
-        "operator:wikidata": "Q12075972",
-        "operator:wikipedia": "uk:Автолюкс"
+        "operator:wikidata": "Q12075972"
       }
     },
     {
@@ -1415,8 +1450,7 @@
         "operator:be": "Белпошта",
         "operator:en": "Belposhta",
         "operator:ru": "Белпочта",
-        "operator:wikidata": "Q2662336",
-        "operator:wikipedia": "be:Белпошта"
+        "operator:wikidata": "Q2662336"
       }
     },
     {
@@ -1427,8 +1461,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Български пощи",
-        "operator:wikidata": "Q2880826",
-        "operator:wikipedia": "bg:Български пощи"
+        "operator:wikidata": "Q2880826"
       }
     },
     {
@@ -1449,42 +1482,18 @@
         "operator": "ГУП Почта Приднестровья",
         "operator:en": "Transnistria Post",
         "operator:ru": "ГУП Почта Приднестровья",
-        "operator:wikidata": "Q4375351",
-        "operator:wikipedia": "ru:Почта Приднестровья"
-      }
-    },
-    {
-      "displayName": "Делівері",
-      "id": "223604-970b0c",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "Делівері"
-      }
-    },
-    {
-      "displayName": "ДЖАСТ ІН",
-      "id": "justin-970b0c",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "ДЖАСТ ІН",
-        "operator:en": "justin",
-        "operator:uk": "ДЖАСТ ІН",
-        "operator:wikidata": "Q63828668",
-        "operator:wikipedia": "uk:Justin"
+        "operator:wikidata": "Q4375351"
       }
     },
     {
       "displayName": "Еконт",
       "id": "27c606-03f0fb",
       "locationSet": {"include": ["bg"]},
-      "matchNames": ["econt", "ekont"],
+      "matchNames": ["econt", "ekont", "еконт"],
       "tags": {
         "amenity": "post_office",
         "operator": "Еконт Експрес ЕООД",
-        "operator:wikidata": "Q12279603",
-        "operator:wikipedia": "bg:Еконт Експрес"
+        "operator:wikidata": "Q12279603"
       }
     },
     {
@@ -1497,25 +1506,16 @@
       }
     },
     {
-      "displayName": "Ін-Тайм",
-      "id": "ba4b41-970b0c",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "Ін-Тайм",
-        "operator:wikidata": "Q12074387",
-        "operator:wikipedia": "uk:Ін-Тайм"
-      }
-    },
-    {
-      "displayName": "Казпочта",
-      "id": "c12bb7-58ab80",
+      "displayName": "Қазпошта",
+      "id": "426ee4-58ab80",
       "locationSet": {"include": ["kz"]},
+      "matchNames": ["казпошта"],
       "tags": {
         "amenity": "post_office",
-        "operator": "Казпочта",
-        "operator:wikidata": "Q746263",
-        "operator:wikipedia": "ru:Казпочта"
+        "operator": "Қазпошта",
+        "operator:kk": "Қазпошта",
+        "operator:ru": "Казпочта",
+        "operator:wikidata": "Q746263"
       }
     },
     {
@@ -1525,8 +1525,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Македонска Пошта",
-        "operator:wikidata": "Q3209396",
-        "operator:wikipedia": "mk:Македонска пошта"
+        "operator:wikidata": "Q3209396"
       }
     },
     {
@@ -1534,6 +1533,8 @@
       "id": "530f2c-970b0c",
       "locationSet": {"include": ["ua"]},
       "matchNames": [
+        "nova poshta",
+        "nova post",
         "нова пошта №1",
         "нова пошта №2",
         "нова пошта №3",
@@ -1543,8 +1544,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Нова Пошта",
-        "operator:wikidata": "Q12133863",
-        "operator:wikipedia": "uk:Нова Пошта"
+        "operator:wikidata": "Q12133863"
       }
     },
     {
@@ -1556,23 +1556,21 @@
         "operator": "Почта Крыма",
         "operator:en": "Post of Crimea",
         "operator:ru": "Почта Крыма",
-        "operator:wikidata": "Q21193668",
-        "operator:wikipedia": "ru:Почта Крыма"
+        "operator:wikidata": "Q21193668"
       }
     },
     {
       "displayName": "Почта России",
-      "id": "8e5a76-5789f0",
+      "id": "6898b3-5789f0",
       "locationSet": {"include": ["ru"]},
       "matchNames": [
-        "ао почта россии",
+        "почта россии",
         "фгуп почта россии"
       ],
       "tags": {
         "amenity": "post_office",
-        "operator": "Почта России",
-        "operator:wikidata": "Q1502763",
-        "operator:wikipedia": "ru:Почта России"
+        "operator": "АО \"Почта России\"",
+        "operator:wikidata": "Q1502763"
       }
     },
     {
@@ -1582,19 +1580,7 @@
       "tags": {
         "amenity": "post_office",
         "operator": "Пошта Србије",
-        "operator:wikidata": "Q769311",
-        "operator:wikipedia": "sr:Pošta Srbije"
-      }
-    },
-    {
-      "displayName": "СДЭК",
-      "id": "5ac048-5789f0",
-      "locationSet": {"include": ["ru"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "СДЭК",
-        "operator:wikidata": "Q28665980",
-        "operator:wikipedia": "ru:СДЭК"
+        "operator:wikidata": "Q769311"
       }
     },
     {
@@ -1610,14 +1596,13 @@
       "displayName": "Укрпошта",
       "id": "c8edb5-970b0c",
       "locationSet": {"include": ["ua"]},
-      "matchNames": ["ат укрпошта"],
+      "matchNames": ["ат укрпошта", "пошта"],
       "tags": {
         "amenity": "post_office",
         "operator": "Укрпошта",
         "operator:ru": "Укрпочта",
         "operator:uk": "Укрпошта",
-        "operator:wikidata": "Q2470783",
-        "operator:wikipedia": "uk:Укрпошта"
+        "operator:wikidata": "Q2470783"
       }
     },
     {
@@ -1629,8 +1614,7 @@
         "operator": "דואר ישראל",
         "operator:en": "Israel Postal Company",
         "operator:he": "דואר ישראל",
-        "operator:wikidata": "Q671700",
-        "operator:wikipedia": "he:דואר ישראל"
+        "operator:wikidata": "Q671700"
       }
     },
     {
@@ -1642,8 +1626,20 @@
         "operator": "البريد الإيراني",
         "operator:ar": "البريد الإيراني",
         "operator:en": "Iran Post",
-        "operator:wikidata": "Q6066851",
-        "operator:wikipedia": "fa:شرکت ملی پست جمهوری اسلامی ایران"
+        "operator:wikidata": "Q6066851"
+      }
+    },
+    {
+      "displayName": "البريد العراقي",
+      "id": "iraqpost-371d69",
+      "locationSet": {"include": ["iq"]},
+      "matchNames": ["iraqi post"],
+      "tags": {
+        "amenity": "post_office",
+        "operator": "البريد العراقي",
+        "operator:ar": "البريد العراقي",
+        "operator:en": "Iraq Post",
+        "operator:wikidata": "Q12184443"
       }
     },
     {
@@ -1655,8 +1651,7 @@
         "operator": "우정사업본부",
         "operator:en": "Korea Post",
         "operator:ko": "우정사업본부",
-        "operator:wikidata": "Q483280",
-        "operator:wikipedia": "ko:우정사업본부"
+        "operator:wikidata": "Q483280"
       }
     },
     {
@@ -1668,21 +1663,7 @@
         "operator": "ヤマト運輸",
         "operator:en": "Yamato Transport",
         "operator:ja": "ヤマト運輸",
-        "operator:wikidata": "Q6584353",
-        "operator:wikipedia": "ja:ヤマト運輸"
-      }
-    },
-    {
-      "displayName": "中国邮政",
-      "id": "chinapost-1c81b5",
-      "locationSet": {"include": ["cn"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "中国邮政",
-        "operator:en": "China Post",
-        "operator:wikidata": "Q1066476",
-        "operator:wikipedia": "en:China Post",
-        "operator:zh": "中国邮政"
+        "operator:wikidata": "Q6584353"
       }
     },
     {
@@ -1691,11 +1672,15 @@
       "locationSet": {"include": ["tw"]},
       "matchNames": ["中華郵政公司", "中華郵政股份有限公司"],
       "tags": {
+        "alt_name": "中華郵政;郵局",
         "amenity": "post_office",
         "operator": "中華郵政",
         "operator:en": "Chunghwa Post",
+        "operator:nan": "Tiong-hôa Iû-chèng",
+        "operator:nan-HJ": "中華郵政",
+        "operator:nan-POJ": "Tiong-hôa Iû-chèng",
+        "operator:nan-TL": "Tiong-huâ Iû-tsìng",
         "operator:wikidata": "Q709259",
-        "operator:wikipedia": "zh:中華郵政",
         "operator:zh": "中華郵政"
       }
     },
@@ -1708,8 +1693,7 @@
         "operator": "佐川急便",
         "operator:en": "Sagawa Express",
         "operator:ja": "佐川急便",
-        "operator:wikidata": "Q7399082",
-        "operator:wikipedia": "ja:佐川急便"
+        "operator:wikidata": "Q7399082"
       }
     },
     {
@@ -1728,21 +1712,9 @@
         "operator:en": "Japan Post",
         "operator:ja": "日本郵便",
         "operator:wikidata": "Q11509260",
-        "operator:wikipedia": "ja:日本郵便",
-        "short_name:en": "JP"
-      }
-    },
-    {
-      "displayName": "菜鸟驿站",
-      "id": "cainiao-1c81b5",
-      "locationSet": {"include": ["cn"]},
-      "tags": {
-        "amenity": "post_office",
-        "operator": "菜鸟驿站",
-        "operator:en": "CAI NIAO",
-        "operator:wikidata": "Q16947973",
-        "operator:wikipedia": "zh:菜鸟网络",
-        "operator:zh": "菜鸟驿站"
+        "short_name": "郵便局",
+        "short_name:en": "JP",
+        "short_name:ja": "郵便局"
       }
     },
     {
@@ -1754,7 +1726,6 @@
         "operator": "香港郵政 Hongkong Post",
         "operator:en": "Hongkong Post",
         "operator:wikidata": "Q196631",
-        "operator:wikipedia": "zh:香港郵政",
         "operator:zh": "香港郵政"
       }
     }

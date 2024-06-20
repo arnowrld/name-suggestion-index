@@ -4,7 +4,10 @@
     "skipCollection": true,
     "preserveTags": ["^name"],
     "exclude": {
-      "generic": ["^school( building)?$"]
+      "generic": [
+        "^school( building)?$",
+        "^школа$"
+      ]
     }
   },
   "items": [
@@ -16,8 +19,7 @@
       "tags": {
         "amenity": "school",
         "brand": "Bahçeşehir Koleji",
-        "brand:wikidata": "Q4843100",
-        "brand:wikipedia": "en:Bahçeşehir Koleji"
+        "brand:wikidata": "Q4843100"
       }
     },
     {
@@ -52,9 +54,20 @@
         "amenity": "school",
         "brand": "Imagine Schools",
         "brand:wikidata": "Q6002737",
-        "brand:wikipedia": "en:Imagine Schools",
         "name": "Imagine Schools",
         "operator:type": "private_non_profit"
+      }
+    },
+    {
+      "displayName": "Jawahar Navodaya Vidyalaya",
+      "id": "jawaharnavodayavidyalaya-198395",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "amenity": "school",
+        "brand": "Jawahar Navodaya Vidyalaya",
+        "brand:wikidata": "Q2723540",
+        "name": "Jawahar Navodaya Vidyalaya",
+        "operator:type": "government_non_profit"
       }
     },
     {
@@ -64,8 +77,7 @@
       "tags": {
         "amenity": "school",
         "brand": "Kendriya Vidyalaya",
-        "brand:wikidata": "Q15646407",
-        "brand:wikipedia": "en:Kendriya Vidyalaya",
+        "brand:wikidata": "Q1156653",
         "name": "Kendriya Vidyalaya",
         "operator:type": "government_non_profit"
       }
@@ -78,10 +90,65 @@
         "amenity": "school",
         "brand": "KIPP",
         "brand:wikidata": "Q6423304",
-        "brand:wikipedia": "en:KIPP",
         "name": "KIPP",
         "official_name": "Knowledge Is Power Program",
         "operator:type": "private_non_profit"
+      }
+    },
+    {
+      "displayName": "Maharishi Vidya Mandir",
+      "id": "maharishividyamandir-198395",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "amenity": "school",
+        "brand": "Maharishi Vidya Mandir",
+        "operator:type": "private_non_profit"
+      }
+    },
+    {
+      "displayName": "Maple Bear",
+      "id": "maplebear-101006",
+      "locationSet": {
+        "include": [
+          "ae",
+          "al",
+          "ar",
+          "au",
+          "bd",
+          "bg",
+          "br",
+          "ca",
+          "gt",
+          "hk",
+          "hr",
+          "in",
+          "ke",
+          "kr",
+          "lk",
+          "ma",
+          "mx",
+          "my",
+          "np",
+          "om",
+          "pe",
+          "ph",
+          "py",
+          "ro",
+          "rs",
+          "sg",
+          "th",
+          "tk",
+          "ua",
+          "us",
+          "vn"
+        ]
+      },
+      "tags": {
+        "amenity": "school",
+        "brand": "Maple Bear",
+        "brand:wikidata": "Q10324823",
+        "name": "Maple Bear",
+        "operator:type": "private"
       }
     },
     {
@@ -92,7 +159,6 @@
         "amenity": "school",
         "brand": "Merryhill School",
         "brand:wikidata": "Q6820493",
-        "brand:wikipedia": "en:Merryhill Schools",
         "name": "Merryhill School",
         "operator:type": "private_non_profit"
       }
@@ -115,7 +181,6 @@
         "amenity": "school",
         "brand": "Success Academy",
         "brand:wikidata": "Q14707388",
-        "brand:wikipedia": "en:Success Academy Charter Schools",
         "name": "Success Academy",
         "operator:type": "private_non_profit"
       }
@@ -129,11 +194,25 @@
         "brand": "新东方",
         "brand:en": "New Oriental Education",
         "brand:wikidata": "Q13631921",
-        "brand:wikipedia": "zh:新东方学校",
         "brand:zh": "新东方",
         "name": "新东方优能中学",
         "name:en": "New Oriental Youneng School",
         "name:zh": "新东方优能中学"
+      }
+    },
+    {
+      "displayName": "遵理學校 Beacon College",
+      "id": "beaconcollege-7e66f3",
+      "locationSet": {"include": ["hk"]},
+      "tags": {
+        "amenity": "school",
+        "brand": "遵理學校 Beacon College",
+        "brand:en": "Beacon College",
+        "brand:wikidata": "Q28408488",
+        "brand:zh": "遵理學校",
+        "name": "遵理學校 Beacon College",
+        "name:en": "Beacon College",
+        "name:zh": "遵理學校"
       }
     }
   ]

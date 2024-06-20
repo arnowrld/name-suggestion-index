@@ -12,12 +12,22 @@
       "displayName": "Adyar Ananda Bhavan",
       "id": "adyaranandabhavan-abc6d4",
       "locationSet": {"include": ["in"]},
-      "matchTags": ["amenity/restaurant"],
       "tags": {
         "brand": "Adyar Ananda Bhavan",
         "brand:wikidata": "Q15178238",
-        "brand:wikipedia": "en:Adyar Ananda Bhavan",
         "name": "Adyar Ananda Bhavan",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Ambala Foods",
+      "id": "ambalafoods-bdbf63",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Ambala",
+        "brand:wikidata": "Q111806237",
+        "cuisine": "indian",
+        "name": "Ambala Foods",
         "shop": "confectionery"
       }
     },
@@ -28,7 +38,6 @@
       "tags": {
         "brand": "arko",
         "brand:wikidata": "Q673647",
-        "brand:wikipedia": "de:Arko (Markenname)",
         "name": "arko",
         "shop": "confectionery"
       }
@@ -40,7 +49,6 @@
       "tags": {
         "brand": "Bahlsen",
         "brand:wikidata": "Q315068",
-        "brand:wikipedia": "de:Bahlsen",
         "name": "Bahlsen Outlet",
         "shop": "confectionery"
       }
@@ -113,12 +121,41 @@
       }
     },
     {
+      "displayName": "Châteraisé",
+      "id": "chateraise-c520ad",
+      "locationSet": {
+        "include": ["hk", "sg", "th", "tw"]
+      },
+      "tags": {
+        "brand": "Châteraisé",
+        "brand:en": "Chateraise",
+        "brand:ja": "シャトレーゼ",
+        "brand:wikidata": "Q11307696",
+        "name": "Châteraisé",
+        "name:en": "Chateraise",
+        "name:ja": "シャトレーゼ",
+        "shop": "confectionery"
+      }
+    },
+    {
       "displayName": "DeBeukelaer Factory Outlet",
       "id": "debeukelaerfactoryoutlet-2c21b2",
       "locationSet": {"include": ["de"]},
       "tags": {
         "brand": "DeBeukelaer",
         "name": "DeBeukelaer Factory Outlet",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Don Benito's",
+      "id": "donbenitos-940870",
+      "locationSet": {"include": ["ph"]},
+      "matchNames": ["don benito's cassava"],
+      "tags": {
+        "brand": "Don Benito's",
+        "brand:wikidata": "Q120755754",
+        "name": "Don Benito's",
         "shop": "confectionery"
       }
     },
@@ -138,10 +175,7 @@
       "id": "elrincon-0b3ba6",
       "locationSet": {"include": ["es"]},
       "matchNames": ["frutos secos el rincón"],
-      "matchTags": [
-        "shop/bakery",
-        "shop/convenience"
-      ],
+      "matchTags": ["shop/convenience"],
       "tags": {
         "brand": "El Rincón",
         "brand:wikidata": "Q98456614",
@@ -153,7 +187,6 @@
       "displayName": "El Rincón & Coffee",
       "id": "elrinconandcoffee-0b3ba6",
       "locationSet": {"include": ["es"]},
-      "matchTags": ["amenity/cafe"],
       "tags": {
         "amenity": "cafe",
         "brand": "El Rincón",
@@ -169,7 +202,6 @@
       "tags": {
         "brand": "Hemmakväll",
         "brand:wikidata": "Q10521791",
-        "brand:wikipedia": "sv:Hemmakväll",
         "name": "Hemmakväll",
         "shop": "confectionery"
       }
@@ -181,7 +213,6 @@
       "tags": {
         "brand": "Hotel Chocolat",
         "brand:wikidata": "Q5911369",
-        "brand:wikipedia": "en:Hotel Chocolat",
         "name": "Hotel Chocolat",
         "shop": "confectionery"
       }
@@ -195,8 +226,18 @@
       "tags": {
         "brand": "Hussel",
         "brand:wikidata": "Q17123688",
-        "brand:wikipedia": "de:Hussel",
         "name": "Hussel",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Hussel Confiserie",
+      "id": "husselconfiserie-ce6a87",
+      "locationSet": {"include": ["at", "de"]},
+      "tags": {
+        "brand": "Hussel",
+        "brand:wikidata": "Q17123688",
+        "name": "Hussel Confiserie",
         "shop": "confectionery"
       }
     },
@@ -207,7 +248,6 @@
       "tags": {
         "brand": "Jamin",
         "brand:wikidata": "Q2291848",
-        "brand:wikipedia": "nl:Jamin",
         "name": "Jamin",
         "shop": "confectionery"
       }
@@ -216,15 +256,9 @@
       "displayName": "Kaspa's",
       "id": "kaspas-bdbf63",
       "locationSet": {"include": ["gb"]},
-      "matchTags": [
-        "amenity/cafe",
-        "amenity/ice_cream",
-        "amenity/restaurant"
-      ],
       "tags": {
         "brand": "Kaspa's",
         "brand:wikidata": "Q24439133",
-        "brand:wikipedia": "en:Kaspa's",
         "name": "Kaspa's",
         "shop": "confectionery"
       }
@@ -233,13 +267,21 @@
       "displayName": "Kilwins",
       "id": "kilwins-c4be02",
       "locationSet": {"include": ["us"]},
-      "matchTags": ["amenity/ice_cream"],
       "tags": {
         "brand": "Kilwins",
         "brand:wikidata": "Q38250832",
-        "brand:wikipedia": "en:Kilwins",
         "cuisine": "chocolate;ice_cream;popcorn",
         "name": "Kilwins",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Kulikov",
+      "id": "kulikov-311d19",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Kulikov",
+        "name": "Kulikov",
         "shop": "confectionery"
       }
     },
@@ -255,14 +297,48 @@
       }
     },
     {
+      "displayName": "Rocket Fizz",
+      "id": "rocketfizz-9950eb",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Rocket Fizz",
+        "brand:wikidata": "Q17107987",
+        "name": "Rocket Fizz",
+        "official_name": "Rocket Fizz Soda Pop & Candy Shop",
+        "shop": "confectionery"
+      }
+    },
+    {
       "displayName": "Rocky Mountain Chocolate Factory",
       "id": "rockymountainchocolatefactory-9950eb",
       "locationSet": {"include": ["ca", "us"]},
       "tags": {
         "brand": "Rocky Mountain Chocolate Factory",
         "brand:wikidata": "Q7355878",
-        "brand:wikipedia": "en:Rocky Mountain Chocolate Factory",
         "name": "Rocky Mountain Chocolate Factory",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Roshen",
+      "id": "roshen-84145b",
+      "locationSet": {"include": ["ua"]},
+      "matchNames": ["рошен"],
+      "tags": {
+        "brand": "Roshen",
+        "brand:wikidata": "Q2635017",
+        "name": "Roshen",
+        "name:en": "Roshen",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Safia",
+      "id": "safia-311d19",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Safia",
+        "name": "Safia",
         "shop": "confectionery"
       }
     },
@@ -274,7 +350,6 @@
       "tags": {
         "brand": "See's Candies",
         "brand:wikidata": "Q2103510",
-        "brand:wikipedia": "en:See's Candies",
         "name": "See's Candies",
         "shop": "confectionery"
       }
@@ -286,7 +361,6 @@
       "tags": {
         "brand": "Storck",
         "brand:wikidata": "Q566814",
-        "brand:wikipedia": "de:August Storck",
         "name": "Storck Welt Outlet",
         "shop": "confectionery"
       }
@@ -308,8 +382,20 @@
       "tags": {
         "brand": "Thorntons",
         "brand:wikidata": "Q683102",
-        "brand:wikipedia": "en:Thorntons",
         "name": "Thorntons",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Vatsak",
+      "id": "vatsak-84145b",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "brand": "Вацак",
+        "brand:wikidata": "Q30966576",
+        "name": "Вацак",
+        "name:en": "Vatsak",
+        "name:uk": "Вацак",
         "shop": "confectionery"
       }
     },
@@ -320,37 +406,17 @@
       "tags": {
         "brand": "Viba",
         "brand:wikidata": "Q1290252",
-        "brand:wikipedia": "de:Viba",
         "name": "Viba",
         "shop": "confectionery"
       }
     },
     {
-      "displayName": "Акконд",
-      "id": "akkond-61c5bf",
-      "locationSet": {"include": ["ru"]},
+      "displayName": "Карамелька",
+      "id": "cf9c6a-311d19",
+      "locationSet": {"include": ["001"]},
       "tags": {
-        "brand": "Акконд",
-        "brand:en": "Akkond",
-        "brand:ru": "Акконд",
-        "brand:wikidata": "Q4053986",
-        "brand:wikipedia": "ru:Акконд",
-        "name": "Акконд",
-        "name:en": "Akkond",
-        "name:ru": "Акконд",
-        "shop": "confectionery"
-      }
-    },
-    {
-      "displayName": "Вацак",
-      "id": "vatsak-84145b",
-      "locationSet": {"include": ["ua"]},
-      "tags": {
-        "brand": "Вацак",
-        "brand:wikidata": "Q30966576",
-        "brand:wikipedia": "uk:Кондитерський Дім «Вацак»",
-        "name": "Вацак",
-        "name:en": "Vatsak",
+        "brand": "Карамелька",
+        "name": "Карамелька",
         "shop": "confectionery"
       }
     },
@@ -358,24 +424,52 @@
       "displayName": "Красный пищевик",
       "id": "4742ac-ceb7f9",
       "locationSet": {"include": ["by"]},
-      "matchTags": ["shop/pastry"],
       "tags": {
         "brand": "Красный пищевик",
         "brand:wikidata": "Q61742027",
-        "brand:wikipedia": "ru:Красный пищевик",
         "name": "Красный пищевик",
         "shop": "confectionery"
       }
     },
     {
       "displayName": "Лакомка",
-      "id": "lakomka-311d19",
-      "locationSet": {"include": ["001"]},
+      "id": "lakomka-61c5bf",
+      "locationSet": {"include": ["ru"]},
       "tags": {
         "brand": "Лакомка",
         "name": "Лакомка",
         "name:en": "Lakomka",
         "name:ru": "Лакомка",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "Север-Метрополь",
+      "id": "severmetropol-61c5bf",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Север-Метрополь",
+        "brand:en": "Sever-Metropol",
+        "brand:ru": "Север-Метрополь",
+        "brand:wikidata": "Q4411982",
+        "name": "Север-Метрополь",
+        "name:en": "Sever-Metropol",
+        "name:ru": "Север-Метрополь",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "شیرین عسل",
+      "id": "shirinasal-971a8a",
+      "locationSet": {"include": ["ir"]},
+      "tags": {
+        "brand": "شیرین عسل",
+        "brand:en": "Shirin Asal",
+        "brand:fa": "شیرین عسل",
+        "brand:wikidata": "Q5862430",
+        "name": "شیرین عسل",
+        "name:en": "Shirin Asal",
+        "name:fa": "شیرین عسل",
         "shop": "confectionery"
       }
     },
@@ -387,9 +481,25 @@
         "brand": "おかしのまちおか",
         "brand:en": "Machioka",
         "brand:ja": "おかしのまちおか",
+        "brand:wikidata": "Q117828763",
         "name": "おかしのまちおか",
         "name:en": "Machioka",
         "name:ja": "おかしのまちおか",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "displayName": "シェ・レカミエ",
+      "id": "chezrecamier-59ea1b",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "brand": "シェ・レカミエ",
+        "brand:en": "Chez Récamier",
+        "brand:ja": "シェ・レカミエ",
+        "brand:wikidata": "Q117377562",
+        "name": "シェ・レカミエ",
+        "name:en": "Chez Récamier",
+        "name:ja": "シェ・レカミエ",
         "shop": "confectionery"
       }
     },
@@ -402,7 +512,6 @@
         "brand:en": "Chateraise",
         "brand:ja": "シャトレーゼ",
         "brand:wikidata": "Q11307696",
-        "brand:wikipedia": "ja:シャトレーゼ",
         "name": "シャトレーゼ",
         "name:en": "Chateraise",
         "name:ja": "シャトレーゼ",
@@ -418,7 +527,6 @@
         "brand:en": "Fujiya",
         "brand:ja": "不二家",
         "brand:wikidata": "Q858452",
-        "brand:wikipedia": "ja:不二家",
         "name": "不二家",
         "name:en": "Fujiya",
         "name:ja": "不二家",
@@ -435,7 +543,6 @@
         "brand:en": "Ginza Cozy Corner",
         "brand:ja": "銀座コージーコーナー",
         "brand:wikidata": "Q11649983",
-        "brand:wikipedia": "ja:銀座コージーコーナー",
         "name": "銀座コージーコーナー",
         "name:en": "Ginza Cozy Corner",
         "name:ja": "銀座コージーコーナー",

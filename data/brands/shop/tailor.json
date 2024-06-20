@@ -7,12 +7,22 @@
         "^atelier de couture$",
         "^couture\\s?(dame|homme|mixte)?$",
         "^ladies tailoring$",
-        "^tail(or|leur)$",
+        "^tail(or|leur)(ing)?$",
         "^ателье$"
       ]
     }
   },
   "items": [
+    {
+      "displayName": "Ремонт одежды",
+      "id": "14b50c-dc4cfe",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Ремонт одежды",
+        "name": "Ремонт одежды",
+        "shop": "tailor"
+      }
+    },
     {
       "displayName": "マジックミシン",
       "id": "magicmachine-91405f",

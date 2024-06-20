@@ -5,14 +5,32 @@
   },
   "items": [
     {
+      "displayName": "Alpes Autopartage",
+      "id": "alpesautopartage-672a50",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Alpes Autopartage"
+      }
+    },
+    {
+      "displayName": "Autohaus Schmid Waldkirch GmbH",
+      "id": "autohausschmidwaldkirchgmbh-088af7",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Autohaus Schmid Waldkirch GmbH",
+        "operator:wikidata": "Q116473916"
+      }
+    },
+    {
       "displayName": "Autolib'",
       "id": "autolib-672a50",
       "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "Autolib'",
-        "operator:wikidata": "Q787037",
-        "operator:wikipedia": "fr:Autolib' (Paris)"
+        "operator:wikidata": "Q787037"
       }
     },
     {
@@ -49,8 +67,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Bolloré",
-        "operator:wikidata": "Q444172",
-        "operator:wikipedia": "fr:Bolloré"
+        "operator:wikidata": "Q444172"
       }
     },
     {
@@ -59,7 +76,8 @@
       "locationSet": {"include": ["de"]},
       "tags": {
         "amenity": "car_sharing",
-        "operator": "book-n-drive"
+        "operator": "book-n-drive",
+        "operator:wikidata": "Q111016349"
       }
     },
     {
@@ -70,9 +88,8 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "cambio CarSharing",
-        "operator:wikidata": "Q1028155",
-        "operator:wikipedia": "de:Cambio CarSharing",
-        "short_name": "Cambio"
+        "operator:short": "Cambio",
+        "operator:wikidata": "Q1028155"
       }
     },
     {
@@ -85,12 +102,13 @@
       }
     },
     {
-      "displayName": "car2go black",
-      "id": "car2goblack-088af7",
-      "locationSet": {"include": ["de"]},
+      "displayName": "CarSharing Erlangen",
+      "id": "carsharingerlangen-8163ad",
+      "locationSet": {"include": ["001"]},
       "tags": {
         "amenity": "car_sharing",
-        "operator": "car2go black"
+        "operator": "CarSharing Erlangen",
+        "operator:wikidata": "Q114390399"
       }
     },
     {
@@ -104,11 +122,8 @@
     },
     {
       "displayName": "Citédia",
-      "id": "citedia-01d93e",
-      "locationSet": {
-        "include": ["001"],
-        "exclude": ["cn"]
-      },
+      "id": "citedia-672a50",
+      "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "Citédia"
@@ -131,8 +146,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Citiz",
-        "operator:wikidata": "Q3080530",
-        "operator:wikipedia": "fr:Citiz"
+        "operator:wikidata": "Q3080530"
       }
     },
     {
@@ -154,14 +168,31 @@
       }
     },
     {
+      "displayName": "Citiz Nantes",
+      "id": "citiznantes-672a50",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Citiz Nantes"
+      }
+    },
+    {
       "displayName": "City CarShare",
       "id": "citycarshare-ed8a5d",
       "locationSet": {"include": ["us"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "City CarShare",
-        "operator:wikidata": "Q5770528",
-        "operator:wikipedia": "en:City CarShare"
+        "operator:wikidata": "Q5770528"
+      }
+    },
+    {
+      "displayName": "Co Cars",
+      "id": "cocars-8ed6b7",
+      "locationSet": {"include": ["gb-eng"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Co Cars"
       }
     },
     {
@@ -181,8 +212,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Communauto",
-        "operator:wikidata": "Q2986851",
-        "operator:wikipedia": "en:Communauto"
+        "operator:wikidata": "Q2986851"
       }
     },
     {
@@ -195,6 +225,15 @@
       }
     },
     {
+      "displayName": "deer GmbH",
+      "id": "deergmbh-088af7",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "deer GmbH"
+      }
+    },
+    {
       "displayName": "DENZEL Mobility CarSharing",
       "id": "denzelmobilitycarsharing-a7a6ff",
       "locationSet": {"include": ["at"]},
@@ -204,14 +243,15 @@
       }
     },
     {
-      "displayName": "Deutsche Bahn Connect GmbH",
+      "displayName": "Deutsche Bahn Connect GmbH (Flinkster)",
       "id": "deutschebahnconnectgmbh-088af7",
       "locationSet": {"include": ["de"]},
       "tags": {
         "amenity": "car_sharing",
+        "brand": "Flinkster",
+        "network": "Flinkster",
         "operator": "Deutsche Bahn Connect GmbH",
-        "operator:wikidata": "Q1152100",
-        "operator:wikipedia": "de:Deutsche Bahn Connect"
+        "operator:wikidata": "Q1152100"
       }
     },
     {
@@ -230,7 +270,8 @@
       "locationSet": {"include": ["it"]},
       "tags": {
         "amenity": "car_sharing",
-        "operator": "e-vai"
+        "operator": "e-vai",
+        "operator:wikidata": "Q113282616"
       }
     },
     {
@@ -250,21 +291,21 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Enterprise Car Club",
-        "operator:wikidata": "Q5123055",
-        "operator:wikipedia": "en:Enterprise Car Club"
+        "operator:wikidata": "Q5123055"
       }
     },
     {
       "displayName": "Enterprise CarShare",
-      "id": "enterprisecarshare-01d93e",
-      "locationSet": {
-        "include": ["001"],
-        "exclude": ["cn"]
-      },
-      "matchNames": ["autoshare"],
+      "id": "enterprisecarshare-79c4ed",
+      "locationSet": {"include": ["ca", "us"]},
+      "matchNames": [
+        "autoshare",
+        "phillycarshare"
+      ],
       "tags": {
         "amenity": "car_sharing",
-        "operator": "Enterprise CarShare"
+        "operator": "Enterprise CarShare",
+        "operator:wikidata": "Q834054"
       }
     },
     {
@@ -274,19 +315,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Evo",
-        "operator:wikidata": "Q26553214",
-        "operator:wikipedia": "en:Evo Car Share"
-      }
-    },
-    {
-      "displayName": "Flinkster",
-      "id": "flinkster-ad9787",
-      "locationSet": {"include": ["at", "de"]},
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "Flinkster",
-        "operator:wikidata": "Q1152100",
-        "operator:wikipedia": "de:Deutsche Bahn Connect"
+        "operator:wikidata": "Q26553214"
       }
     },
     {
@@ -314,8 +343,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "GoCar",
-        "operator:wikidata": "Q5574615",
-        "operator:wikipedia": "en:GoCar (carsharing)"
+        "operator:wikidata": "Q5574615"
       }
     },
     {
@@ -325,8 +353,16 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "GoGet",
-        "operator:wikidata": "Q5574624",
-        "operator:wikipedia": "en:GoGet"
+        "operator:wikidata": "Q5574624"
+      }
+    },
+    {
+      "displayName": "Grafinger Auto-Teiler e.V.",
+      "id": "grafingerautoteilerev-8163ad",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Grafinger Auto-Teiler e.V."
       }
     },
     {
@@ -336,8 +372,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Greenwheels",
-        "operator:wikidata": "Q316782",
-        "operator:wikipedia": "en:Greenwheels"
+        "operator:wikidata": "Q316782"
       }
     },
     {
@@ -377,14 +412,22 @@
       }
     },
     {
+      "displayName": "Linz AG",
+      "id": "linzag-8163ad",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Linz AG"
+      }
+    },
+    {
       "displayName": "Marguerite",
       "id": "marguerite-672a50",
       "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "Marguerite",
-        "operator:wikidata": "Q3290655",
-        "operator:wikipedia": "fr:Marguerite (autopartage)"
+        "operator:wikidata": "Q3290655"
       }
     },
     {
@@ -404,17 +447,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Mobility",
-        "operator:wikidata": "Q692400",
-        "operator:wikipedia": "de:Mobility Carsharing"
-      }
-    },
-    {
-      "displayName": "Mobility Center GmbH",
-      "id": "mobilitycentergmbh-088af7",
-      "locationSet": {"include": ["de"]},
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "Mobility Center GmbH"
+        "operator:wikidata": "Q692400"
       }
     },
     {
@@ -424,8 +457,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Modo",
-        "operator:wikidata": "Q6889533",
-        "operator:wikipedia": "en:Modo (car co-op)"
+        "operator:wikidata": "Q6889533"
       }
     },
     {
@@ -435,8 +467,16 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Modulauto",
-        "operator:wikidata": "Q3317964",
-        "operator:wikipedia": "fr:Modulauto"
+        "operator:wikidata": "Q3317964"
+      }
+    },
+    {
+      "displayName": "MyWheels",
+      "id": "mywheels-c3e863",
+      "locationSet": {"include": ["nl"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "MyWheels"
       }
     },
     {
@@ -459,25 +499,13 @@
       }
     },
     {
-      "displayName": "PhillyCarShare",
-      "id": "phillycarshare-d68aa9",
-      "locationSet": {
-        "include": [[-75.3, 40.1, 50]]
-      },
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "PhillyCarShare",
-        "operator:wikidata": "Q7185981",
-        "operator:wikipedia": "en:PhillyCarShare"
-      }
-    },
-    {
       "displayName": "Régie des Transports du Territoire de Belfort",
       "id": "regiedestransportsduterritoiredebelfort-672a50",
       "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "car_sharing",
-        "operator": "Régie des Transports du Territoire de Belfort"
+        "operator": "Régie des Transports du Territoire de Belfort",
+        "operator:short": "RTTB"
       }
     },
     {
@@ -487,26 +515,48 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Roma Servizi per la Mobilità",
-        "operator:wikidata": "Q30284569",
-        "operator:wikipedia": "it:Roma Servizi per la Mobilità"
+        "operator:wikidata": "Q30284569"
       }
     },
     {
-      "displayName": "RTTB",
-      "id": "rttb-672a50",
-      "locationSet": {"include": ["fx"]},
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "RTTB"
-      }
-    },
-    {
-      "displayName": "Scouter",
-      "id": "scouter-088af7",
+      "displayName": "Scouter Carsharing",
+      "id": "scoutercarsharing-088af7",
       "locationSet": {"include": ["de"]},
+      "matchNames": ["scouter"],
       "tags": {
         "amenity": "car_sharing",
-        "operator": "Scouter"
+        "operator": "Scouter Carsharing",
+        "operator:wikidata": "Q116058863"
+      }
+    },
+    {
+      "displayName": "Share Now",
+      "id": "sharenow-663d52",
+      "locationSet": {
+        "include": [
+          "at",
+          "de",
+          "dk",
+          "fx",
+          "it",
+          "nl"
+        ]
+      },
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Share Now",
+        "operator:wikidata": "Q62021602"
+      }
+    },
+    {
+      "displayName": "Sheepersharing.com",
+      "id": "sheepersharingcom-541d57",
+      "locationSet": {
+        "include": ["de-ni.geojson"]
+      },
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Sheepersharing.com"
       }
     },
     {
@@ -538,27 +588,6 @@
       }
     },
     {
-      "displayName": "stadtmobil",
-      "id": "stadtmobil-088af7",
-      "locationSet": {"include": ["de"]},
-      "matchNames": [
-        "stadtmobil carsharing gmbh & co. kg",
-        "stadtmobil carsharing-station",
-        "stadtmobil hannover gmbh",
-        "stadtmobil rhein-neckar",
-        "stadtmobil rhein-neckar ag",
-        "stadtmobil rhein-ruhr gmbh",
-        "stadtmobil stuttgart",
-        "stadtmobil südbaden"
-      ],
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "stadtmobil",
-        "operator:wikidata": "Q2327629",
-        "operator:wikipedia": "de:Stadtmobil"
-      }
-    },
-    {
       "displayName": "StadtTeilAuto",
       "id": "stadtteilauto-088af7",
       "locationSet": {"include": ["de"]},
@@ -578,8 +607,10 @@
     },
     {
       "displayName": "Stadtwerke Augsburg",
-      "id": "stadtwerkeaugsburg-088af7",
-      "locationSet": {"include": ["de"]},
+      "id": "stadtwerkeaugsburg-1dcf8b",
+      "locationSet": {
+        "include": ["de-by.geojson"]
+      },
       "matchNames": [
         "stadtwerke augsburg carsharing gmbh",
         "stadtwerke augsburg holding gmbh"
@@ -587,8 +618,7 @@
       "tags": {
         "amenity": "car_sharing",
         "operator": "Stadtwerke Augsburg",
-        "operator:wikidata": "Q2328426",
-        "operator:wikipedia": "de:Stadtwerke Augsburg"
+        "operator:wikidata": "Q2328426"
       }
     },
     {
@@ -601,36 +631,13 @@
       }
     },
     {
-      "displayName": "Streetcar",
-      "id": "streetcar-8ed6b7",
-      "locationSet": {"include": ["gb-eng"]},
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "Streetcar",
-        "operator:wikidata": "Q7623070",
-        "operator:wikipedia": "en:Streetcar (carsharing)"
-      }
-    },
-    {
       "displayName": "Sunfleet",
       "id": "sunfleet-cd4862",
       "locationSet": {"include": ["se"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "Sunfleet",
-        "operator:wikidata": "Q19978726",
-        "operator:wikipedia": "sv:Sunfleet"
-      }
-    },
-    {
-      "displayName": "teilAuto",
-      "id": "teilauto-088af7",
-      "locationSet": {"include": ["de"]},
-      "tags": {
-        "amenity": "car_sharing",
-        "operator": "teilAuto",
-        "operator:wikidata": "Q2400658",
-        "operator:wikipedia": "de:TeilAuto"
+        "operator:wikidata": "Q19978726"
       }
     },
     {
@@ -644,12 +651,40 @@
       }
     },
     {
+      "displayName": "Times",
+      "id": "times-8163ad",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Times"
+      }
+    },
+    {
+      "displayName": "Ubeeqo",
+      "id": "ubeeqo-8163ad",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Ubeeqo",
+        "operator:wikidata": "Q25391869"
+      }
+    },
+    {
       "displayName": "Vaterstettener Auto-Teiler e.V.",
       "id": "vaterstettenerautoteilerev-088af7",
       "locationSet": {"include": ["de"]},
       "tags": {
         "amenity": "car_sharing",
         "operator": "Vaterstettener Auto-Teiler e.V."
+      }
+    },
+    {
+      "displayName": "Vianova eG",
+      "id": "vianovaeg-8163ad",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_sharing",
+        "operator": "Vianova eG"
       }
     },
     {
@@ -675,34 +710,45 @@
           "us"
         ]
       },
+      "matchNames": ["streetcar"],
+      "matchTags": ["amenity/car_rental"],
       "tags": {
         "amenity": "car_sharing",
         "operator": "Zipcar",
-        "operator:wikidata": "Q1069924",
-        "operator:wikipedia": "en:Zipcar"
+        "operator:wikidata": "Q1069924"
       }
     },
     {
-      "displayName": "タイムズ24",
-      "id": "d1ffdb-4854ed",
+      "displayName": "タイムズカー",
+      "id": "timesmobility-4854ed",
       "locationSet": {"include": ["jp"]},
+      "matchNames": [
+        "タイムズ",
+        "タイムズ24",
+        "タイムズカーシェア"
+      ],
       "tags": {
         "amenity": "car_sharing",
-        "operator": "タイムズ24",
-        "operator:ja": "タイムズ24"
+        "brand": "タイムズカー",
+        "brand:en": "Times Car",
+        "brand:ja": "タイムズカー",
+        "brand:wikidata": "Q17987881",
+        "operator": "タイムズモビリティ",
+        "operator:en": "Times Mobility",
+        "operator:ja": "タイムズモビリティ",
+        "operator:wikidata": "Q115248773"
       }
     },
     {
-      "displayName": "タイムズカーシェア",
-      "id": "timescarshare-4854ed",
+      "displayName": "三井不動産リアルティ",
+      "id": "mitsuifudosanrealty-4854ed",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "car_sharing",
-        "operator": "タイムズカーシェア",
-        "operator:en": "Times Car Share",
-        "operator:ja": "タイムズカーシェア",
-        "operator:wikidata": "Q17987881",
-        "operator:wikipedia": "ja:タイムズカー"
+        "operator": "三井不動産リアルティ",
+        "operator:en": "Mitsui Fudosan Realty",
+        "operator:ja": "三井不動産リアルティ",
+        "operator:wikidata": "Q11354218"
       }
     }
   ]

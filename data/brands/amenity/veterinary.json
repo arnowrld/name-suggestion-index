@@ -5,14 +5,33 @@
       "generic": [
         "^(cabinet |clinique )?vétérinaire$",
         "^(cl[ií]nica )?veterinari[ao]$",
+        "^ambulatorio veterinario$",
         "^tierarztpraxis$",
         "^veterinary( hospital)?$",
+        "^ветеринарная аптека$",
         "^ветеринарная клиника$",
         "^ветлечебница$"
+      ],
+      "named": [
+        "^government veterinary hospital$",
+        "^kleintierpraxis$",
+        "^ветаптека$"
       ]
     }
   },
   "items": [
+    {
+      "displayName": "Animates Vetcare",
+      "id": "animatesvetcare-023837",
+      "locationSet": {"include": ["nz"]},
+      "preserveTags": ["^name"],
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "Animates",
+        "brand:wikidata": "Q110299350",
+        "name": "Animates Vetcare"
+      }
+    },
     {
       "displayName": "Banfield Pet Hospital",
       "id": "banfieldpethospital-146b24",
@@ -21,7 +40,6 @@
         "amenity": "veterinary",
         "brand": "Banfield Pet Hospital",
         "brand:wikidata": "Q2882416",
-        "brand:wikipedia": "en:Banfield Pet Hospital",
         "name": "Banfield Pet Hospital"
       }
     },
@@ -33,20 +51,55 @@
         "amenity": "veterinary",
         "brand": "Blue Cross",
         "brand:wikidata": "Q3520039",
-        "brand:wikipedia": "en:Blue Cross (animal charity)",
         "name": "Blue Cross Pet Clinic"
       }
     },
     {
-      "displayName": "Greencross",
-      "id": "greencross-42dd12",
+      "displayName": "BluePearl",
+      "id": "bluepearl-146b24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "BluePearl",
+        "brand:wikidata": "Q4928764",
+        "name": "BluePearl"
+      }
+    },
+    {
+      "displayName": "Goddard Veterinary Group",
+      "id": "goddardveterinarygroup-1f839e",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "matchNames": ["goddard vet group"],
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "Goddard Veterinary Group",
+        "brand:wikidata": "Q120587989",
+        "name": "Goddard Veterinary Group"
+      }
+    },
+    {
+      "displayName": "Greencross Vets",
+      "id": "greencrossvets-42dd12",
       "locationSet": {"include": ["au"]},
       "tags": {
         "amenity": "veterinary",
-        "brand": "Greencross",
+        "brand": "Greencross Vets",
         "brand:wikidata": "Q41179992",
-        "brand:wikipedia": "en:Greencross",
-        "name": "Greencross"
+        "name": "Greencross Vets"
+      }
+    },
+    {
+      "displayName": "Medivet",
+      "id": "medivet-45f750",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["medivet the vets"],
+      "tags": {
+        "amenity": "veterinary",
+        "brand": "Medivet",
+        "brand:wikidata": "Q120372623",
+        "name": "Medivet"
       }
     },
     {
@@ -57,8 +110,19 @@
         "amenity": "veterinary",
         "brand": "VCA Animal Hospital",
         "brand:wikidata": "Q7906620",
-        "brand:wikipedia": "en:VCA Animal Hospitals",
         "name": "VCA Animal Hospital"
+      }
+    },
+    {
+      "displayName": "VetIQ Petcare",
+      "id": "vetiq-146b24",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "alt_name": "VetIQ Smarter Pet Health",
+        "amenity": "veterinary",
+        "brand": "VetIQ Petcare",
+        "brand:wikidata": "Q109887581",
+        "name": "VetIQ"
       }
     },
     {
@@ -69,7 +133,6 @@
         "amenity": "veterinary",
         "brand": "Vets4Pets",
         "brand:wikidata": "Q16960196",
-        "brand:wikipedia": "en:Vets4pets",
         "name": "Vets4Pets"
       }
     },
@@ -82,26 +145,6 @@
         "brand": "WellHaven",
         "brand:wikidata": "Q107784406",
         "name": "WellHaven Pet Health"
-      }
-    },
-    {
-      "displayName": "Ветаптека",
-      "id": "8c25b2-ae5565",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "amenity": "veterinary",
-        "brand": "Ветаптека",
-        "name": "Ветаптека"
-      }
-    },
-    {
-      "displayName": "Ветеринарная аптека",
-      "id": "181b3f-ae5565",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "amenity": "veterinary",
-        "brand": "Ветеринарная аптека",
-        "name": "Ветеринарная аптека"
       }
     }
   ]

@@ -1,6 +1,7 @@
 {
   "properties": {
     "path": "brands/leisure/sports_centre",
+    "preserveTags": ["^name"],
     "exclude": {
       "generic": [
         "^(complejo|pabell[oó]n)( municipal)? de deportes$",
@@ -25,15 +26,18 @@
         "^salle (omnisport|polyvalente|des sports)$",
         "^schützenhaus$",
         "^sport(csarnok|platz)$",
+        "^sportovní hala$",
         "^бассейн$",
+        "^дюсш$",
         "^ледовый дворец$",
         "^спорт(зал|комплекс)$",
+        "^фок$",
         "^体育[館馆]$"
       ],
       "named": [
+        "^(piscina comunale|sokolovna)$",
         "^orlik$",
-        "^sokolovna$",
-        "^дюсш$"
+        "^stade municipal$"
       ]
     }
   },
@@ -45,7 +49,6 @@
       "tags": {
         "brand": "AABB",
         "brand:wikidata": "Q9633503",
-        "brand:wikipedia": "pt:Associação Atlética Banco do Brasil",
         "leisure": "sports_centre",
         "name": "Associação Atlética Banco do Brasil",
         "name:en": "Banco do Brasil Athletic Association",
@@ -54,15 +57,54 @@
       }
     },
     {
+      "displayName": "Better (Greenwich Leisure Limited)",
+      "id": "better-2b43d7",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Better",
+        "brand:wikidata": "Q109721926",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "operator": "Greenwich Leisure Limited",
+        "operator:wikidata": "Q5604859"
+      }
+    },
+    {
       "displayName": "David Lloyd Clubs",
       "id": "davidlloydclubs-2b43d7",
       "locationSet": {"include": ["gb"]},
+      "matchNames": ["david lloyd"],
       "tags": {
         "brand": "David Lloyd Clubs",
         "brand:wikidata": "Q5236716",
-        "brand:wikipedia": "en:David Lloyd Leisure",
         "leisure": "sports_centre",
         "name": "David Lloyd Clubs"
+      }
+    },
+    {
+      "displayName": "Everyone Active",
+      "id": "everyoneactive-2b43d7",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": [
+        "sports and leisure management ltd"
+      ],
+      "tags": {
+        "brand": "Everyone Active",
+        "brand:wikidata": "Q113562737",
+        "fee": "yes",
+        "leisure": "sports_centre"
+      }
+    },
+    {
+      "displayName": "Goals",
+      "id": "goals-2b43d7",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Goals",
+        "brand:wikidata": "Q111480472",
+        "leisure": "sports_centre",
+        "name": "Goals",
+        "sport": "soccer"
       }
     },
     {
@@ -78,6 +120,30 @@
       }
     },
     {
+      "displayName": "K1 Speed",
+      "id": "k1speed-fb63c7",
+      "locationSet": {
+        "include": [
+          "ca",
+          "cn",
+          "do",
+          "fx",
+          "it",
+          "kr",
+          "kw",
+          "mx",
+          "us"
+        ]
+      },
+      "tags": {
+        "brand": "K1 Speed",
+        "brand:wikidata": "Q105615897",
+        "leisure": "sports_centre",
+        "name": "K1 Speed",
+        "sport": "karting"
+      }
+    },
+    {
       "displayName": "Spor İstanbul",
       "id": "sporistanbul-62337f",
       "locationSet": {"include": ["tr"]},
@@ -88,13 +154,34 @@
       }
     },
     {
-      "displayName": "Stade Municipal",
-      "id": "stademunicipal-ba45e1",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Topgolf",
+      "id": "topgolf-9025ef",
+      "locationSet": {
+        "include": [
+          "ae",
+          "au",
+          "cn",
+          "de",
+          "gb",
+          "mx",
+          "th",
+          "us"
+        ]
+      },
+      "matchTags": [
+        "golf/clubhouse",
+        "golf/driving_range",
+        "leisure/golf_course",
+        "leisure/miniture_golf",
+        "leisure/pitch",
+        "tourism/attraction"
+      ],
       "tags": {
-        "brand": "Stade Municipal",
+        "brand": "Topgolf",
+        "brand:wikidata": "Q7824379",
         "leisure": "sports_centre",
-        "name": "Stade Municipal"
+        "name": "Topgolf",
+        "sport": "golf"
       }
     },
     {
@@ -109,13 +196,52 @@
       }
     },
     {
+      "displayName": "X Golf",
+      "id": "xgolf-8a88af",
+      "locationSet": {
+        "include": [
+          "us-al.geojson",
+          "us-co.geojson",
+          "us-ga.geojson",
+          "us-il.geojson",
+          "us-in.geojson",
+          "us-ks.geojson",
+          "us-ma.geojson",
+          "us-me.geojson",
+          "us-mi.geojson",
+          "us-mn.geojson",
+          "us-mo.geojson",
+          "us-nd.geojson",
+          "us-ne.geojson",
+          "us-ny.geojson",
+          "us-oh.geojson",
+          "us-or.geojson",
+          "us-pa.geojson",
+          "us-ri.geojson",
+          "us-sc.geojson",
+          "us-sd.geojson",
+          "us-ut.geojson",
+          "us-va.geojson",
+          "us-wa.geojson",
+          "us-wi.geojson"
+        ]
+      },
+      "tags": {
+        "brand": "X Golf",
+        "brand:wikidata": "Q111585369",
+        "indoor": "yes",
+        "leisure": "sports_centre",
+        "name": "X Golf",
+        "sport": "golf"
+      }
+    },
+    {
       "displayName": "YMCA",
       "id": "ymca-ba45e1",
       "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "YMCA",
         "brand:wikidata": "Q157169",
-        "brand:wikipedia": "en:YMCA",
         "leisure": "sports_centre",
         "name": "YMCA"
       }
@@ -148,16 +274,6 @@
         "brand": "Физкультурно-оздоровительный комплекс",
         "leisure": "sports_centre",
         "name": "Физкультурно-оздоровительный комплекс"
-      }
-    },
-    {
-      "displayName": "ФОК",
-      "id": "76f3bc-ba45e1",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "brand": "ФОК",
-        "leisure": "sports_centre",
-        "name": "ФОК"
       }
     }
   ]

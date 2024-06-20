@@ -13,20 +13,7 @@
       "tags": {
         "brand": "Felleskjøpet",
         "brand:wikidata": "Q5442461",
-        "brand:wikipedia": "no:Felleskjøpet",
         "name": "Felleskjøpet",
-        "shop": "agrarian"
-      }
-    },
-    {
-      "displayName": "Granngården",
-      "id": "granngarden-91ec76",
-      "locationSet": {"include": ["se"]},
-      "tags": {
-        "brand": "Granngården",
-        "brand:wikidata": "Q10508136",
-        "brand:wikipedia": "sv:Granngården AB",
-        "name": "Granngården",
         "shop": "agrarian"
       }
     },
@@ -38,9 +25,40 @@
         "agrarian": "seed;feed;tools",
         "brand": "Southern States",
         "brand:wikidata": "Q7570508",
-        "brand:wikipedia": "en:Southern States Cooperative",
         "name": "Southern States",
         "official_name": "Southern States Cooperative",
+        "shop": "agrarian"
+      }
+    },
+    {
+      "displayName": "UFA",
+      "id": "ufa-700bc3",
+      "locationSet": {
+        "include": ["ca-ab.geojson"]
+      },
+      "matchNames": ["united farmers of alberta"],
+      "tags": {
+        "brand": "UFA",
+        "brand:wikidata": "Q1809831",
+        "name": "UFA",
+        "shop": "agrarian"
+      }
+    },
+    {
+      "displayName": "Wilco",
+      "id": "wilco-25b295",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
+      "tags": {
+        "alt_name": "Wilco Farm Stores",
+        "brand": "Wilco",
+        "brand:wikidata": "Q8000290",
+        "name": "Wilco",
         "shop": "agrarian"
       }
     },
@@ -51,7 +69,6 @@
       "tags": {
         "brand": "ZG Raiffeisen",
         "brand:wikidata": "Q136135",
-        "brand:wikipedia": "de:ZG Raiffeisen",
         "name": "ZG Raiffeisen Agrar",
         "shop": "agrarian"
       }
@@ -64,7 +81,6 @@
         "agrarian": "machine_parts",
         "brand": "ZG Raiffeisen",
         "brand:wikidata": "Q136135",
-        "brand:wikipedia": "de:ZG Raiffeisen",
         "name": "ZG Raiffeisen Technik",
         "shop": "agrarian"
       }

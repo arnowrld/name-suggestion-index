@@ -6,7 +6,10 @@
     "exclude": {
       "generic": [
         "^parking( lot)?$",
-        "^visitor parking$"
+        "^visitor parking$",
+        "^автостоянка$",
+        "^парковка$",
+        "^停车场$"
       ],
       "named": ["^lot \\d+$"]
     }
@@ -45,11 +48,11 @@
           "se"
         ]
       },
+      "matchNames": ["apcoa"],
       "tags": {
         "amenity": "parking",
         "operator": "APCOA Parking",
-        "operator:wikidata": "Q296108",
-        "operator:wikipedia": "en:APCOA Parking"
+        "operator:wikidata": "Q296108"
       }
     },
     {
@@ -59,6 +62,52 @@
       "tags": {
         "amenity": "parking",
         "operator": "Bank Park"
+      }
+    },
+    {
+      "displayName": "Bath and North East Somerset Council",
+      "id": "bathandnortheastsomersetcouncil-854c9b",
+      "locationSet": {
+        "include": ["gb-bas.geojson"]
+      },
+      "matchNames": ["b&nes", "banes"],
+      "note": "ISO 3166-2:GB - gb-eng (England) , gb-bas (Bath and North East Somerset)",
+      "tags": {
+        "amenity": "parking",
+        "operator": "Bath and North East Somerset Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q16966588"
+      }
+    },
+    {
+      "displayName": "Best in Parking",
+      "id": "bestinparking-c10a77",
+      "locationSet": {
+        "include": [
+          "at",
+          "ch",
+          "hr",
+          "it",
+          "si",
+          "sk"
+        ]
+      },
+      "matchNames": ["bip"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "Best in Parking",
+        "operator:wikidata": "Q112118218"
+      }
+    },
+    {
+      "displayName": "BOE Parking",
+      "id": "boeparking-cf21e1",
+      "locationSet": {"include": ["at"]},
+      "matchNames": ["boe"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "BOE Parking",
+        "operator:wikidata": "Q114778107"
       }
     },
     {
@@ -79,8 +128,10 @@
     },
     {
       "displayName": "City Center Parking",
-      "id": "citycenterparking-c11ec2",
-      "locationSet": {"include": ["us"]},
+      "id": "citycenterparking-3047f4",
+      "locationSet": {
+        "include": ["us-or.geojson"]
+      },
       "matchNames": ["u-park"],
       "tags": {
         "amenity": "parking",
@@ -111,6 +162,19 @@
       }
     },
     {
+      "displayName": "Contipark",
+      "id": "contipark-083d22",
+      "locationSet": {"include": ["at", "de"]},
+      "matchNames": [
+        "contipark parkgaragengesellschaft"
+      ],
+      "tags": {
+        "amenity": "parking",
+        "operator": "Contipark",
+        "operator:wikidata": "Q54867477"
+      }
+    },
+    {
       "displayName": "Cornwall Council",
       "id": "cornwallcouncil-76dd28",
       "locationSet": {
@@ -121,8 +185,7 @@
         "amenity": "parking",
         "operator": "Cornwall Council",
         "operator:type": "government",
-        "operator:wikidata": "Q3774189",
-        "operator:wikipedia": "en:Cornwall Council"
+        "operator:wikidata": "Q3774189"
       }
     },
     {
@@ -133,11 +196,9 @@
         "amenity": "parking",
         "brand": "Diamond Parking",
         "brand:wikidata": "Q5270887",
-        "brand:wikipedia": "en:Diamond Parking",
         "name": "Diamond Parking",
         "operator": "Diamond Parking",
-        "operator:wikidata": "Q5270887",
-        "operator:wikipedia": "en:Diamond Parking"
+        "operator:wikidata": "Q5270887"
       }
     },
     {
@@ -151,8 +212,7 @@
         "amenity": "parking",
         "operator": "Dorset Council",
         "operator:type": "government",
-        "operator:wikidata": "Q55609905",
-        "operator:wikipedia": "en:Dorset Council (UK)"
+        "operator:wikidata": "Q55609905"
       }
     },
     {
@@ -163,11 +223,9 @@
         "amenity": "parking",
         "brand": "Effia",
         "brand:wikidata": "Q3045894",
-        "brand:wikipedia": "fr:EFFIA",
         "name": "Effia",
         "operator": "Effia",
-        "operator:wikidata": "Q3045894",
-        "operator:wikipedia": "fr:EFFIA"
+        "operator:wikidata": "Q3045894"
       }
     },
     {
@@ -177,8 +235,31 @@
       "tags": {
         "amenity": "parking",
         "operator": "English Heritage",
-        "operator:wikidata": "Q936287",
-        "operator:wikipedia": "en:English Heritage"
+        "operator:wikidata": "Q936287"
+      }
+    },
+    {
+      "displayName": "Erewash Borough Council",
+      "id": "erewashboroughcouncil-5b215a",
+      "locationSet": {
+        "include": ["gb-east-midlands.geojson"]
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "Erewash Borough Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q73072621"
+      }
+    },
+    {
+      "displayName": "Estapar",
+      "id": "estapar-67d8e2",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "parking",
+        "operator": "Estapar",
+        "operator:type": "private",
+        "operator:wikidata": "Q111785735"
       }
     },
     {
@@ -199,8 +280,52 @@
         "amenity": "parking",
         "operator": "Exeter City Council",
         "operator:type": "government",
-        "operator:wikidata": "Q5420103",
-        "operator:wikipedia": "en:Exeter City Council"
+        "operator:wikidata": "Q5420103"
+      }
+    },
+    {
+      "displayName": "Gedling Borough Council",
+      "id": "gedlingboroughcouncil-5b215a",
+      "locationSet": {
+        "include": ["gb-east-midlands.geojson"]
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "Gedling Borough Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q73072632"
+      }
+    },
+    {
+      "displayName": "Horizon Parking",
+      "id": "horizonparking-712538",
+      "locationSet": {
+        "include": [
+          "gb-eng",
+          "gb-nir",
+          "gb-sct",
+          "gb-wls"
+        ]
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "Horizon Parking",
+        "operator:type": "private",
+        "operator:wikidata": "Q111050068"
+      }
+    },
+    {
+      "displayName": "Impark",
+      "id": "impark-4ef6cc",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "amenity": "parking",
+        "brand": "Impark",
+        "brand:wikidata": "Q6006077",
+        "fee": "yes",
+        "name": "Impark",
+        "operator": "Impark",
+        "operator:wikidata": "Q6006077"
       }
     },
     {
@@ -211,12 +336,24 @@
         "amenity": "parking",
         "brand": "Indigo",
         "brand:wikidata": "Q3559970",
-        "brand:wikipedia": "fr:Indigo (entreprise)",
         "fee": "yes",
         "name": "Indigo",
         "operator": "Indigo",
-        "operator:wikidata": "Q3559970",
-        "operator:wikipedia": "fr:Indigo (entreprise)"
+        "operator:wikidata": "Q3559970"
+      }
+    },
+    {
+      "displayName": "Interparking",
+      "id": "interparking-b37902",
+      "locationSet": {"include": ["be"]},
+      "tags": {
+        "amenity": "parking",
+        "brand": "Interparking",
+        "brand:wikidata": "Q1895863",
+        "fee": "yes",
+        "name": "Interparking",
+        "operator": "Interparking",
+        "operator:wikidata": "Q1895863"
       }
     },
     {
@@ -227,12 +364,35 @@
         "amenity": "parking",
         "brand": "İSPARK",
         "brand:wikidata": "Q97215078",
-        "brand:wikipedia": "tr:İSPARK",
         "fee": "yes",
         "name": "İSPARK",
         "operator": "İSPARK",
-        "operator:wikidata": "Q97215078",
-        "operator:wikipedia": "tr:İSPARK"
+        "operator:wikidata": "Q97215078"
+      }
+    },
+    {
+      "displayName": "JustPark",
+      "id": "justpark-822ef4",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "parking",
+        "fee": "yes",
+        "operator": "JustPark",
+        "operator:type": "private",
+        "operator:wikidata": "Q17143517"
+      }
+    },
+    {
+      "displayName": "London Borough of Newham",
+      "id": "londonboroughofnewham-38d530",
+      "locationSet": {
+        "include": ["gb-nwm.geojson"]
+      },
+      "tags": {
+        "amenity": "parking",
+        "operator": "London Borough of Newham",
+        "operator:type": "government",
+        "operator:wikidata": "Q7018141"
       }
     },
     {
@@ -244,24 +404,37 @@
         "amenity": "parking",
         "operator": "Lyon Parc Auto",
         "operator:type": "public",
-        "operator:wikidata": "Q21427571",
-        "operator:wikipedia": "fr:Lyon Parc Auto"
+        "operator:wikidata": "Q21427571"
       }
     },
     {
-      "displayName": "Mendip District Council",
-      "id": "mendipdistrictcouncil-6e1dc7",
-      "locationSet": {
-        "include": ["gb-som.geojson"]
-      },
-      "matchNames": ["mdc"],
-      "note": "ISO 3166-2:GB - gb-eng (England) , gb-som (Somerset)",
+      "displayName": "Mesto Košice",
+      "id": "mestokosice-61f593",
+      "locationSet": {"include": ["sk"]},
       "tags": {
         "amenity": "parking",
-        "operator": "Mendip District Council",
-        "operator:type": "government",
-        "operator:wikidata": "Q657798",
-        "operator:wikipedia": "en:Mendip District"
+        "operator": "Mesto Košice",
+        "operator:type": "public",
+        "operator:wikidata": "Q25409"
+      }
+    },
+    {
+      "displayName": "National Car Parks",
+      "id": "nationalcarparks-712538",
+      "locationSet": {
+        "include": [
+          "gb-eng",
+          "gb-nir",
+          "gb-sct",
+          "gb-wls"
+        ]
+      },
+      "matchNames": ["ncp"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "National Car Parks",
+        "operator:type": "private",
+        "operator:wikidata": "Q6971273"
       }
     },
     {
@@ -273,8 +446,8 @@
       "tags": {
         "amenity": "parking",
         "operator": "National Trust",
-        "operator:wikidata": "Q333515",
-        "operator:wikipedia": "en:National Trust"
+        "operator:type": "charitable",
+        "operator:wikidata": "Q333515"
       }
     },
     {
@@ -284,25 +457,38 @@
       "tags": {
         "amenity": "parking",
         "operator": "National Trust for Scotland",
-        "operator:wikidata": "Q599997",
-        "operator:wikipedia": "en:National Trust for Scotland"
+        "operator:short": "NTS",
+        "operator:type": "charitable",
+        "operator:wikidata": "Q599997"
+      }
+    },
+    {
+      "displayName": "North Somerset Council",
+      "id": "northsomersetcouncil-349006",
+      "locationSet": {
+        "include": ["gb-nsm.geojson"]
+      },
+      "note": "ISO 3166-2:GB - gb-eng (England) , gb-nsm (North Somerset)",
+      "tags": {
+        "amenity": "parking",
+        "operator": "North Somerset Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q17016922"
       }
     },
     {
       "displayName": "NPC24H",
-      "id": "npc24h-a16317",
+      "id": "npc-a16317",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "parking",
         "brand": "NPC",
         "brand:wikidata": "Q11506782",
-        "brand:wikipedia": "ja:日本パーキング",
         "fee": "yes",
         "name": "NPC24H",
         "official_name": "日本パーキング",
         "operator": "NPC",
-        "operator:wikidata": "Q11506782",
-        "operator:wikipedia": "ja:日本パーキング"
+        "operator:wikidata": "Q11506782"
       }
     },
     {
@@ -330,6 +516,17 @@
       }
     },
     {
+      "displayName": "Parking Control Management (PCM)",
+      "id": "parkingcontrolmanagementukltd-822ef4",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "parking",
+        "operator": "Parking Control Management UK Ltd",
+        "operator:type": "private",
+        "operator:wikidata": "Q115646545"
+      }
+    },
+    {
       "displayName": "ParkingEye",
       "id": "parkingeye-822ef4",
       "locationSet": {"include": ["gb"]},
@@ -340,18 +537,40 @@
       }
     },
     {
-      "displayName": "Plymouth City Council",
-      "id": "plymouthcitycouncil-2736e9",
+      "displayName": "Payuca",
+      "id": "payuca-083d22",
+      "locationSet": {"include": ["at", "de"]},
+      "matchNames": ["payuca parking"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "Payuca",
+        "operator:wikidata": "Q117304345"
+      }
+    },
+    {
+      "displayName": "Pittsburgh Parking Authority",
+      "id": "pittsburghparkingauthority-ca0b08",
       "locationSet": {
-        "include": [[-4.15, 50.45]]
+        "include": [[-79.98, 40.43, 11]]
       },
-      "note": "ISO 3166-2:GB - gb-eng (England), gb-dev (Devon), gb-ply (Plymouth)",
+      "tags": {
+        "amenity": "parking",
+        "operator": "Pittsburgh Parking Authority",
+        "operator:type": "government",
+        "operator:wikidata": "Q7199346"
+      }
+    },
+    {
+      "displayName": "Plymouth City Council",
+      "id": "plymouthcitycouncil-b3011c",
+      "locationSet": {
+        "include": ["gb-ply.geojson"]
+      },
       "tags": {
         "amenity": "parking",
         "operator": "Plymouth City Council",
         "operator:type": "government",
-        "operator:wikidata": "Q7205775",
-        "operator:wikipedia": "en:Plymouth City Council"
+        "operator:wikidata": "Q7205775"
       }
     },
     {
@@ -372,11 +591,9 @@
         "amenity": "parking",
         "brand": "Q-Park",
         "brand:wikidata": "Q1127798",
-        "brand:wikipedia": "en:Q-Park",
         "fee": "yes",
         "operator": "Q-Park",
-        "operator:wikidata": "Q1127798",
-        "operator:wikipedia": "en:Q-Park"
+        "operator:wikidata": "Q1127798"
       }
     },
     {
@@ -387,73 +604,72 @@
         "amenity": "parking",
         "fee": "yes",
         "operator": "Republic Parking",
-        "operator:wikidata": "Q7314409",
-        "operator:wikipedia": "en:Republic Parking System"
+        "operator:wikidata": "Q7314409"
       }
     },
     {
-      "displayName": "Sedgemoor District Council",
-      "id": "sedgemoordistrictcouncil-6e1dc7",
+      "displayName": "Rother District Council",
+      "id": "rotherdistrictcouncil-a07589",
       "locationSet": {
-        "include": ["gb-som.geojson"]
+        "include": ["gb-south-east-coast.geojson"]
       },
-      "matchNames": ["sdc"],
-      "note": "ISO 3166-2:GB - gb-eng (England) , gb-som (Somerset)",
       "tags": {
         "amenity": "parking",
-        "operator": "Sedgemoor District Council",
+        "operator": "Rother District Council",
         "operator:type": "government",
-        "operator:wikidata": "Q1752483",
-        "operator:wikipedia": "en:Sedgemoor"
+        "operator:wikidata": "Q73072720"
+      }
+    },
+    {
+      "displayName": "Salford City Council",
+      "id": "salfordcitycouncil-664294",
+      "locationSet": {
+        "include": [
+          "gb-greater-manchester.geojson"
+        ]
+      },
+      "matchNames": ["salford council"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "Salford City Council",
+        "operator:type": "government",
+        "operator:wikidata": "Q17020402"
       }
     },
     {
       "displayName": "SmartPark",
-      "id": "smartpark-c11ec2",
-      "locationSet": {"include": ["us"]},
+      "id": "portlandbureauoftransportation-3047f4",
+      "locationSet": {
+        "include": ["us-or.geojson"]
+      },
       "tags": {
         "amenity": "parking",
         "brand": "SmartPark",
         "brand:wikidata": "Q108276936",
-        "building": "parking",
-        "name": "SmartPark",
         "operator": "Portland Bureau of Transportation",
+        "operator:short": "PBOT",
         "operator:type": "government",
-        "operator:wikidata": "Q18156807",
-        "operator:wikipedia": "en:Portland Bureau of Transportation",
-        "parking": "multi-storey"
+        "operator:wikidata": "Q18156807"
       }
     },
     {
-      "displayName": "Somerset West and Taunton Council",
-      "id": "somersetwestandtauntoncouncil-6e1dc7",
+      "displayName": "Somerset Council",
+      "id": "somersetcouncil-6e1dc7",
       "locationSet": {
         "include": ["gb-som.geojson"]
       },
-      "matchNames": ["sw&t", "swt"],
-      "note": "ISO 3166-2:GB - gb-eng (England) , gb-som (Somerset)",
+      "matchNames": [
+        "mendip district council",
+        "sedgemoor district council",
+        "somerset county council",
+        "somerset west and taunton council",
+        "south somerset district council"
+      ],
       "tags": {
         "amenity": "parking",
-        "operator": "Somerset West and Taunton Council",
+        "operator": "Somerset Council",
         "operator:type": "government",
-        "operator:wikidata": "Q54554249",
-        "operator:wikipedia": "en:Somerset West and Taunton"
-      }
-    },
-    {
-      "displayName": "South Somerset District Council",
-      "id": "southsomersetdistrictcouncil-6e1dc7",
-      "locationSet": {
-        "include": ["gb-som.geojson"]
-      },
-      "matchNames": ["ssdc"],
-      "note": "ISO 3166-2:GB - gb-eng (England) , gb-som (Somerset)",
-      "tags": {
-        "amenity": "parking",
-        "operator": "South Somerset District Council",
-        "operator:type": "government",
-        "operator:wikidata": "Q1379924",
-        "operator:wikipedia": "en:South Somerset"
+        "operator:wikidata": "Q6386270"
       }
     },
     {
@@ -470,12 +686,10 @@
         "amenity": "parking",
         "brand": "SP+",
         "brand:wikidata": "Q7598289",
-        "brand:wikipedia": "en:SP Plus Corporation",
         "fee": "yes",
         "name": "SP+",
         "operator": "SP+",
-        "operator:wikidata": "Q7598289",
-        "operator:wikipedia": "en:SP Plus Corporation"
+        "operator:wikidata": "Q7598289"
       }
     },
     {
@@ -487,8 +701,22 @@
         "amenity": "parking",
         "operator": "Torbay Council",
         "operator:type": "government",
-        "operator:wikidata": "Q17034697",
-        "operator:wikipedia": "en:Torbay Council"
+        "operator:wikidata": "Q17034697"
+      }
+    },
+    {
+      "displayName": "TriMet Park & Ride",
+      "id": "trimet-3047f4",
+      "locationSet": {
+        "include": ["us-or.geojson"]
+      },
+      "preserveTags": ["^name"],
+      "tags": {
+        "amenity": "parking",
+        "name": "TriMet Park & Ride",
+        "operator": "TriMet",
+        "operator:wikidata": "Q1766623",
+        "park_ride": "yes"
       }
     },
     {
@@ -512,12 +740,21 @@
         "amenity": "parking",
         "brand": "Wilson Parking",
         "brand:wikidata": "Q28448427",
-        "brand:wikipedia": "en:Wilson Parking",
         "fee": "yes",
         "name": "Wilson Parking",
         "operator": "Wilson Parking",
-        "operator:wikidata": "Q28448427",
-        "operator:wikipedia": "en:Wilson Parking"
+        "operator:wikidata": "Q28448427"
+      }
+    },
+    {
+      "displayName": "WIPARK",
+      "id": "wipark-cf21e1",
+      "locationSet": {"include": ["at"]},
+      "matchNames": ["wipark garagen"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "WIPARK",
+        "operator:wikidata": "Q112181206"
       }
     },
     {
@@ -530,7 +767,6 @@
         "brand:en": "Apple Park",
         "brand:ja": "アップルパーク",
         "brand:wikidata": "Q30923801",
-        "brand:wikipedia": "ja:アップルパーク",
         "fee": "yes",
         "name": "アップルパーク",
         "name:en": "Apple Park",
@@ -538,31 +774,48 @@
         "operator": "アップルパーク",
         "operator:en": "Apple Park",
         "operator:ja": "アップルパーク",
-        "operator:wikidata": "Q30923801",
-        "operator:wikipedia": "ja:アップルパーク"
+        "operator:wikidata": "Q30923801"
+      }
+    },
+    {
+      "displayName": "エコロパーク",
+      "id": "ecolocity-a16317",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "parking",
+        "brand": "ECOLO PARK",
+        "brand:en": "ECOLO PARK",
+        "brand:ja": "エコロパーク",
+        "brand:wikidata": "Q120750951",
+        "fee": "yes",
+        "name": "エコロパーク",
+        "name:en": "Ecolo Park",
+        "name:ja": "エコロパーク",
+        "operator": "エコロシティ",
+        "operator:en": "Ecolocity",
+        "operator:ja": "エコロシティ",
+        "operator:wikidata": "Q120750922"
       }
     },
     {
       "displayName": "タイムズ",
-      "id": "times-a16317",
+      "id": "times24-a16317",
       "locationSet": {"include": ["jp"]},
-      "matchNames": ["times 24th", "タイムズ24"],
+      "matchNames": ["times 24th"],
       "tags": {
         "amenity": "parking",
         "brand": "タイムズ",
         "brand:en": "Times",
         "brand:ja": "タイムズ",
-        "brand:wikidata": "Q11089693",
-        "brand:wikipedia": "ja:パーク24",
+        "brand:wikidata": "Q115263643",
         "fee": "yes",
         "name": "タイムズ",
         "name:en": "Times",
         "name:ja": "タイムズ",
-        "operator": "タイムズ",
-        "operator:en": "Times",
-        "operator:ja": "タイムズ",
-        "operator:wikidata": "Q11089693",
-        "operator:wikipedia": "ja:パーク24"
+        "operator": "タイムズ24",
+        "operator:en": "Times24",
+        "operator:ja": "タイムズ24",
+        "operator:wikidata": "Q115263626"
       }
     },
     {
@@ -575,7 +828,6 @@
         "brand:en": "Trust Park",
         "brand:ja": "トラストパーク",
         "brand:wikidata": "Q11321776",
-        "brand:wikipedia": "ja:トラストホールディングス",
         "fee": "yes",
         "name": "トラストパーク",
         "name:en": "Trust Park",
@@ -583,8 +835,47 @@
         "operator": "トラストパーク",
         "operator:en": "Trust Park",
         "operator:ja": "トラストパーク",
-        "operator:wikidata": "Q11321776",
-        "operator:wikipedia": "ja:トラストホールディングス"
+        "operator:wikidata": "Q11321776"
+      }
+    },
+    {
+      "displayName": "ナビパーク",
+      "id": "startsamenity-a16317",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "parking",
+        "brand": "Navi Park",
+        "brand:en": "Navi Park",
+        "brand:ja": "ナビパーク",
+        "brand:wikidata": "Q116975255",
+        "fee": "yes",
+        "name": "ナビパーク",
+        "name:en": "Navi Park",
+        "name:ja": "ナビパーク",
+        "operator": "スターツアメニティー",
+        "operator:en": "Starts Amenity",
+        "operator:ja": "スターツアメニティー",
+        "operator:wikidata": "Q116975260"
+      }
+    },
+    {
+      "displayName": "パークジャパン",
+      "id": "parkjapan-a16317",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "parking",
+        "brand": "Park Japan",
+        "brand:en": "Park Japan",
+        "brand:ja": "パークジャパン",
+        "brand:wikidata": "Q120980567",
+        "fee": "yes",
+        "name": "パークジャパン",
+        "name:en": "Park Japan",
+        "name:ja": "パークジャパン",
+        "operator": "パークジャパン",
+        "operator:en": "Park Japan",
+        "operator:ja": "パークジャパン",
+        "operator:wikidata": "Q120980567"
       }
     },
     {
@@ -597,7 +888,6 @@
         "brand:en": "Paraca",
         "brand:ja": "パラカ",
         "brand:wikidata": "Q11329318",
-        "brand:wikipedia": "ja:パラカ",
         "fee": "yes",
         "name": "パラカ",
         "name:en": "Paraca",
@@ -605,8 +895,7 @@
         "operator": "パラカ",
         "operator:en": "Paraca",
         "operator:ja": "パラカ",
-        "operator:wikidata": "Q11329318",
-        "operator:wikipedia": "ja:パラカ"
+        "operator:wikidata": "Q11329318"
       }
     },
     {
@@ -620,7 +909,6 @@
         "brand:en": "LePerc",
         "brand:ja": "ル・パルク",
         "brand:wikidata": "Q11236111",
-        "brand:wikipedia": "ja:NTTル・パルク",
         "fee": "yes",
         "name": "ル・パルク",
         "name:en": "LePerc",
@@ -628,13 +916,12 @@
         "operator": "ル・パルク",
         "operator:en": "LePerc",
         "operator:ja": "ル・パルク",
-        "operator:wikidata": "Q11236111",
-        "operator:wikipedia": "ja:NTTル・パルク"
+        "operator:wikidata": "Q11236111"
       }
     },
     {
       "displayName": "三井のリパーク",
-      "id": "mitsuirepark-a16317",
+      "id": "mitsuifudosanrealty-a16317",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "parking",
@@ -642,7 +929,6 @@
         "brand:en": "Mitsui Repark",
         "brand:ja": "三井のリパーク",
         "brand:wikidata": "Q55521368",
-        "brand:wikipedia": "ja:三井のリパーク",
         "fee": "yes",
         "name": "三井のリパーク",
         "name:en": "Mitsui Repark",
@@ -650,8 +936,7 @@
         "operator": "三井不動産リアルティ",
         "operator:en": "Mitsui Fudosan Realty",
         "operator:ja": "三井不動産リアルティ",
-        "operator:wikidata": "Q11354218",
-        "operator:wikipedia": "ja:三井不動産リアルティ"
+        "operator:wikidata": "Q11354218"
       }
     },
     {
@@ -664,7 +949,6 @@
         "brand:en": "Meitetsu Kyosho",
         "brand:ja": "名鉄協商パーキング",
         "brand:wikidata": "Q11415765",
-        "brand:wikipedia": "ja:名鉄協商",
         "fee": "yes",
         "name": "名鉄協商パーキング",
         "name:en": "Meitetsu Kyosho",
@@ -672,29 +956,36 @@
         "operator": "名鉄協商パーキング",
         "operator:en": "Meitetsu Kyosho",
         "operator:ja": "名鉄協商パーキング",
-        "operator:wikidata": "Q11415765",
-        "operator:wikipedia": "ja:名鉄協商"
+        "operator:wikidata": "Q11415765"
       }
     },
     {
-      "displayName": "威信停車場",
+      "displayName": "威信停車場 Wilson Parking",
       "id": "wilsonparking-1f7225",
       "locationSet": {"include": ["hk"]},
-      "matchNames": ["威信"],
+      "matchNames": ["wilson", "威信"],
       "tags": {
         "amenity": "parking",
-        "brand": "威信停車場",
-        "brand:en": "Wilson Parking",
-        "brand:wikidata": "Q28448427",
-        "brand:wikipedia": "zh:威信停車場",
-        "brand:zh": "威信停車場",
         "fee": "yes",
-        "name": "威信停車場 Wilson Parking",
-        "operator": "威信停車場",
+        "operator": "威信停車場 Wilson Parking",
         "operator:en": "Wilson Parking",
         "operator:wikidata": "Q28448427",
-        "operator:wikipedia": "zh:威信停車場",
         "operator:zh": "威信停車場"
+      }
+    },
+    {
+      "displayName": "運輸署 Transport Department",
+      "id": "transportdepartment-1f7225",
+      "locationSet": {"include": ["hk"]},
+      "matchNames": ["td"],
+      "tags": {
+        "amenity": "parking",
+        "operator": "運輸署 Transport Department",
+        "operator:en": "Transport Department",
+        "operator:short:en": "TD",
+        "operator:type": "government",
+        "operator:wikidata": "Q2355889",
+        "operator:zh": "運輸署"
       }
     }
   ]

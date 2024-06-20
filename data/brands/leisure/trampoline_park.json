@@ -5,6 +5,30 @@
   },
   "items": [
     {
+      "displayName": "Altitude",
+      "id": "altitude-88b71c",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Altitude",
+        "brand:wikidata": "Q109322489",
+        "leisure": "trampoline_park",
+        "name": "Altitude"
+      }
+    },
+    {
+      "displayName": "Bounce Inc",
+      "id": "bounceinc-0b8920",
+      "locationSet": {"include": ["au"]},
+      "matchNames": ["bounce"],
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Bounce Inc",
+        "brand:wikidata": "Q120405695",
+        "leisure": "trampoline_park",
+        "name": "BOUNCEinc"
+      }
+    },
+    {
       "displayName": "Flip Out",
       "id": "flipout-002cc1",
       "locationSet": {"include": ["gb"]},
@@ -39,6 +63,20 @@
         "brand:wikidata": "Q7537557",
         "leisure": "trampoline_park",
         "name": "Sky Zone"
+      }
+    },
+    {
+      "displayName": "Urban Air",
+      "id": "urbanair-569d04",
+      "locationSet": {
+        "include": ["at", "ca", "us"]
+      },
+      "tags": {
+        "brand": "Urban Air",
+        "brand:wikidata": "Q110172893",
+        "leisure": "trampoline_park",
+        "name": "Urban Air",
+        "official_name": "Urban Air Trampoline and Adventure Park"
       }
     }
   ]

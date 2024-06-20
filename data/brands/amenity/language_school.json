@@ -12,18 +12,17 @@
       "tags": {
         "amenity": "language_school",
         "brand": "AEON",
-        "brand:en": "Aeon",
-        "brand:ja": "AEON",
-        "brand:ja-Hira": "イーオン",
-        "brand:ja-Latn": "AEON",
+        "brand:en": "AEON",
+        "brand:ja": "イーオン",
+        "brand:ja-Hira": "いーおん",
+        "brand:ja-Latn": "Īon",
         "brand:wikidata": "Q4687898",
-        "brand:wikipedia": "ja:イーオンホールディングス",
         "language:en": "main",
         "name": "AEON",
-        "name:en": "Aeon",
-        "name:ja": "AEON",
-        "name:ja-Hira": "イーオン",
-        "name:ja-Latn": "AEON"
+        "name:en": "AEON",
+        "name:ja": "イーオン",
+        "name:ja-Hira": "いーおん",
+        "name:ja-Latn": "Īon"
       }
     },
     {
@@ -34,8 +33,45 @@
         "amenity": "language_school",
         "brand": "Berlitz",
         "brand:wikidata": "Q821960",
-        "brand:wikipedia": "en:Berlitz Corporation",
         "name": "Berlitz"
+      }
+    },
+    {
+      "displayName": "CCAA",
+      "id": "ccaa-d56926",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "CCAA",
+        "brand:wikidata": "Q9669735",
+        "language:en": "yes",
+        "language:es": "yes",
+        "name": "CCAA"
+      }
+    },
+    {
+      "displayName": "CNA",
+      "id": "cna-d56926",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "CNA",
+        "brand:wikidata": "Q18465698",
+        "language:en": "main",
+        "language:es": "yes",
+        "name": "CNA"
+      }
+    },
+    {
+      "displayName": "Cultura Inglesa",
+      "id": "culturainglesa-d56926",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "Cultura Inglesa",
+        "brand:wikidata": "Q777467",
+        "language:en": "main",
+        "name": "Cultura Inglesa"
       }
     },
     {
@@ -47,21 +83,20 @@
         "brand": "ECC外語学院",
         "brand:en": "ECC Foreign Language Institute",
         "brand:ja": "ECC外語学院",
-        "brand:ja-Hira": "イーシーシーがいごがくいん",
-        "brand:ja-Latn": "ECC Gaigo Gakuin",
+        "brand:ja-Hira": "いーしーしーがいごがくいん",
+        "brand:ja-Latn": "Īshīshī Gaigo Gakuin",
         "brand:wikidata": "Q5322655",
-        "brand:wikipedia": "ja:ECC総合教育機関",
         "language:en": "main",
         "name": "ECC外語学院",
         "name:en": "ECC Foreign Language Institute",
         "name:ja": "ECC外語学院",
-        "name:ja-Hira": "イーシーシーがいごがくいん",
-        "name:ja-Latn": "ECC Gaigo Gakuin",
+        "name:ja-Hira": "いーしーしーがいごがくいん",
+        "name:ja-Latn": "Īshīshī Gaigo Gakuin",
         "short_name": "ECC",
         "short_name:en": "ECC",
         "short_name:ja": "ECC",
-        "short_name:ja-Hira": "イーシーシー",
-        "short_name:ja-Latn": "ECC"
+        "short_name:ja-Hira": "いーしーしー",
+        "short_name:ja-Latn": "Īshīshī"
       }
     },
     {
@@ -84,12 +119,24 @@
         "brand": "ELS",
         "brand:en": "ELS",
         "brand:wikidata": "Q5323325",
-        "brand:wikipedia": "en:ELS Language Centers",
         "language:en": "main",
         "name": "ELS",
         "name:en": "ELS",
         "official_name": "ELS Language Centers",
         "official_name:en": "ELS Language Centers"
+      }
+    },
+    {
+      "displayName": "Fisk",
+      "id": "fisk-d56926",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "Fisk",
+        "brand:wikidata": "Q10286392",
+        "language:en": "yes",
+        "language:es": "yes",
+        "name": "Fisk"
       }
     },
     {
@@ -101,15 +148,14 @@
         "brand": "GABA",
         "brand:en": "Gaba",
         "brand:ja": "GABA",
-        "brand:ja-Kana": "ガバ",
+        "brand:ja-Hira": "がば",
         "brand:ja-Latn": "GABA",
         "brand:wikidata": "Q5515241",
-        "brand:wikipedia": "ja:GABA (企業)",
         "language:en": "main",
         "name": "GABA",
         "name:en": "Gaba",
         "name:ja": "GABA",
-        "name:ja-Kana": "ガバ",
+        "name:ja-Hira": "がば",
         "name:ja-Latn": "GABA"
       }
     },
@@ -118,20 +164,21 @@
       "id": "nova-411869",
       "locationSet": {"include": ["jp"]},
       "tags": {
+        "alt_name:ja": "ノヴァ",
+        "alt_name:ja-Latn": "Nobua",
         "amenity": "language_school",
         "brand": "NOVA",
         "brand:en": "Nova",
         "brand:ja": "NOVA",
-        "brand:ja-Hira": "ノヴァ",
-        "brand:ja-Latn": "NOVA",
+        "brand:ja-Hira": "のば",
+        "brand:ja-Latn": "Noba",
         "brand:wikidata": "Q7064000",
-        "brand:wikipedia": "ja:NOVA",
         "language:en": "main",
         "name": "NOVA",
         "name:en": "Nova",
         "name:ja": "NOVA",
-        "name:ja-Hira": "ノヴァ",
-        "name:ja-Latn": "NOVA"
+        "name:ja-Hira": "のば",
+        "name:ja-Latn": "Noba"
       }
     },
     {
@@ -156,12 +203,23 @@
         "brand:ja": "シェーン英会話",
         "brand:ja-Latn": "Shēn Eikaiwa",
         "brand:wikidata": "Q17054332",
-        "brand:wikipedia": "en:Shane English School",
         "language:en": "main",
         "name": "Shane English School",
         "name:en": "Shane English School",
         "name:ja": "シェーン英会話",
         "name:ja-Latn": "Shēn Eikaiwa"
+      }
+    },
+    {
+      "displayName": "Wizard",
+      "id": "wizard-d56926",
+      "locationSet": {"include": ["br"]},
+      "matchNames": ["wizard by pearson"],
+      "tags": {
+        "amenity": "language_school",
+        "brand": "Wizard",
+        "brand:wikidata": "Q10393925",
+        "name": "Wizard"
       }
     },
     {
@@ -175,7 +233,6 @@
         "brand:ja": "シェーン英会話",
         "brand:ja-Latn": "Shēn Eikaiwa",
         "brand:wikidata": "Q17054332",
-        "brand:wikipedia": "ja:シェーン英会話スクール",
         "language:en": "main",
         "name": "シェーン英会話",
         "name:en": "Shane English School",
@@ -192,15 +249,14 @@
         "brand": "セイハ英語学院",
         "brand:en": "Seiha English Academy",
         "brand:ja": "セイハ英語学院",
-        "brand:ja-Hani": "セイハえいごがくいん",
+        "brand:ja-Hira": "せいはえいごがくいん",
         "brand:ja-Latn": "Seiha Eigo Gakuin",
         "brand:wikidata": "Q7446694",
-        "brand:wikipedia": "en:Seiha English Academy",
         "language:en": "main",
         "name": "セイハ英語学院",
         "name:en": "Seiha English Academy",
         "name:ja": "セイハ英語学院",
-        "name:ja-Hani": "セイハえいごがくいん",
+        "name:ja-Hira": "せいはえいごがくいん",
         "name:ja-Latn": "Seiha Eigo Gakuin"
       }
     },
@@ -215,7 +271,6 @@
         "brand:ja": "ペッピーキッズクラブ",
         "brand:ja-Latn": "Peppi Kizzu Kurabu",
         "brand:wikidata": "Q7166471",
-        "brand:wikipedia": "ja:ペッピーキッズクラブ",
         "language:en": "main",
         "name": "ペッピーキッズクラブ",
         "name:en": "Peppy Kids Club",
@@ -232,13 +287,36 @@
         "brand": "ベルリッツ",
         "brand:en": "Berlitz",
         "brand:ja": "ベルリッツ",
-        "brand:ja-Hira": "ベルリッツ",
+        "brand:ja-Hira": "べるりっつ",
         "brand:wikidata": "Q4892545",
-        "brand:wikipedia": "ja:ベルリッツ・ジャパン",
         "name": "ベルリッツ",
         "name:en": "Berlitz",
         "name:ja": "ベルリッツ",
-        "name:ja-Hira": "ベルリッツ"
+        "name:ja-Hira": "べるりっつ"
+      }
+    },
+    {
+      "displayName": "地球村文教機構",
+      "id": "globalvillageorganization-85e50b",
+      "locationSet": {"include": ["tw"]},
+      "matchNames": [
+        "gvo",
+        "milton institute",
+        "地球村美日韓語",
+        "美爾頓證照檢定"
+      ],
+      "tags": {
+        "amenity": "language_school",
+        "brand": "地球村",
+        "brand:en": "Global Village Organization",
+        "brand:wikidata": "Q65681329",
+        "brand:zh": "地球村",
+        "language:en": "main",
+        "language:ja": "yes",
+        "language:ko": "yes",
+        "name": "地球村",
+        "name:en": "Global Village Organization",
+        "name:zh": "地球村"
       }
     },
     {
@@ -250,7 +328,6 @@
         "brand": "夏恩英語學校",
         "brand:en": "Shane English School",
         "brand:wikidata": "Q17054332",
-        "brand:wikipedia": "en:Shane English School",
         "brand:zh": "夏恩英語學校",
         "language:en": "main",
         "name": "夏恩英語學校",
@@ -267,12 +344,42 @@
         "brand": "夏恩英语学校",
         "brand:en": "Shane English School",
         "brand:wikidata": "Q17054332",
-        "brand:wikipedia": "en:Shane English School",
         "brand:zh": "夏恩英语学校",
         "language:en": "main",
         "name": "夏恩英语学校",
         "name:en": "Shane English School",
         "name:zh": "夏恩英语学校"
+      }
+    },
+    {
+      "displayName": "巨匠東大日語",
+      "id": "gjun-85e50b",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "巨匠教育",
+        "brand:en": "Gjun",
+        "brand:wikidata": "Q11057516",
+        "brand:zh": "巨匠教育",
+        "language:ja": "main",
+        "name": "巨匠東大日語",
+        "name:zh": "巨匠東大日語"
+      }
+    },
+    {
+      "displayName": "巨匠美語",
+      "id": "gjunenglish-85e50b",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "language_school",
+        "brand": "巨匠教育",
+        "brand:en": "Gjun",
+        "brand:wikidata": "Q11057516",
+        "brand:zh": "巨匠教育",
+        "language:en": "main",
+        "name": "巨匠美語",
+        "name:en": "Gjun English",
+        "name:zh": "巨匠美語"
       }
     },
     {
@@ -284,7 +391,6 @@
         "brand": "新东方",
         "brand:en": "New Oriental Education",
         "brand:wikidata": "Q13631921",
-        "brand:wikipedia": "zh:新东方学校",
         "brand:zh": "新东方",
         "name": "新东方",
         "name:en": "New Oriental Education",
@@ -301,7 +407,6 @@
         "brand:en": "Sakura JP",
         "brand:ja": "桜にほんご",
         "brand:wikidata": "Q7403164",
-        "brand:wikipedia": "zh:樱花日语",
         "brand:zh": "樱花日语",
         "name": "樱花日语",
         "name:en": "Sakura JP",

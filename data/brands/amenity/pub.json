@@ -5,9 +5,12 @@
     "exclude": {
       "generic": [
         "^(bar|bistro|pub)$",
+        "^(bistrot|buvette|cave|maquis)$",
         "^(commercial )?hotel$",
-        "bistrot",
-        "irish pub"
+        "^irish pub$",
+        "^italbolt$",
+        "^kocsma$",
+        "^söröző$"
       ],
       "named": [
         "^(black horse|coach and horses|cross keys|crown inn|kings arms|kings head|new inn)$",
@@ -23,6 +26,18 @@
     }
   },
   "items": [
+    {
+      "displayName": "Adnams",
+      "id": "adnams-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Adnams",
+        "brand:wikidata": "Q4683851",
+        "brewery": "Adnams",
+        "brewery:wikidata": "Q4683851"
+      }
+    },
     {
       "displayName": "BEFeD",
       "id": "befed-1d1bef",
@@ -66,7 +81,6 @@
         "amenity": "pub",
         "brand": "BrewDog",
         "brand:wikidata": "Q911367",
-        "brand:wikipedia": "en:BrewDog",
         "name": "BrewDog"
       }
     },
@@ -78,28 +92,31 @@
         "amenity": "pub",
         "brand": "Brewers Fayre",
         "brand:wikidata": "Q4962678",
-        "brand:wikipedia": "en:Brewers Fayre",
         "cuisine": "british"
       }
     },
     {
-      "displayName": "Buvette",
-      "id": "buvette-296a9c",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Brewhouse & Kitchen",
+      "id": "brewhouseandkitchen-eaed91",
+      "locationSet": {"include": ["gb"]},
       "tags": {
         "amenity": "pub",
-        "brand": "Buvette",
-        "name": "Buvette"
+        "brand": "Brewhouse & Kitchen",
+        "brand:wikidata": "Q110420544",
+        "microbrewery": "yes"
       }
     },
     {
-      "displayName": "Cave",
-      "id": "cave-296a9c",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Castle Rock",
+      "id": "castlerock-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["castle rock brewery"],
       "tags": {
         "amenity": "pub",
-        "brand": "Cave",
-        "name": "Cave"
+        "brand": "Castle Rock",
+        "brand:wikidata": "Q5050272",
+        "brewery": "Castle Rock",
+        "brewery:wikidata": "Q5050272"
       }
     },
     {
@@ -109,8 +126,34 @@
       "tags": {
         "amenity": "pub",
         "brand": "Chef & Brewer",
-        "brand:wikidata": "Q5089491",
-        "brand:wikipedia": "en:Chef & Brewer"
+        "brand:wikidata": "Q5089491"
+      }
+    },
+    {
+      "displayName": "Ember Inns",
+      "id": "emberinns-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "note": "No name for Ember Inns brand as each pub is named differently.",
+      "tags": {
+        "amenity": "pub",
+        "brand": "Ember Inns",
+        "brand:wikidata": "Q116272278"
+      }
+    },
+    {
+      "displayName": "Everards",
+      "id": "everards-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": [
+        "everards brewery",
+        "everards of leicestershire"
+      ],
+      "tags": {
+        "amenity": "pub",
+        "brand": "Everards",
+        "brand:wikidata": "Q5416921",
+        "brewery": "Everards",
+        "brewery:wikidata": "Q5416921"
       }
     },
     {
@@ -131,20 +174,19 @@
       "tags": {
         "amenity": "pub",
         "brand": "Fuller's",
-        "brand:wikidata": "Q5253950",
-        "brand:wikipedia": "en:Fuller's Brewery"
+        "brand:wikidata": "Q5253950"
       }
     },
     {
       "displayName": "Greene King",
       "id": "greeneking-eaed91",
       "locationSet": {"include": ["gb"]},
+      "matchNames": ["greene king local pubs"],
       "note": "No name for Greene King's brand as each pub is named differently.",
       "tags": {
         "amenity": "pub",
         "brand": "Greene King",
-        "brand:wikidata": "Q5564162",
-        "brand:wikipedia": "en:Greene King"
+        "brand:wikidata": "Q5564162"
       }
     },
     {
@@ -154,8 +196,30 @@
       "tags": {
         "amenity": "pub",
         "brand": "Hall & Woodhouse",
-        "brand:wikidata": "Q5642555",
-        "brand:wikipedia": "en:Hall & Woodhouse"
+        "brand:wikidata": "Q5642555"
+      }
+    },
+    {
+      "displayName": "Harvey's",
+      "id": "harveys-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["harveys brewery"],
+      "tags": {
+        "amenity": "pub",
+        "brand": "Harvey's",
+        "brand:wikidata": "Q5677759",
+        "brewery": "Harvey's",
+        "brewery:wikidata": "Q5677759"
+      }
+    },
+    {
+      "displayName": "Hive Pubs",
+      "id": "hivepubs-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Hive Pubs",
+        "brand:wikidata": "Q115594794"
       }
     },
     {
@@ -165,38 +229,30 @@
       "tags": {
         "amenity": "pub",
         "brand": "Hungry Horse",
-        "brand:wikidata": "Q5943510",
-        "brand:wikipedia": "en:Hungry Horse"
+        "brand:wikidata": "Q5943510"
       }
     },
     {
-      "displayName": "Italbolt",
-      "id": "italbolt-296a9c",
-      "locationSet": {"include": ["001"]},
+      "displayName": "J.W. Lees",
+      "id": "jwlees-eaed91",
+      "locationSet": {"include": ["gb"]},
       "tags": {
         "amenity": "pub",
-        "brand": "Italbolt",
-        "name": "Italbolt"
+        "brand": "J.W. Lees",
+        "brand:wikidata": "Q6104441",
+        "brewery": "J.W. Lees",
+        "brewery:wikidata": "Q6104441"
       }
     },
     {
-      "displayName": "Kocsma",
-      "id": "kocsma-296a9c",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Marston's",
+      "id": "marstons-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["marston's inns & taverns"],
       "tags": {
         "amenity": "pub",
-        "brand": "Kocsma",
-        "name": "Kocsma"
-      }
-    },
-    {
-      "displayName": "Maquis",
-      "id": "maquis-296a9c",
-      "locationSet": {"include": ["001"]},
-      "tags": {
-        "amenity": "pub",
-        "brand": "Maquis",
-        "name": "Maquis"
+        "brand": "Marston's",
+        "brand:wikidata": "Q6773982"
       }
     },
     {
@@ -215,14 +271,38 @@
     },
     {
       "displayName": "McMenamins",
-      "id": "mcmenamins-41045b",
-      "locationSet": {"include": ["us"]},
+      "id": "mcmenamins-3769c3",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "amenity": "pub",
         "brand": "McMenamins",
         "brand:wikidata": "Q6802345",
-        "brand:wikipedia": "en:McMenamins",
         "cuisine": "american"
+      }
+    },
+    {
+      "displayName": "Nicholson's",
+      "id": "nicholsons-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Nicholson's",
+        "brand:wikidata": "Q113130666"
+      }
+    },
+    {
+      "displayName": "O'Neill's",
+      "id": "oneills-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "O'Neill's",
+        "brand:wikidata": "Q7071905"
       }
     },
     {
@@ -245,44 +325,103 @@
         "amenity": "pub",
         "brand": "Pitcher & Piano",
         "brand:wikidata": "Q65930663",
-        "brand:wikipedia": "en:Pitcher & Piano",
         "cuisine": "british",
         "name": "Pitcher & Piano"
       }
     },
     {
-      "displayName": "Schmizza Public House",
-      "id": "schmizzapublichouse-41045b",
-      "locationSet": {"include": ["us"]},
+      "displayName": "Robinsons",
+      "id": "robinsons-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["robinsons brewery"],
+      "tags": {
+        "amenity": "pub",
+        "brand": "Robinsons",
+        "brand:wikidata": "Q7353116",
+        "brewery": "Robinsons",
+        "operator": "Robinsons",
+        "operator:wikidata": "Q7353116"
+      }
+    },
+    {
+      "displayName": "Samuel Smith",
+      "id": "samuelsmith-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["sam smith"],
+      "tags": {
+        "amenity": "pub",
+        "brand": "Samuel Smith",
+        "brand:wikidata": "Q7412675",
+        "brewery": "Samuel Smith",
+        "operator": "Samuel Smith",
+        "operator:wikidata": "Q7412675"
+      }
+    },
+    {
+      "displayName": "Schmizza Pub & Grub",
+      "id": "schmizzapubandgrub-3769c3",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "amenity": "pub",
         "brand": "Pizza Schmizza",
         "brand:wikidata": "Q7199979",
-        "brand:wikipedia": "en:Pizza Schmizza",
+        "cuisine": "pizza",
+        "name": "Schmizza Pub & Grub",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Schmizza Public House",
+      "id": "schmizzapublichouse-3769c3",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "pub",
+        "brand": "Pizza Schmizza",
+        "brand:wikidata": "Q7199979",
         "cuisine": "pizza",
         "name": "Schmizza Public House",
         "takeaway": "yes"
       }
     },
     {
-      "displayName": "Söröző",
-      "id": "sorozo-296a9c",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Shepherd Neame",
+      "id": "shepherdneame-eaed91",
+      "locationSet": {"include": ["gb"]},
       "tags": {
         "amenity": "pub",
-        "brand": "Söröző",
-        "name": "Söröző"
+        "brand": "Shepherd Neame",
+        "brand:wikidata": "Q12002324"
+      }
+    },
+    {
+      "displayName": "Sizzling Pubs",
+      "id": "sizzlingpubs-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Sizzling Pubs",
+        "brand:wikidata": "Q118314187"
       }
     },
     {
       "displayName": "St Austell Brewery",
       "id": "staustellbrewery-eaed91",
       "locationSet": {"include": ["gb"]},
+      "matchNames": ["st austell brewery pubs"],
       "tags": {
         "amenity": "pub",
         "brand": "St Austell Brewery",
         "brand:wikidata": "Q7592564",
-        "brand:wikipedia": "en:St Austell Brewery",
         "cuisine": "british"
       }
     },
@@ -298,6 +437,51 @@
       }
     },
     {
+      "displayName": "The Craft Beer Co.",
+      "id": "thecraftbeerco-f71e9b",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "tags": {
+        "amenity": "pub",
+        "brand": "The Craft Beer Co.",
+        "brand:wikidata": "Q111517437",
+        "name": "The Craft Beer Co."
+      }
+    },
+    {
+      "displayName": "The George Inn",
+      "id": "thegeorgeinn-296a9c",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "The George Inn",
+        "name": "The George Inn"
+      }
+    },
+    {
+      "displayName": "The Globe",
+      "id": "theglobe-296a9c",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "The Globe",
+        "name": "The Globe"
+      }
+    },
+    {
+      "displayName": "Thwaites",
+      "id": "thwaites-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["thwaites pubs"],
+      "tags": {
+        "amenity": "pub",
+        "brand": "Thwaites",
+        "brand:wikidata": "Q7799526",
+        "brewery": "Thwaites"
+      }
+    },
+    {
       "displayName": "Toddy Shop",
       "id": "toddyshop-fb2db4",
       "locationSet": {"include": ["in"]},
@@ -305,9 +489,18 @@
         "amenity": "pub",
         "brand": "Toddy Shop",
         "brand:wikidata": "Q7812761",
-        "brand:wikipedia": "en:Toddy shop",
         "drink:palm_wine": "yes",
         "name": "Toddy Shop"
+      }
+    },
+    {
+      "displayName": "Vintage Inns",
+      "id": "vintageinns-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Vintage Inns",
+        "brand:wikidata": "Q87067899"
       }
     },
     {
@@ -328,7 +521,6 @@
         "amenity": "pub",
         "brand": "Walkabout",
         "brand:wikidata": "Q7962149",
-        "brand:wikipedia": "en:Walkabout (pub chain)",
         "name": "Walkabout"
       }
     },
@@ -345,8 +537,7 @@
       "tags": {
         "amenity": "pub",
         "brand": "Wetherspoon",
-        "brand:wikidata": "Q6109362",
-        "brand:wikipedia": "en:Wetherspoons"
+        "brand:wikidata": "Q6109362"
       }
     },
     {
@@ -356,8 +547,7 @@
       "tags": {
         "amenity": "pub",
         "brand": "Young's",
-        "brand:wikidata": "Q8057802",
-        "brand:wikipedia": "en:Young's"
+        "brand:wikidata": "Q8057802"
       }
     },
     {
@@ -370,7 +560,6 @@
         "brand:en": "Tsubohachi",
         "brand:ja": "つぼ八",
         "brand:wikidata": "Q11272459",
-        "brand:wikipedia": "ja:つぼ八",
         "name": "つぼ八",
         "name:en": "Tsubohachi",
         "name:ja": "つぼ八"
@@ -392,6 +581,21 @@
       }
     },
     {
+      "displayName": "八剣伝",
+      "id": "hakkenden-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "八剣伝",
+        "brand:en": "Hakkenden",
+        "brand:ja": "八剣伝",
+        "brand:wikidata": "Q114783141",
+        "name": "八剣伝",
+        "name:en": "Hakkenden",
+        "name:ja": "八剣伝"
+      }
+    },
+    {
       "displayName": "和民",
       "id": "watami-0435b9",
       "locationSet": {"include": ["jp"]},
@@ -401,7 +605,6 @@
         "brand:en": "Watami",
         "brand:ja": "和民",
         "brand:wikidata": "Q10921591",
-        "brand:wikipedia": "ja:ワタミ",
         "name": "和民",
         "name:en": "Watami",
         "name:ja": "和民"
@@ -409,8 +612,8 @@
     },
     {
       "displayName": "庄や",
-      "id": "5d7ca5-296a9c",
-      "locationSet": {"include": ["001"]},
+      "id": "5d7ca5-0435b9",
+      "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "pub",
         "brand": "庄や",
@@ -429,10 +632,21 @@
         "brand:en": "Shirokiya",
         "brand:ja": "白木屋",
         "brand:wikidata": "Q489746",
-        "brand:wikipedia": "ja:白木屋 (居酒屋)",
         "name": "白木屋",
         "name:en": "Shirokiya",
         "name:ja": "白木屋"
+      }
+    },
+    {
+      "displayName": "目利きの銀次",
+      "id": "bc257c-296a9c",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "目利きの銀次",
+        "brand:ja": "目利きの銀次",
+        "name": "目利きの銀次",
+        "name:ja": "目利きの銀次"
       }
     },
     {
@@ -460,7 +674,6 @@
         "brand:en": "Furaibo",
         "brand:ja": "風来坊",
         "brand:wikidata": "Q22129759",
-        "brand:wikipedia": "ja:風来坊 (愛知県)",
         "name": "風来坊",
         "name:en": "Furaibo",
         "name:ja": "風来坊"
@@ -476,7 +689,6 @@
         "brand:en": "Yoronotaki",
         "brand:ja": "養老乃瀧",
         "brand:wikidata": "Q11666874",
-        "brand:wikipedia": "ja:養老乃瀧",
         "name": "養老乃瀧",
         "name:en": "Yoronotaki",
         "name:ja": "養老乃瀧"
@@ -492,7 +704,6 @@
         "brand:en": "Uotami",
         "brand:ja": "魚民",
         "brand:wikidata": "Q11673981",
-        "brand:wikipedia": "ja:魚民",
         "name": "魚民",
         "name:en": "Uotami",
         "name:ja": "魚民"
@@ -508,7 +719,6 @@
         "brand:en": "Torikizoku",
         "brand:ja": "鳥貴族",
         "brand:wikidata": "Q11675129",
-        "brand:wikipedia": "ja:鳥貴族",
         "name": "鳥貴族",
         "name:en": "Torikizoku",
         "name:ja": "鳥貴族"

@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "path": "brands/shop/bathroom_furnishing",
+    "exclude": {
+      "generic": [
+        "^bathroom( furnishing)?$",
+        "^сантехника$"
+      ]
+    }
+  },
+  "items": [
+    {
+      "displayName": "Easy Bathrooms",
+      "id": "easybathrooms-72592f",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "Easy Bathrooms",
+        "brand:wikidata": "Q114348566",
+        "name": "Easy Bathrooms",
+        "shop": "bathroom_furnishing"
+      }
+    }
+  ]
+}

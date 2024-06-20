@@ -1,15 +1,20 @@
 {
   "_meta": {
-    "version": "6.0.20211028",
-    "generated": "2021-10-28T17:01:13.553Z",
+    "version": "6.0.20230801",
+    "generated": "2023-08-01T07:31:01.739Z",
     "url": "https://raw.githubusercontent.com/osmlab/name-suggestion-index/main/dist/matchGroups.json",
-    "hash": "95cb782097b0f7775c23a6c5fc5abfe2"
+    "hash": "dd69476689037ba44d3908e17eb01ec8"
   },
   "matchGroups": {
     "adult_gaming_centre": [
       "amenity/casino",
       "amenity/gambling",
       "leisure/adult_gaming_centre"
+    ],
+    "bar": [
+      "amenity/bar",
+      "amenity/pub",
+      "amenity/restaurant"
     ],
     "beauty": [
       "shop/beauty",
@@ -23,10 +28,10 @@
       "shop/alcohol",
       "shop/beer",
       "shop/beverages",
+      "shop/kiosk",
       "shop/wine"
     ],
     "camping": [
-      "leisure/park",
       "tourism/camp_site",
       "tourism/caravan_site"
     ],
@@ -40,12 +45,10 @@
       "amenity/clinic",
       "amenity/doctors",
       "healthcare/clinic",
+      "healthcare/laboratory",
+      "healthcare/physiotherapist",
+      "healthcare/sample_collection",
       "healthcare/dialysis"
-    ],
-    "confectionery": [
-      "shop/candy",
-      "shop/chocolate",
-      "shop/confectionery"
     ],
     "convenience": [
       "shop/beauty",
@@ -53,6 +56,7 @@
       "shop/convenience",
       "shop/cosmetics",
       "shop/grocery",
+      "shop/kiosk",
       "shop/newsagent",
       "shop/perfumery"
     ],
@@ -68,12 +72,15 @@
     ],
     "electronics": [
       "office/telecommunication",
+      "shop/appliance",
       "shop/computer",
       "shop/electronics",
       "shop/hifi",
+      "shop/kiosk",
       "shop/mobile",
       "shop/mobile_phone",
-      "shop/telecommunication"
+      "shop/telecommunication",
+      "shop/video_games"
     ],
     "fabric": [
       "shop/fabric",
@@ -83,7 +90,7 @@
     "fashion": [
       "shop/accessories",
       "shop/bag",
-      "shop/botique",
+      "shop/boutique",
       "shop/clothes",
       "shop/department_store",
       "shop/fashion",
@@ -106,17 +113,21 @@
       "leisure/sports_center"
     ],
     "food": [
-      "amenity/pub",
-      "amenity/bar",
       "amenity/cafe",
       "amenity/fast_food",
       "amenity/ice_cream",
       "amenity/restaurant",
       "shop/bakery",
+      "shop/candy",
+      "shop/chocolate",
+      "shop/coffee",
+      "shop/confectionary",
+      "shop/confectionery",
+      "shop/food",
+      "shop/kiosk",
       "shop/ice_cream",
       "shop/pastry",
-      "shop/tea",
-      "shop/coffee"
+      "shop/tea"
     ],
     "fuel": [
       "amenity/fuel",
@@ -128,6 +139,7 @@
       "shop/gift",
       "shop/card",
       "shop/cards",
+      "shop/kiosk",
       "shop/stationery"
     ],
     "hardware": [
@@ -171,10 +183,11 @@
       "shop/houseware",
       "shop/interior_decoration"
     ],
-    "lifeboat_station": [
+    "water_rescue": [
       "amenity/lifeboat_station",
       "emergency/lifeboat_station",
-      "emergency/marine_rescue"
+      "emergency/marine_rescue",
+      "emergency/water_rescue"
     ],
     "lodging": [
       "tourism/hotel",
@@ -190,13 +203,19 @@
       "shop/stationery"
     ],
     "outdoor": [
+      "shop/clothes",
       "shop/outdoor",
       "shop/sports"
+    ],
+    "parcel_locker": [
+      "amenity/parcel_locker",
+      "amenity/vending_machine"
     ],
     "pharmacy": [
       "amenity/doctors",
       "amenity/pharmacy",
-      "healthcare/pharmacy"
+      "healthcare/pharmacy",
+      "shop/chemist"
     ],
     "playground": [
       "amenity/theme_park",
@@ -209,7 +228,10 @@
       "amenity/car_rental",
       "amenity/truck_rental",
       "amenity/vehicle_rental",
-      "shop/rental"
+      "shop/kiosk",
+      "shop/plant_hire",
+      "shop/rental",
+      "shop/tool_hire"
     ],
     "school": [
       "amenity/childcare",
@@ -237,6 +259,15 @@
       "shop/supermarket",
       "shop/wholesale"
     ],
+    "thrift": [
+      "shop/charity",
+      "shop/clothes",
+      "shop/second_hand"
+    ],
+    "tobacco": [
+      "shop/e-cigarette",
+      "shop/tobacco"
+    ],
     "variety_store": [
       "shop/variety_store",
       "shop/discount",
@@ -244,9 +275,11 @@
     ],
     "vending": [
       "amenity/vending_machine",
+      "shop/kiosk",
       "shop/vending_machine"
     ],
     "weight_loss": [
+      "amenity/clinic",
       "amenity/doctors",
       "amenity/weight_clinic",
       "healthcare/counselling",

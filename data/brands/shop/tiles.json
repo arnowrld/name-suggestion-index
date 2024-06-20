@@ -17,6 +17,40 @@
       }
     },
     {
+      "displayName": "Daltile",
+      "id": "daltile-31ce31",
+      "locationSet": {"include": ["ca", "us"]},
+      "tags": {
+        "brand": "Daltile",
+        "brand:wikidata": "Q120633664",
+        "name": "daltile",
+        "shop": "tiles"
+      }
+    },
+    {
+      "displayName": "Interceramic",
+      "id": "interceramic-7c9f08",
+      "locationSet": {"include": ["mx"]},
+      "matchTags": ["shop/diy", "shop/hardware"],
+      "tags": {
+        "brand": "Interceramic",
+        "brand:wikidata": "Q113203429",
+        "name": "Interceramic",
+        "shop": "tiles"
+      }
+    },
+    {
+      "displayName": "National Tiles",
+      "id": "nationaltiles-87a8ad",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "brand": "National Tiles",
+        "brand:wikidata": "Q117157007",
+        "name": "National Tiles",
+        "shop": "tiles"
+      }
+    },
+    {
       "displayName": "Tile Giant",
       "id": "tilegiant-d8218f",
       "locationSet": {"include": ["gb"]},
@@ -32,11 +66,10 @@
       "displayName": "Topps Tiles",
       "id": "toppstiles-d8218f",
       "locationSet": {"include": ["gb"]},
-      "matchTags": ["shop/diy"],
+      "matchTags": ["shop/diy", "shop/paint"],
       "tags": {
         "brand": "Topps Tiles",
         "brand:wikidata": "Q17026595",
-        "brand:wikipedia": "en:Topps Tiles",
         "name": "Topps Tiles",
         "shop": "tiles"
       }

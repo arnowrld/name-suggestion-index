@@ -3,7 +3,8 @@
     "path": "brands/shop/copyshop",
     "exclude": {
       "generic": [
-        "^(copyshop|fotocopias|photocopie)$"
+        "^(copyshop|fotocopias|photocopie)$",
+        "^(打印|复印)店$"
       ],
       "named": ["^xerox$"]
     }
@@ -16,7 +17,6 @@
       "tags": {
         "brand": "AlphaGraphics",
         "brand:wikidata": "Q4734952",
-        "brand:wikipedia": "en:AlphaGraphics",
         "craft": "signmaker",
         "name": "AlphaGraphics",
         "shop": "copyshop"
@@ -65,8 +65,18 @@
       "tags": {
         "brand": "FedEx Office",
         "brand:wikidata": "Q474379",
-        "brand:wikipedia": "en:FedEx Office",
         "name": "FedEx Office",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "displayName": "Mania Print",
+      "id": "maniaprint-a6353b",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "brand": "Mania Print",
+        "brand:wikidata": "Q117326997",
+        "name": "Mania Print",
         "shop": "copyshop"
       }
     },
@@ -84,6 +94,22 @@
       }
     },
     {
+      "displayName": "Service Graphics",
+      "id": "servicegraphics-965e32",
+      "locationSet": {"include": ["gb"]},
+      "matchNames": ["paragon service point"],
+      "matchTags": [
+        "shop/printing",
+        "shop/stationery"
+      ],
+      "tags": {
+        "brand": "Service Graphics",
+        "brand:wikidata": "Q109451804",
+        "name": "Service Graphics",
+        "shop": "copyshop"
+      }
+    },
+    {
       "displayName": "Sir Speedy",
       "id": "sirspeedy-090c18",
       "locationSet": {"include": ["us"]},
@@ -91,7 +117,6 @@
       "tags": {
         "brand": "Sir Speedy",
         "brand:wikidata": "Q17088225",
-        "brand:wikipedia": "en:Sir Speedy",
         "name": "Sir Speedy",
         "shop": "copyshop"
       }

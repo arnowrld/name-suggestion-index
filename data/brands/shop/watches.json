@@ -12,7 +12,6 @@
       "tags": {
         "brand": "A. Lange & Söhne",
         "brand:wikidata": "Q278880",
-        "brand:wikipedia": "en:A. Lange & Söhne",
         "name": "A. Lange & Söhne",
         "shop": "watches"
       }
@@ -25,7 +24,6 @@
       "tags": {
         "brand": "Audemars Piguet",
         "brand:wikidata": "Q667425",
-        "brand:wikipedia": "en:Audemars Piguet",
         "name": "Audemars Piguet",
         "shop": "watches"
       }
@@ -38,16 +36,34 @@
       "tags": {
         "brand": "Baume & Mercier",
         "brand:wikidata": "Q138109",
-        "brand:wikipedia": "en:Baume et Mercier",
         "name": "Baume & Mercier",
         "shop": "watches"
       }
     },
     {
+      "displayName": "Breitling",
+      "id": "breitling-101248",
+      "locationSet": {"include": ["001"]},
+      "matchTags": ["shop/jewelry"],
+      "tags": {
+        "brand": "Breitling",
+        "brand:wikidata": "Q665740",
+        "name": "Breitling",
+        "shop": "watches"
+      }
+    },
+    {
       "displayName": "Fossil",
-      "id": "fossil-b09800",
+      "id": "fossil-86cc90",
       "locationSet": {
-        "include": ["ca", "de", "fr", "it", "us"]
+        "include": [
+          "ca",
+          "de",
+          "fr",
+          "hk",
+          "it",
+          "us"
+        ]
       },
       "matchTags": [
         "shop/bag",
@@ -57,7 +73,6 @@
       "tags": {
         "brand": "Fossil",
         "brand:wikidata": "Q356212",
-        "brand:wikipedia": "en:Fossil Group",
         "name": "Fossil",
         "shop": "watches"
       }
@@ -74,7 +89,6 @@
       "tags": {
         "brand": "IWC",
         "brand:wikidata": "Q662902",
-        "brand:wikipedia": "en:International Watch Company",
         "name": "IWC",
         "shop": "watches"
       }
@@ -87,8 +101,64 @@
       "tags": {
         "brand": "Jaeger-LeCoultre",
         "brand:wikidata": "Q378698",
-        "brand:wikipedia": "en:Jaeger-LeCoultre",
         "name": "Jaeger-LeCoultre",
+        "shop": "watches"
+      }
+    },
+    {
+      "displayName": "Just Watches",
+      "id": "justwatches-3643f6",
+      "locationSet": {"include": ["in"]},
+      "matchTags": ["shop/jewelry"],
+      "tags": {
+        "brand": "Just Watches",
+        "brand:wikidata": "Q117822349",
+        "name": "Just Watches",
+        "shop": "watches"
+      }
+    },
+    {
+      "displayName": "Longines",
+      "id": "longines-691196",
+      "locationSet": {
+        "include": [
+          "ar",
+          "au",
+          "be",
+          "ca",
+          "ch",
+          "cl",
+          "cn",
+          "de",
+          "dk",
+          "es",
+          "fi",
+          "fr",
+          "gb",
+          "gr",
+          "in",
+          "it",
+          "jp",
+          "kr",
+          "mx",
+          "my",
+          "nl",
+          "no",
+          "pt",
+          "se",
+          "sg",
+          "th",
+          "tr",
+          "tw",
+          "us",
+          "za"
+        ]
+      },
+      "matchTags": ["shop/jewelry"],
+      "tags": {
+        "brand": "Longines",
+        "brand:wikidata": "Q603698",
+        "name": "Longines",
         "shop": "watches"
       }
     },
@@ -112,19 +182,20 @@
       "tags": {
         "brand": "Movado",
         "brand:wikidata": "Q939816",
-        "brand:wikipedia": "en:Movado",
         "name": "Movado",
         "shop": "watches"
       }
     },
     {
       "displayName": "Omega",
-      "id": "omega-237699",
-      "locationSet": {"include": ["ch", "fr"]},
+      "id": "omega-c9e7be",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["cn"]
+      },
       "tags": {
         "brand": "Omega",
         "brand:wikidata": "Q659224",
-        "brand:wikipedia": "en:Omega SA",
         "name": "Omega",
         "shop": "watches"
       }
@@ -137,7 +208,6 @@
       "tags": {
         "brand": "Panerai",
         "brand:wikidata": "Q1475590",
-        "brand:wikipedia": "en:Panerai",
         "name": "Panerai",
         "shop": "watches"
       }
@@ -150,7 +220,6 @@
       "tags": {
         "brand": "Patek Philippe",
         "brand:wikidata": "Q659096",
-        "brand:wikipedia": "en:Patek Philippe SA",
         "name": "Patek Philippe",
         "shop": "watches"
       }
@@ -163,19 +232,17 @@
       "tags": {
         "brand": "Roger Dubuis",
         "brand:wikidata": "Q670160",
-        "brand:wikipedia": "en:Roger Dubuis",
         "name": "Roger Dubuis",
         "shop": "watches"
       }
     },
     {
       "displayName": "Rolex",
-      "id": "rolex-b9b74c",
-      "locationSet": {"include": ["us"]},
+      "id": "rolex-101248",
+      "locationSet": {"include": ["001"]},
       "tags": {
         "brand": "Rolex",
         "brand:wikidata": "Q62288",
-        "brand:wikipedia": "en:Rolex",
         "name": "Rolex",
         "shop": "watches"
       }
@@ -189,7 +256,6 @@
       "tags": {
         "brand": "Seiko",
         "brand:wikidata": "Q322601",
-        "brand:wikipedia": "en:Seiko",
         "name": "Seiko",
         "shop": "watches"
       }
@@ -202,7 +268,6 @@
       "tags": {
         "brand": "Swatch",
         "brand:wikidata": "Q573422",
-        "brand:wikipedia": "en:Swatch",
         "name": "Swatch",
         "shop": "watches"
       }
@@ -215,8 +280,19 @@
       "tags": {
         "brand": "TAG Heuer",
         "brand:wikidata": "Q645984",
-        "brand:wikipedia": "en:TAG Heuer",
         "name": "TAG Heuer",
+        "shop": "watches"
+      }
+    },
+    {
+      "displayName": "Tissot",
+      "id": "tissot-101248",
+      "locationSet": {"include": ["001"]},
+      "matchTags": ["shop/jewelry"],
+      "tags": {
+        "brand": "Tissot",
+        "brand:wikidata": "Q659530",
+        "name": "Tissot",
         "shop": "watches"
       }
     },
@@ -228,7 +304,6 @@
       "tags": {
         "brand": "Tourneau",
         "brand:wikidata": "Q7829333",
-        "brand:wikipedia": "en:Tourneau",
         "name": "Tourneau",
         "shop": "watches"
       }
@@ -241,8 +316,40 @@
       "tags": {
         "brand": "Vacheron Constantin",
         "brand:wikidata": "Q62341",
-        "brand:wikipedia": "en:Vacheron Constantin",
         "name": "Vacheron Constantin",
+        "shop": "watches"
+      }
+    },
+    {
+      "displayName": "時間廊 City Chain",
+      "id": "citychain-301c40",
+      "locationSet": {"include": ["hk"]},
+      "tags": {
+        "brand": "時間廊 City Chain",
+        "brand:en": "City Chain",
+        "brand:wikidata": "Q11089260",
+        "brand:zh": "時間廊",
+        "name": "時間廊 City Chain",
+        "name:en": "City Chain",
+        "name:zh": "時間廊",
+        "shop": "watches"
+      }
+    },
+    {
+      "displayName": "欧米茄",
+      "id": "omega-410977",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "brand": "欧米茄",
+        "brand:en": "Omega",
+        "brand:wikidata": "Q659224",
+        "brand:zh": "欧米茄",
+        "name": "欧米茄",
+        "name:en": "Omega",
+        "name:zh": "欧米茄",
         "shop": "watches"
       }
     }

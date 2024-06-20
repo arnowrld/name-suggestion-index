@@ -5,8 +5,10 @@
       "generic": [
         "^(hand)?\\s?car\\s?wash$",
         "^(авто)?м[ио]йка( самообслуживания)?$",
+        "^autolavado$",
         "^autolavaggio$",
         "^autowäsche$",
+        "^avtoyuma$",
         "^la(rje|vadero|vage|vazh)( auto)?$",
         "^myjnia\\s?(bezdotykowa|samochodowa)?$",
         "^spălătorie( auto)?$",
@@ -17,6 +19,25 @@
   },
   "items": [
     {
+      "displayName": "Alltown",
+      "id": "alltown-cac12f",
+      "locationSet": {
+        "include": [
+          "us-ct.geojson",
+          "us-ma.geojson",
+          "us-me.geojson",
+          "us-nh.geojson",
+          "us-ri.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Alltown",
+        "brand:wikidata": "Q119586667",
+        "name": "Alltown"
+      }
+    },
+    {
       "displayName": "Aral",
       "id": "aral-78fe7d",
       "locationSet": {"include": ["de", "lu"]},
@@ -24,8 +45,19 @@
         "amenity": "car_wash",
         "brand": "Aral",
         "brand:wikidata": "Q565734",
-        "brand:wikipedia": "en:Aral AG",
         "name": "Aral"
+      }
+    },
+    {
+      "displayName": "Aral SuperWash",
+      "id": "aralsuperwash-26327d",
+      "locationSet": {"include": ["de"]},
+      "matchNames": ["superwash"],
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Aral",
+        "brand:wikidata": "Q565734",
+        "name": "Aral SuperWash"
       }
     },
     {
@@ -36,7 +68,6 @@
         "amenity": "car_wash",
         "brand": "BP",
         "brand:wikidata": "Q152057",
-        "brand:wikipedia": "en:BP",
         "name": "BP"
       }
     },
@@ -48,7 +79,6 @@
         "amenity": "car_wash",
         "brand": "Brown Bear Car Wash",
         "brand:wikidata": "Q107354893",
-        "brand:wikipedia": "en:Brown Bear Car Wash",
         "name": "Brown Bear Car Wash"
       }
     },
@@ -60,7 +90,6 @@
         "amenity": "car_wash",
         "brand": "Chevron",
         "brand:wikidata": "Q319642",
-        "brand:wikipedia": "en:Chevron Corporation",
         "name": "Chevron"
       }
     },
@@ -72,27 +101,38 @@
         "amenity": "car_wash",
         "brand": "Circle K",
         "brand:wikidata": "Q3268010",
-        "brand:wikipedia": "en:Circle K",
         "name": "Circle K"
       }
     },
     {
-      "displayName": "Elefante Azul",
-      "id": "elefanteazul-43b899",
+      "displayName": "Ehrle",
+      "id": "ehrle-43b899",
       "locationSet": {"include": ["001"]},
       "tags": {
         "amenity": "car_wash",
+        "brand": "Ehrle",
+        "name": "Ehrle"
+      }
+    },
+    {
+      "displayName": "Elefante Azul",
+      "id": "elefanteazul-99bbad",
+      "locationSet": {"include": ["es", "pt"]},
+      "tags": {
+        "amenity": "car_wash",
         "brand": "Elefante Azul",
+        "brand:wikidata": "Q114185701",
         "name": "Elefante Azul"
       }
     },
     {
       "displayName": "Éléphant Bleu",
-      "id": "elephantbleu-43b899",
-      "locationSet": {"include": ["001"]},
+      "id": "elephantbleu-6a6dda",
+      "locationSet": {"include": ["ch", "fx"]},
       "tags": {
         "amenity": "car_wash",
         "brand": "Éléphant Bleu",
+        "brand:wikidata": "Q3144358",
         "name": "Éléphant Bleu"
       }
     },
@@ -107,8 +147,18 @@
         "amenity": "car_wash",
         "brand": "Esso",
         "brand:wikidata": "Q867662",
-        "brand:wikipedia": "en:Esso",
         "name": "Esso"
+      }
+    },
+    {
+      "displayName": "Esso TigerWash",
+      "id": "essotigerwash-26327d",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "name": "Esso TigerWash"
       }
     },
     {
@@ -119,7 +169,6 @@
         "amenity": "car_wash",
         "brand": "H-E-B",
         "brand:wikidata": "Q830621",
-        "brand:wikipedia": "en:H-E-B",
         "name": "H-E-B Car Wash",
         "short_name": "H-E-B"
       }
@@ -141,11 +190,11 @@
         "include": ["001"],
         "exclude": ["pl"]
       },
+      "matchNames": ["imo car wash (arc)"],
       "tags": {
         "amenity": "car_wash",
         "brand": "IMO Car Wash",
         "brand:wikidata": "Q1654122",
-        "brand:wikipedia": "de:IMO Car Wash Group",
         "name": "IMO Car Wash",
         "short_name": "IMO"
       }
@@ -161,14 +210,18 @@
         "amenity": "car_wash",
         "brand": "Intermarché",
         "brand:wikidata": "Q3153200",
-        "brand:wikipedia": "fr:Intermarché",
         "name": "Intermarché"
       }
     },
     {
       "displayName": "Kaady Car Wash",
-      "id": "kaadycarwash-244496",
-      "locationSet": {"include": ["us"]},
+      "id": "kaadycarwash-4e367a",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "amenity": "car_wash",
         "brand": "Kaady Car Wash",
@@ -184,18 +237,39 @@
         "amenity": "car_wash",
         "brand": "Migrol",
         "brand:wikidata": "Q1747771",
-        "brand:wikipedia": "de:Migrol",
         "name": "Migrol Car Wash"
       }
     },
     {
       "displayName": "Mister Car Wash",
-      "id": "mistercarwash-43b899",
-      "locationSet": {"include": ["001"]},
+      "id": "mistercarwash-244496",
+      "locationSet": {"include": ["us"]},
       "tags": {
         "amenity": "car_wash",
         "brand": "Mister Car Wash",
+        "brand:wikidata": "Q114185788",
         "name": "Mister Car Wash"
+      }
+    },
+    {
+      "displayName": "Mobil",
+      "id": "mobil-43b899",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Mobil",
+        "name": "Mobil"
+      }
+    },
+    {
+      "displayName": "ModWash",
+      "id": "modwash-244496",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "ModWash",
+        "brand:wikidata": "Q110543739",
+        "name": "ModWash"
       }
     },
     {
@@ -206,7 +280,6 @@
         "amenity": "car_wash",
         "brand": "Mr. Wash",
         "brand:wikidata": "Q1951447",
-        "brand:wikipedia": "de:Mr. Wash",
         "name": "Mr. Wash"
       }
     },
@@ -218,8 +291,29 @@
         "amenity": "car_wash",
         "brand": "OMV",
         "brand:wikidata": "Q168238",
-        "brand:wikipedia": "en:OMV",
         "name": "OMV"
+      }
+    },
+    {
+      "displayName": "Orlen",
+      "id": "orlen-b1b959",
+      "locationSet": {"include": ["lt", "pl"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Orlen",
+        "brand:wikidata": "Q971649",
+        "name": "Orlen"
+      }
+    },
+    {
+      "displayName": "Petro-Canada",
+      "id": "petrocanada-9ea365",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Petro-Canada",
+        "brand:wikidata": "Q1208279",
+        "name": "Petro-Canada"
       }
     },
     {
@@ -230,7 +324,6 @@
         "amenity": "car_wash",
         "brand": "Quick Quack Car Wash",
         "brand:wikidata": "Q16968054",
-        "brand:wikipedia": "en:Quick Quack Car Wash",
         "name": "Quick Quack Car Wash"
       }
     },
@@ -245,8 +338,7 @@
       "tags": {
         "amenity": "car_wash",
         "brand": "Shell",
-        "brand:wikidata": "Q154950",
-        "brand:wikipedia": "en:Royal Dutch Shell",
+        "brand:wikidata": "Q110716465",
         "name": "Shell"
       }
     },
@@ -260,8 +352,18 @@
         "amenity": "car_wash",
         "brand": "Slovnaft",
         "brand:wikidata": "Q1587563",
-        "brand:wikipedia": "en:Slovnaft",
         "name": "Slovnaft"
+      }
+    },
+    {
+      "displayName": "Soapy Noble",
+      "id": "soapynoble-244496",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Soapy Noble",
+        "brand:wikidata": "Q117237115",
+        "name": "Soapy Noble"
       }
     },
     {
@@ -271,6 +373,7 @@
       "tags": {
         "amenity": "car_wash",
         "brand": "Super Wash",
+        "brand:wikidata": "Q114185986",
         "name": "Super Wash"
       }
     },
@@ -282,8 +385,20 @@
         "amenity": "car_wash",
         "brand": "Total",
         "brand:wikidata": "Q154037",
-        "brand:wikipedia": "fr:TotalEnergies",
         "name": "Total Wash"
+      }
+    },
+    {
+      "displayName": "Washman",
+      "id": "washman-987d4e",
+      "locationSet": {
+        "include": ["us-or.geojson"]
+      },
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Washman",
+        "brand:wikidata": "Q109827210",
+        "name": "Washman"
       }
     },
     {
@@ -305,6 +420,33 @@
         "amenity": "car_wash",
         "brand": "Автобаня",
         "name": "Автобаня"
+      }
+    },
+    {
+      "displayName": "Мой-ка! DS",
+      "id": "cf497f-43b899",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "Мой-ка! DS",
+        "name": "Мой-ка! DS"
+      }
+    },
+    {
+      "displayName": "途虎",
+      "id": "77ef3a-b5eb92",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["途虎养车"],
+      "tags": {
+        "amenity": "car_wash",
+        "brand": "途虎",
+        "brand:wikidata": "Q114064893",
+        "brand:zh": "途虎",
+        "name": "途虎",
+        "name:zh": "途虎"
       }
     }
   ]
